@@ -8020,6 +8020,7 @@ body {
   margin-top: 0.25rem;
   height: 2rem;
   width: 2rem;
+  filter: drop-shadow(0 0 1em 0 #f00);
 }
 .version {
   color: #d6d6dc;
@@ -8050,8 +8051,14 @@ ul#contents {
   margin: 0 !important;
   padding: 0.2em !important;
 }
+.draft {
+  border: 1px dashed #c96e40;
+}
 .draft-hide {
   display: none !important;
+}
+.draft-show {
+  display: block !important;
 }
 .copyright {
   font-family: Arial, sans-serif;
