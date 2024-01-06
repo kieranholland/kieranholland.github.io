@@ -4108,6 +4108,7 @@ body,
 table {
   font-size: 1em;
 }
+a,
 dl,
 li,
 p,
@@ -8284,13 +8285,13 @@ hr {
   border: none !important;
   margin: 0 0.2rem 0.5rem 0.2rem;
 }
+p,
 dl,
 pre,
 pre.p,
 pre:not(.p),
 pre.code code.hljs,
 dd pre {
-  line-height: 1rem;
   font-family: Menlo, Menlo Web, Roboto Mono, Consolas, Courier New, monospace;
 }
 pre:not(.p) {
@@ -8359,10 +8360,10 @@ h1 {
 h2 {
   color: #fff !important;
   font-family: Palatino Linotype, Times New Roman, serif;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-style: italic;
   text-align: left;
-  margin: 0 0.1rem 0 11rem;
+  margin: 0 0.1rem 0 11.2rem;
 }
 div.table {
   -webkit-flex: 1;
