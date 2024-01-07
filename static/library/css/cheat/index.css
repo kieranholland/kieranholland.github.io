@@ -8371,6 +8371,9 @@ h6 + * {
   height: 100%;
   padding: 0.03rem 0.4rem 0.1rem 0.15rem;
 }
+#titles a {
+  text-decoration: none;
+}
 h1 {
   color: #fff !important;
   border: none;
@@ -8589,6 +8592,9 @@ table.l90 tr > td:not(first-child) {
   width: 10% !important;
 }
 #content dl {
+  display: grid;
+  -ms-grid-template: auto/1fr 1fr;
+  grid-template: auto/1fr 1fr;
   margin: 0 0.2rem 0.5rem 0.2rem;
   -webkit-column-gap: 0.6rem;
   -moz-column-gap: 0.6rem;
@@ -8611,7 +8617,6 @@ dl.col1 {
   -moz-column-count: 1;
   column-count: 1;
 }
-dl,
 dl.col2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
