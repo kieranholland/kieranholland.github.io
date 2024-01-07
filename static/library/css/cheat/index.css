@@ -8330,14 +8330,14 @@ button#theme {
   cursor: pointer;
   border: none;
   height: 1.3rem;
-  width: 5.8rem;
+  width: 3.5rem;
   line-height: 1rem;
 }
 #banner a.issues {
-  vertical-align: center;
+  line-height: 1.4rem;
 }
 #banner a.issues img {
-  display: inline-block;
+  float: right;
   height: 1.2rem;
   width: 1.2rem;
   margin: 0.1rem 0.2rem 0 0.2rem;
