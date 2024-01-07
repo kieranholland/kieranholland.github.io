@@ -102,12 +102,12 @@ String if len(tuple)==1
 [finally: # always executed
     …]
 
-raise exception [from None] # disable exception chaining
+raise exception [from None] # stop exception chain
 
 try:
     1 / 0
 except ZeroDivisionError:
-    raise TypeError("Disable exception chain") from None
+    raise TypeError("Stop chain") from None
 </code></pre><pre>BaseException                      <i>Base class for all exceptions</i>
 ├─ BaseExceptionGroup              <i>Base class for groups of exceptions</i>
 ├─ GeneratorExit                   <i>Generator close() raises to terminate iteration</i>
@@ -186,4 +186,4 @@ python -W ignore foo.py
 # or
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-</code></pre><div class="section"><h3 id="h3-testing"><a href="#h3-testing" name="h3-testing">#</a>Testing</h3></div><ul class="col3"><li><a href="https://docs.python-guide.org/writing/tests/" rel="noopener noreferrer" target="_blank" class="external">Testing Python code</a></li></ul><div class="section"><h3 id="h3-references"><a href="#h3-references" name="h3-references">#</a>References</h3></div><ul class="col3"><li><a href="https://docs.python.org/3/contents.html" rel="noopener noreferrer" target="_blank" class="external">Python documentation</a></li><li><a href="https://peps.python.org/pep-0008/" rel="noopener noreferrer" target="_blank" class="external">Python style guide (PEP 8)</a></li><li><a href="https://learnxinyminutes.com/docs/python/" rel="noopener noreferrer" target="_blank" class="external">Learn X in Y minutes</a></li><li><a href="https://docs.python-guide.org/" rel="noopener noreferrer" target="_blank" class="external">The Hitchhiker’s Guide to Python</a></li><li><a href="https://gto76.github.io/python-cheatsheet/" rel="noopener noreferrer" target="_blank" class="external">Cheatsheet - gto76</a></li><li><a href="https://quickref.me/python" rel="noopener noreferrer" target="_blank" class="external">Cheatsheet - quickref.me</a></li><li><a href="https://www.pythoncheatsheet.org/" rel="noopener noreferrer" target="_blank" class="external">Cheatsheet - pythoncheatsheet.org</a></li><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Libraries - awesome-python</a></li></ul></div><p class="copyright">© Copyright Kieran Holland</p></body></html>
+</code></pre><div class="section"><h3 id="h3-testing"><a href="#h3-testing" name="h3-testing">#</a>Testing</h3></div><ul class="col3"><li><a href="https://docs.python-guide.org/writing/tests/" rel="noopener noreferrer" target="_blank" class="external">Testing Python code</a></li></ul><div class="section"><h3 id="h3-references"><a href="#h3-references" name="h3-references">#</a>References</h3></div><ul class="col3"><li><a href="https://docs.python.org/3/contents.html" rel="noopener noreferrer" target="_blank" class="external">Python documentation</a></li><li><a href="https://peps.python.org/pep-0008/" rel="noopener noreferrer" target="_blank" class="external">Python style guide (PEP 8)</a></li><li><a href="https://learnxinyminutes.com/docs/python/" rel="noopener noreferrer" target="_blank" class="external">Learn X in Y minutes</a></li><li><a href="https://docs.python-guide.org/" rel="noopener noreferrer" target="_blank" class="external">The hitchhiker’s guide to Python</a></li><li><a href="https://gto76.github.io/python-cheatsheet/" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - gto76</a></li><li><a href="https://quickref.me/python" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - quickref.me</a></li><li><a href="https://www.pythoncheatsheet.org/" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - pythoncheatsheet.org</a></li><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Libraries - awesome-python</a></li></ul></div><p class="copyright">© Copyright Kieran Holland</p></body></html>
