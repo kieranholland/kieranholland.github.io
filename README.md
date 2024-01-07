@@ -1,4 +1,2 @@
 ### The Best Python Cheatsheet
-[Just what you need](https://kieranholland.com/best-python-cheatsheet/)
-
-
+A dense [Python cheat sheet](https://kieranholland.com/best-python-cheatsheet/) with just what you need.
