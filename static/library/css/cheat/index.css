@@ -8015,12 +8015,13 @@ body {
   font-family: Menlo, Menlo Web, Roboto Mono, Consolas, Courier New, monospace;
   font-size: 0.85rem;
   text-align: center;
+  line-height: 1rem;
 }
 #banner a img {
   margin-top: 0.25rem;
   height: 2rem;
   width: 2rem;
-  filter: drop-shadow(0 0 1em 0 #f00);
+  filter: drop-shadow(0 0 1em 1em #111);
 }
 .version {
   color: #d6d6dc;
@@ -8042,7 +8043,7 @@ body {
   -ms-flex-shrink: 1;
   flex-shrink: 1;
 }
-#banner > a {
+#banner > a.logo {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
   flex-grow: 1;
@@ -8314,6 +8315,7 @@ pre.col2 {
   column-count: 2;
 }
 button#draft,
+button#feedback,
 button#pdf,
 button#theme {
   font-family: Arial, sans-serif;
@@ -8327,9 +8329,21 @@ button#theme {
   transition: background-color 0.3s;
   cursor: pointer;
   border: none;
-  width: 4em;
+  height: 1.3rem;
+  width: 5.8rem;
+  line-height: 1rem;
+}
+#banner a.issues {
+  vertical-align: center;
+}
+#banner a.issues img {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0.1rem 0.2rem 0 0.2rem;
 }
 button#draft:hover,
+button#feedback:hover,
 button#pdf:hover,
 button#theme:hover {
   background-color: #f1f1f3;
