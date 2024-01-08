@@ -8136,6 +8136,7 @@ ul,
 ul#contents {
   font-family: Menlo, Menlo Web, Roboto Mono, Consolas, Courier New, monospace;
   font-size: 0.85rem;
+  line-height: 1rem;
 }
 .section {
   border-top: 1px solid #858585;
@@ -8306,7 +8307,6 @@ pre:not(.p) {
 }
 pre.code code.hljs {
   padding: 0.3rem;
-  overflow: wrap;
 }
 pre.col2 {
   -webkit-column-count: 2;
@@ -8706,6 +8706,16 @@ dl.l90 dt {
 dl.l90 dd {
   width: 10%;
 }
+#content pre,
+#content pre.p,
+#content pre:not(.p),
+#content .hbox pre,
+#content pre.code,
+#content pre.code code.hljs {
+  white-space: pre;
+  overflow: hidden;
+  scrollbar-width: none;
+}
 @media (max-width: 200mm) {
   .draft-show {
     display: none !important;
@@ -8768,16 +8778,15 @@ dl.l90 dd {
   .hbox.cont :not(:last-child) div.table {
     margin: 0 0.2rem 0 0.2rem;
   }
-  pre.code code.hljs {
-    overflow: scroll;
-  }
   #content pre,
   #content pre.p,
   #content pre:not(.p),
+  #content .hbox pre,
   #content pre.code,
-  #content .hbox pre {
+  #content pre.code code.hljs {
     white-space: pre;
     overflow: scroll;
+    scrollbar-width: none;
   }
   ul#contents {
     -webkit-column-count: 3;
