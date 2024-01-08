@@ -4106,7 +4106,7 @@ template {
 }
 body,
 table {
-  font-size: 1em;
+  font-size: 1rem;
 }
 a,
 dl,
@@ -4114,12 +4114,12 @@ li,
 p,
 pre,
 table {
-  line-height: 1.15em;
+  line-height: 1.15rem;
 }
 li li,
 li li li,
 li li li li {
-  font-size: 1em;
+  font-size: 1rem;
 }
 body,
 ol,
@@ -4144,11 +4144,12 @@ pre {
 }
 pre {
   font-family: Hack Nerd Font, Hack, Roboto Mono, Consolas, Courier New, monospace;
-  font-size: 0.9em;
+  font-size: 1rem;
+  overflow: scroll;
 }
 pre.p {
   font-family: Palatino Linotype, Times New Roman, serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin-left: 0;
 }
 p.pre {
@@ -4172,7 +4173,7 @@ pre {
 }
 sup,
 sub {
-  font-size: 0.6em;
+  font-size: 0.6rem;
   position: relative;
   top: -0.5em;
   vertical-align: baseline;
@@ -8189,9 +8190,6 @@ ul#contents {
   -webkit-column-count: 6;
   -moz-column-count: 6;
   column-count: 6;
-  -webkit-column-width: 10rem;
-  -moz-column-width: 10rem;
-  column-width: 10rem;
   -webkit-column-gap: 0.6rem;
   -moz-column-gap: 0.6rem;
   column-gap: 0.6rem;
@@ -8749,11 +8747,20 @@ dl.l90 dd {
     -moz-column-count: 1;
     column-count: 1;
   }
+  .col10e {
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-width: auto;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
   pre {
     font-size: 0.9rem;
   }
   .squish {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
   }
   .hbox.cont div:not(:first-child) table thead {
     display: none;
@@ -8771,6 +8778,18 @@ dl.l90 dd {
   #content .hbox pre {
     white-space: pre;
     overflow: scroll;
+  }
+  ul#contents {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 0.6rem;
+    -moz-column-gap: 0.6rem;
+    column-gap: 0.6rem;
+    line-height: 1.8rem;
+  }
+  ul.links {
+    line-height: 1.8rem;
   }
 }
 
