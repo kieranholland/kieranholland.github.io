@@ -8708,7 +8708,7 @@ dl.l90 dt {
 dl.l90 dd {
   width: 10%;
 }
-@media (max-width: 768px) {
+@media (max-width: 200mm) {
   .draft-show {
     display: none !important;
   }
