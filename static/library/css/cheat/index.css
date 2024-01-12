@@ -8697,11 +8697,15 @@ body {
   text-align: center;
   line-height: 1rem;
 }
-#banner a img {
-  margin-top: 0.25rem;
-  height: 2rem;
-  width: 2rem;
-  filter: drop-shadow(0 0 1em 1em #111);
+#banner a.logo {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+#banner a.logo img {
+  margin: 0.25rem 0.4rem 0 auto;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 #banner a.issues {
   line-height: 1.4rem;
@@ -8722,14 +8726,6 @@ body {
   -webkit-flex-shrink: 1;
   -ms-flex-shrink: 1;
   flex-shrink: 1;
-}
-#banner a.logo {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-#banner a.logo img {
-  margin: 0.35rem 0.4rem 0 auto;
 }
 #banner .version {
   color: #d6d6dc;
@@ -9358,17 +9354,30 @@ dl.l90 dt {
 dl.l90 dd {
   width: 10%;
 }
+.mobile #content {
+  border-left: none;
+}
+.mobile div.table,
+.mobile #content dl,
+.mobile .hbox pre,
+.mobile p,
+.mobile pre,
+.mobile :not(li) > ul {
+  margin-left: 0;
+  margin-right: 0;
+}
 .mobile .draft-show {
   display: none !important;
 }
 .mobile #content {
+  border-left: none;
   width: 115mm;
 }
 .mobile #banner {
   width: 115mm;
 }
 .mobile #banner a.logo img {
-  margin: 0.35rem auto 0 0.3rem;
+  margin: 0.25rem auto 0 0.3rem;
 }
 .mobile .copyright {
   width: 115mm;
@@ -9445,17 +9454,30 @@ dl.l90 dd {
   line-height: 0.8rem;
 }
 @media (max-width: 120mm) {
+  #content {
+    border-left: none;
+  }
+  div.table,
+  #content dl,
+  .hbox pre,
+  p,
+  pre,
+  :not(li) > ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .draft-show {
     display: none !important;
   }
   #content {
+    border-left: none;
     width: 115mm;
   }
   #banner {
     width: 115mm;
   }
   #banner a.logo img {
-    margin: 0.35rem auto 0 0.3rem;
+    margin: 0.25rem auto 0 0.3rem;
   }
   .copyright {
     width: 115mm;
@@ -9532,17 +9554,30 @@ dl.l90 dd {
     line-height: 0.8rem;
   }
 }
+.tablet #content {
+  border-left: none;
+}
+.tablet div.table,
+.tablet #content dl,
+.tablet .hbox pre,
+.tablet p,
+.tablet pre,
+.tablet :not(li) > ul {
+  margin-left: 0;
+  margin-right: 0;
+}
 .tablet .draft-show {
   display: none !important;
 }
 .tablet #content {
+  border-left: none;
   width: 115mm;
 }
 .tablet #banner {
   width: 115mm;
 }
 .tablet #banner a.logo img {
-  margin: 0.35rem auto 0 0.3rem;
+  margin: 0.25rem auto 0 0.3rem;
 }
 .tablet .copyright {
   width: 115mm;
@@ -9614,10 +9649,6 @@ dl.l90 dd {
 .tablet ul.links {
   line-height: 1.8rem;
 }
-.tablet .squish {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-}
 .tablet #content {
   width: 200mm;
 }
@@ -9659,18 +9690,31 @@ dl.l90 dd {
   -moz-column-count: 3;
   column-count: 3;
 }
-@media (max-width: 220mm) {
+@media (min-width: 120mm) and (max-width: 220mm) {
+  #content {
+    border-left: none;
+  }
+  div.table,
+  #content dl,
+  .hbox pre,
+  p,
+  pre,
+  :not(li) > ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .draft-show {
     display: none !important;
   }
   #content {
+    border-left: none;
     width: 115mm;
   }
   #banner {
     width: 115mm;
   }
   #banner a.logo img {
-    margin: 0.35rem auto 0 0.3rem;
+    margin: 0.25rem auto 0 0.3rem;
   }
   .copyright {
     width: 115mm;
@@ -9742,10 +9786,6 @@ dl.l90 dd {
   ul.links {
     line-height: 1.8rem;
   }
-  .squish {
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-  }
   #content {
     width: 200mm;
   }
@@ -9793,6 +9833,18 @@ dl.l90 dd {
   background: #fff;
   content: " (" attr(href) ")";
   vertical-align: normal;
+}
+.print #content {
+  border-left: none;
+}
+.print div.table,
+.print #content dl,
+.print .hbox pre,
+.print p,
+.print pre,
+.print :not(li) > ul {
+  margin-left: 0;
+  margin-right: 0;
 }
 .print h1,
 .print h2,
@@ -9874,6 +9926,9 @@ dl.l90 dd {
 .print .copyright {
   color: #646475;
 }
+.print #content {
+  border-left: none;
+}
 .print #banner a,
 .print #banner button,
 .print #banner #titles {
@@ -9884,6 +9939,9 @@ dl.l90 dd {
 }
 .print .print-hide {
   display: none !important;
+}
+.print .section {
+  border-top: none;
 }
 .print .section-links p,
 .print .section-links a {
@@ -9902,6 +9960,18 @@ dl.l90 dd {
   columns: 1;
 }
 @media print {
+  #content {
+    border-left: none;
+  }
+  div.table,
+  #content dl,
+  .hbox pre,
+  p,
+  pre,
+  :not(li) > ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
   h1,
   h2,
   h3,
@@ -9982,6 +10052,9 @@ dl.l90 dd {
   .copyright {
     color: #646475;
   }
+  #content {
+    border-left: none;
+  }
   #banner a,
   #banner button,
   #banner #titles {
@@ -9992,6 +10065,9 @@ dl.l90 dd {
   }
   .print-hide {
     display: none !important;
+  }
+  .section {
+    border-top: none;
   }
   .section-links p,
   .section-links a {
