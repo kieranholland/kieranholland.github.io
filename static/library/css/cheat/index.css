@@ -8846,12 +8846,19 @@ ul,
   font-size: 0.85rem;
   line-height: 1rem;
 }
+pre,
+.pre,
+pre.code code.hljs,
+dd pre {
+  font-family: DM Mono, monospace;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
 #contents,
 ul.links {
   line-height: 1.35rem;
 }
 a {
-  font-family: DM Mono, monospace;
   font-size: 0.85rem;
 }
 p,
@@ -8903,15 +8910,6 @@ pre.code,
 .hbox pre {
   border: none !important;
   margin: 0 0.2rem 0.5rem 0.2rem;
-}
-p,
-dl,
-pre,
-pre.p,
-pre:not(.p),
-pre.code code.hljs,
-dd pre {
-  font-family: DM Mono, monospace;
 }
 pre:not(.p) {
   background: none;

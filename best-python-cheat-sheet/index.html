@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
-</script></head><body rel="True"><div id="banner"><a href="#" class="logo"><img name="image" src="/static/library/img/icon/python.svg"></a><div class="version">Python 3.8+ | 12 Jan 2024</div><button id="theme">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues">Feedback<img src="/static/library/img/icon/github-alpha.svg"></a></div><div id="content"><div class="section"><div id="titles"> <a href="#"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></a> </div><ul id="contents"><li><a href="#h3-built-in-functions">Built-in functions</a></li><li><a href="#h3-bytes">Bytes</a></li><li><a href="#h3-community">Community</a></li><li><a href="#h3-debugging">Debugging</a></li><li><a href="#h3-dictionary">Dictionary</a></li><li><a href="#h3-exceptions">Exceptions</a></li><li><a href="#h3-execution-environment">Execution / Environment</a></li><li><a href="#h3-flow-control">Flow control</a></li><li><a href="#h3-keywords">Keywords</a></li><li><a href="#h3-library">Library</a></li><li><a href="#h3-list">List</a></li><li><a href="#h3-math-numbers">Math / Numbers</a></li><li><a href="#h3-operators">Operators</a></li><li><a href="#h3-references">References</a></li><li><a href="#h3-regex">Regex</a></li><li><a href="#h3-sequence">Sequence</a></li><li><a href="#h3-set">Set</a></li><li><a href="#h3-string">String</a></li><li><a href="#h3-testing">Testing</a></li><li><a href="#h3-tuple">Tuple</a></li></ul></div><div class="section"><div class="section-links h3"><h3 id="h3-keywords"><a href="#h3-keywords" name="h3-keywords">#</a>Keywords</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
+</script></head><body rel="True"><div id="banner"><a href="#" class="logo"><img name="image" src="/static/library/img/icon/python.svg"></a><div class="version">Python 3.8+ | 12 Jan 2024</div><button id="theme">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues">Feedback<img src="/static/library/img/icon/github-alpha.svg"></a></div><div id="content"><div class="section"><div id="titles"> <a href="#"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></a> </div><ul id="contents"><li><a href="#h3-built-in-functions">Built-in functions</a></li><li><a href="#h3-bytes">Bytes</a></li><li><a href="#h3-class">Class</a></li><li><a href="#h3-community">Community</a></li><li><a href="#h3-debugging">Debugging</a></li><li><a href="#h3-dictionary">Dictionary</a></li><li><a href="#h3-exceptions">Exceptions</a></li><li><a href="#h3-execution-environment">Execution / Environment</a></li><li><a href="#h3-flow-control">Flow control</a></li><li><a href="#h3-keywords">Keywords</a></li><li><a href="#h3-library">Library</a></li><li><a href="#h3-list">List</a></li><li><a href="#h3-math-numbers">Math / Numbers</a></li><li><a href="#h3-operators">Operators</a></li><li><a href="#h3-references">References</a></li><li><a href="#h3-regex">Regex</a></li><li><a href="#h3-sequence">Sequence</a></li><li><a href="#h3-set">Set</a></li><li><a href="#h3-string">String</a></li><li><a href="#h3-testing">Testing</a></li><li><a href="#h3-time">Time</a></li><li><a href="#h3-tuple">Tuple</a></li></ul></div><div class="section"><div class="section-links h3"><h3 id="h3-keywords"><a href="#h3-keywords" name="h3-keywords">#</a>Keywords</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
 </li><li>as
 </li><li>assert
 </li><li>break
@@ -231,7 +231,203 @@ Hello World!
 </p><ul><li>__enter__() should lock resources and optionally return an object
 </li><li>__exit()__ should release resources, and handle any exceptions raised in the
 block, optionally suppressing it by returning True
-</li></ul></div><div class="section"><div class="section-links h3"><h3 id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable sequence of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with prefix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with suffix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters </dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join <i>strings</i> with <i>separator</i></dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for separator from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for separator from end and split</dd></div></dl><div class="section-links h4"><h4 id="h4-string-formatting"><a href="#h4-string-formatting" name="h4-string-formatting">#</a>String formatting</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>f-string
+</li></ul></div><div class="section"><div class="section-links h3"><h3 id="h3-class"><a href="#h3-class" name="h3-class">#</a>Class</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/classes.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="section-links h4"><h4 id="h4-instantiation"><a href="#h4-instantiation" name="h4-instantiation">#</a>Instantiation</h4></div><pre class="code"><code class="py">class C:
+    def __init__(self, a):
+        self.a = a
+    def __repr__(self):
+        """Used for repr(c), also for str(c) if __str__ not defined."""
+        return f'{self.__class__.__name__}({self.a!r})'
+    def __str__(self):
+        return str(self.a)
+
+    @classmethod
+    def get_class_name(cls): # passed class rather than instance
+        return cls.__name__
+
+    @staticmethod
+    def static(): # passed nothing
+        return 1
+
+# class instantiation does this
+obj = cls.__new__(cls, *args, **kwds)
+if isinstance(obj, cls):
+    obj.__init__(*args, **kwds)
+</code></pre><div class="section-links h4"><h4 id="h4-instance-property"><a href="#h4-instance-property" name="h4-instance-property">#</a>Instance property</h4></div><pre class="code"><code class="py">class C:
+    @property
+    def f(self):
+        if not hasattr(self, '_f'):
+            return
+        return self._f
+    @f.setter
+    def f(self, value):
+        self._f = value
+</code></pre><div class="section-links h4"></div><div class="section-links h4"><h4 id="h4-class-special-methods"><a href="#h4-class-special-methods" name="h4-class-special-methods">#</a>Class special methods</h4><p>Also: </p><a href="https://docs.python.org/3/reference/datamodel.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table l40"><table><thead><tr><th>Operator
+</th><th>Method
+</th></tr></thead><tbody><tr><td>self + other
+other + self
+self += other
+</td><td>__add__(self, other)
+__radd__(self, other)
+__iadd__(self, other)
+</td></tr><tr><td>self - other
+other - self
+self -= other
+</td><td>__sub__(self, other)
+__rsub__(self, other)
+__isub__(self, other)
+</td></tr><tr><td>self * other
+other * self
+self *= other
+</td><td>__mul__(self, other)
+__rmul__(self, other)
+__imul__(self, other)
+</td></tr><tr><td>self @ other
+other @ self
+self @= other
+</td><td>__matmul__(self, other)
+__rmatmul__(self, other)
+__imatmul__(self, other)
+</td></tr><tr><td>self / other
+other / self
+self /= other
+</td><td>__truediv__(self, other)
+__rtruediv__(self, other)
+__itruediv__(self, other)
+</td></tr><tr><td>self // other
+other // self
+self //= other
+</td><td>__floordiv__(self, other)
+__rfloordiv__(self, other)
+__ifloordiv__(self, other)
+</td></tr><tr><td>self % other
+other % self
+self %= other
+</td><td>__mod__(self, other)
+__rmod__(self, other)
+__imod__(self, other)
+</td></tr><tr><td>divmod(self, other)
+divmod(self, other)
+</td><td>__divmod__(self, other)
+__rdivmod__(self, other)
+</td></tr><tr><td>self ** other
+other ** self
+self **= other
+</td><td>__pow__(self, other)
+__rpow__(self, other)
+__ipow__(self, other)
+</td></tr><tr><td>self &lt;&lt; other
+other &lt;&lt; self
+self &lt;&lt;= other
+</td><td>__lshift__(self, other)
+__rlshift__(self, other)
+__ilshift__(self, other)
+</td></tr><tr><td>self &gt;&gt; other
+other &gt;&gt; self
+self &gt;&gt;= other
+</td><td>__rshift__(self, other)
+__rrshift__(self, other)
+__irshift__(self, other)
+</td></tr><tr><td>self &amp; other
+other &amp; self
+self &amp;= other
+</td><td>__and__(self, other)
+__rand__(self, other)
+__iand__(self, other)
+</td></tr><tr><td>self | other
+other | self
+self |= other
+</td><td>__or__(self, other)
+__ror__(self, other)
+__ior__(self, other)
+</td></tr><tr><td>self ^ other
+other ^ self
+self ^= other
+</td><td>__xor__(self, other)
+__rxor__(self, other)
+__ixor__(self, other)
+</td></tr></tbody></table></div></div><div><div class="table l40"><table><thead><tr><th>Operator
+</th><th>Method
+</th></tr></thead><tbody><tr><td>-self
+</td><td>__neg__(self)
+</td></tr><tr><td>+self
+</td><td>__pos__(self)
+</td></tr><tr><td>abs(self)
+</td><td>__abs__(self)
+</td></tr><tr><td>~self
+</td><td>__invert__(self) [bitwise]
+</td></tr><tr><td>self == other
+</td><td>__eq__(self) [default 'is', requires __hash__]
+</td></tr><tr><td>self != other
+</td><td>__ne__(self)
+</td></tr><tr><td>self &lt; other
+</td><td>__lt__(self, other)
+</td></tr><tr><td>self &lt;= other
+</td><td>__le__(self, other)
+</td></tr><tr><td>self &gt; other
+</td><td>__gt__(self, other)
+</td></tr><tr><td>self &gt;= other
+</td><td>__ge__(self, other)
+</td></tr><tr><td>item in self
+</td><td>__contains__(self, item)
+</td></tr><tr><td>bool(self)
+</td><td>__bool__(self)
+</td></tr><tr><td>bytes(self)
+</td><td>__bytes__(self)
+</td></tr><tr><td>complex(self)
+</td><td>__complex__(self)
+</td></tr><tr><td>float(self)
+</td><td>__float__(self)
+</td></tr><tr><td>int(self)
+</td><td>__int__(self)
+</td></tr><tr><td>round(self)
+</td><td>__round__(self[, ndigits])
+</td></tr><tr><td>math.ceil(self)
+</td><td>__ceil__(self)
+</td></tr><tr><td>math.floor(self)
+</td><td>__floor__(self)
+</td></tr><tr><td>math.trunc(self)
+</td><td>__trunc__(self)
+</td></tr></tbody></table></div></div><div><div class="table l40"><table><thead><tr><th>Operator
+</th><th>Method
+</th></tr></thead><tbody><tr><td>dir(self)
+</td><td>__dir__(self)
+</td></tr><tr><td>format(self)
+</td><td>__format__(self, format_spec)
+</td></tr><tr><td>hash(self)
+</td><td>__hash__(self)
+</td></tr><tr><td>iter(self)
+</td><td>__iter__(self)
+</td></tr><tr><td>len(self)
+</td><td>__len__(self)
+</td></tr><tr><td>repr(self)
+</td><td>__repr__(self)
+</td></tr><tr><td>reversed(self)
+</td><td>__reversed__(self)
+</td></tr><tr><td>str(self)
+self(*args, **kwds)
+</td><td>__str__(self)
+__call__(self, *args, **kwds)
+</td></tr><tr><td>self[…]
+</td><td>__getitem__(self, key)
+</td></tr><tr><td>self[…] = 1
+</td><td>__setitem__(self, key, value)
+</td></tr><tr><td>del self[…]
+</td><td>__detitem__(self, key)
+</td></tr><tr><td>other[self]
+</td><td>__index__(self)
+</td></tr><tr><td>self.name
+</td><td>__getattribute__(self, name)
+__getattr__(self, name) if AttributeError
+</td></tr><tr><td>self.name = 1
+</td><td>__setattr__(self, name, value)
+</td></tr><tr><td>del self.name
+</td><td>__delattr__(self, name)
+</td></tr><tr><td>with self:
+</td><td>__enter__(self)
+__exit__(self, exc_type, exc_value, traceback)
+</td></tr><tr><td>await self
+</td><td>__await__(self)
+</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable sequence of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with prefix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with suffix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters </dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join <i>strings</i> with <i>separator</i></dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for separator from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for separator from end and split</dd></div></dl><div class="section-links h4"><h4 id="h4-string-formatting"><a href="#h4-string-formatting" name="h4-string-formatting">#</a>String formatting</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>f-string
 </th><th>Output
 </th></tr></thead><tbody><tr><td>f"{6/3}, {'a'+'b'}"
 '{}, {}'.format(6/3, 'a'+'b')
@@ -429,7 +625,61 @@ s1 ^ s2</dt><dd>New set of unshared elements
 def write_bytes(filename, bytes_obj):
     with open(filename, 'wb') as file:
         file.write(bytes_obj)
-</code></pre></div><div class="section"><div class="section-links h3"><h3 id="h3-built-in-functions"><a href="#h3-built-in-functions" name="h3-built-in-functions">#</a>Built-in functions</h3><p>Also: </p><a href="https://docs.python.org/3/library/functions.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl><div class="ditem"><dt>abs()</dt><dd>The absolute value of a number</dd></div><div class="ditem"><dt>aiter()</dt><dd>Asynchronous iterator for an asynchronous iterable</dd></div><div class="ditem"><dt>all()</dt><dd>True if all elements of iterable are true</dd></div><div class="ditem"><dt>any()</dt><dd>True if any element of iterable is true</dd></div><div class="ditem"><dt>ascii()</dt><dd>A string with a printable representation of an object</dd></div><div class="ditem"><dt>bin()</dt><dd>Convert an integer number to a binary string</dd></div><div class="ditem"><dt>bool()</dt><dd>Boolean value</dd></div><div class="ditem"><dt>breakpoint()</dt><dd>Drop into debugger at call site</dd></div><div class="ditem"><dt>bytearray()</dt><dd>New array of bytes</dd></div><div class="ditem"><dt>bytes()</dt><dd>New “bytes” object</dd></div><div class="ditem"><dt>callable()</dt><dd>True if the object argument is callable</dd></div><div class="ditem"><dt>chr()</dt><dd>The string representing a character</dd></div><div class="ditem"><dt>classmethod()</dt><dd>Transform method into class method</dd></div><div class="ditem"><dt>compile()</dt><dd>Compile source into code or AST object</dd></div><div class="ditem"><dt>complex()</dt><dd>Complex number with the value real + imag*1j</dd></div><div class="ditem"><dt>delattr()</dt><dd>Delete the named attribute, if object allows</dd></div><div class="ditem"><dt>dict()</dt><dd>Create new dictionary</dd></div><div class="ditem"><dt>dir()</dt><dd>List of names in the current local scope</dd></div><div class="ditem"><dt>divmod()</dt><dd>Pair of numbers (quotient, remainder)</dd></div><div class="ditem"><dt>enumerate()</dt><dd>Enumerate object</dd></div><div class="ditem"><dt>eval()</dt><dd>Execute expression</dd></div><div class="ditem"><dt>exec()</dt><dd>Execution Python code</dd></div><div class="ditem"><dt>filter()</dt><dd>Make iterator from an iterable and returns true</dd></div><div class="ditem"><dt>float()</dt><dd>Floating point number from number or string</dd></div><div class="ditem"><dt>format()</dt><dd>Formatted representation</dd></div><div class="ditem"><dt>frozenset()</dt><dd>New frozenset object.</dd></div><div class="ditem"><dt>getattr()</dt><dd>Get value of named attribute of object</dd></div><div class="ditem"><dt>globals()</dt><dd>Dictionary of current module namespace</dd></div><div class="ditem"><dt>hasattr()</dt><dd>True if object has named attribute</dd></div><div class="ditem"><dt>hash()</dt><dd>Hash value of object</dd></div><div class="ditem"><dt>help()</dt><dd>Built-in help system</dd></div><div class="ditem"><dt>hex()</dt><dd>Convert integer to lowercase hexadecimal string</dd></div><div class="ditem"><dt>id()</dt><dd>Return unique integer identifier of object</dd></div><div class="ditem"><dt>__import__()</dt><dd>Invoked by the import statement</dd></div><div class="ditem"><dt>input()</dt><dd>input and converts it into a string</dd></div><div class="ditem"><dt>int()</dt><dd>Create integer from number or string</dd></div><div class="ditem"><dt>isinstance()</dt><dd>True if object is instance of a class object</dd></div><div class="ditem"><dt>issubclass()</dt><dd>True if class is a subclass of class object</dd></div><div class="ditem"><dt>iter()</dt><dd>Iterator for object</dd></div><div class="ditem"><dt>len()</dt><dd>Length of an object</dd></div><div class="ditem"><dt>list()</dt><dd>Create list</dd></div><div class="ditem"><dt>locals()</dt><dd>Dictionary of current local symbol table</dd></div><div class="ditem"><dt>map()</dt><dd>Apply function to every item of iterable</dd></div><div class="ditem"><dt>max()</dt><dd>Largest item in an iterable</dd></div><div class="ditem"><dt>memoryview()</dt><dd>Access internal object data via buffer protocol</dd></div><div class="ditem"><dt>min()</dt><dd>Smallest item in an iterable</dd></div><div class="ditem"><dt>next()</dt><dd>Next item from iterator</dd></div><div class="ditem"><dt>object()</dt><dd>New featureless object</dd></div><div class="ditem"><dt>oct()</dt><dd>Convert integer to octal string</dd></div><div class="ditem"><dt>open()</dt><dd>Open file object</dd></div><div class="ditem"><dt>ord()</dt><dd>Integer representing Unicode code point of character</dd></div><div class="ditem"><dt>pow()</dt><dd>Return base to the power exp.</dd></div><div class="ditem"><dt>print()</dt><dd>Print object to text stream file</dd></div><div class="ditem"><dt>property()</dt><dd>Property decorator</dd></div><div class="ditem"><dt>range()</dt><dd>Generate integer sequences</dd></div><div class="ditem"><dt>repr()</dt><dd>String representation of object for debugging</dd></div><div class="ditem"><dt>reversed()</dt><dd>Reverse iterator</dd></div><div class="ditem"><dt>round()</dt><dd>Number rounded to ndigits precision after decimal point</dd></div><div class="ditem"><dt>set()</dt><dd>New set object.</dd></div><div class="ditem"><dt>setattr()</dt><dd>Set object attribute value by name</dd></div><div class="ditem"><dt>slice()</dt><dd>Slice object representing a set of indices</dd></div><div class="ditem"><dt>sorted()</dt><dd>New sorted list from the items in iterable</dd></div><div class="ditem"><dt>staticmethod()</dt><dd>Transform method into static method</dd></div><div class="ditem"><dt>str()</dt><dd>String description of object</dd></div><div class="ditem"><dt>sum()</dt><dd>Sums items of iterable</dd></div><div class="ditem"><dt>super()</dt><dd>Proxy object that delegates method calls to parent or sibling</dd></div><div class="ditem"><dt>tuple()</dt><dd>Create a tuple</dd></div><div class="ditem"><dt>type()</dt><dd>Type of an object</dd></div><div class="ditem"><dt>vars()</dt><dd>dict attribute for any other object with a dict attribute</dd></div><div class="ditem"><dt>zip()</dt><dd>Iterate over multiple iterables in parallel</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 id="h3-exceptions"><a href="#h3-exceptions" name="h3-exceptions">#</a>Exceptions</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox stack-left"><div><pre class="code"><code class="py">try:
+</code></pre></div><div class="section"><div class="section-links h3"><h3 id="h3-built-in-functions"><a href="#h3-built-in-functions" name="h3-built-in-functions">#</a>Built-in functions</h3><p>Also: </p><a href="https://docs.python.org/3/library/functions.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl><div class="ditem"><dt>abs()</dt><dd>The absolute value of a number</dd></div><div class="ditem"><dt>aiter()</dt><dd>Asynchronous iterator for an asynchronous iterable</dd></div><div class="ditem"><dt>all()</dt><dd>True if all elements of iterable are true</dd></div><div class="ditem"><dt>any()</dt><dd>True if any element of iterable is true</dd></div><div class="ditem"><dt>ascii()</dt><dd>A string with a printable representation of an object</dd></div><div class="ditem"><dt>bin()</dt><dd>Convert an integer number to a binary string</dd></div><div class="ditem"><dt>bool()</dt><dd>Boolean value</dd></div><div class="ditem"><dt>breakpoint()</dt><dd>Drop into debugger at call site</dd></div><div class="ditem"><dt>bytearray()</dt><dd>New array of bytes</dd></div><div class="ditem"><dt>bytes()</dt><dd>New “bytes” object</dd></div><div class="ditem"><dt>callable()</dt><dd>True if the object argument is callable</dd></div><div class="ditem"><dt>chr()</dt><dd>The string representing a character</dd></div><div class="ditem"><dt>classmethod()</dt><dd>Transform method into class method</dd></div><div class="ditem"><dt>compile()</dt><dd>Compile source into code or AST object</dd></div><div class="ditem"><dt>complex()</dt><dd>Complex number with the value real + imag*1j</dd></div><div class="ditem"><dt>delattr()</dt><dd>Delete the named attribute, if object allows</dd></div><div class="ditem"><dt>dict()</dt><dd>Create new dictionary</dd></div><div class="ditem"><dt>dir()</dt><dd>List of names in the current local scope</dd></div><div class="ditem"><dt>divmod()</dt><dd>Pair of numbers (quotient, remainder)</dd></div><div class="ditem"><dt>enumerate()</dt><dd>Enumerate object</dd></div><div class="ditem"><dt>eval()</dt><dd>Execute expression</dd></div><div class="ditem"><dt>exec()</dt><dd>Execution Python code</dd></div><div class="ditem"><dt>filter()</dt><dd>Make iterator from an iterable and returns true</dd></div><div class="ditem"><dt>float()</dt><dd>Floating point number from number or string</dd></div><div class="ditem"><dt>format()</dt><dd>Formatted representation</dd></div><div class="ditem"><dt>frozenset()</dt><dd>New frozenset object.</dd></div><div class="ditem"><dt>getattr()</dt><dd>Get value of named attribute of object</dd></div><div class="ditem"><dt>globals()</dt><dd>Dictionary of current module namespace</dd></div><div class="ditem"><dt>hasattr()</dt><dd>True if object has named attribute</dd></div><div class="ditem"><dt>hash()</dt><dd>Hash value of object</dd></div><div class="ditem"><dt>help()</dt><dd>Built-in help system</dd></div><div class="ditem"><dt>hex()</dt><dd>Convert integer to lowercase hexadecimal string</dd></div><div class="ditem"><dt>id()</dt><dd>Return unique integer identifier of object</dd></div><div class="ditem"><dt>__import__()</dt><dd>Invoked by the import statement</dd></div><div class="ditem"><dt>input()</dt><dd>input and converts it into a string</dd></div><div class="ditem"><dt>int()</dt><dd>Create integer from number or string</dd></div><div class="ditem"><dt>isinstance()</dt><dd>True if object is instance of a class object</dd></div><div class="ditem"><dt>issubclass()</dt><dd>True if class is a subclass of class object</dd></div><div class="ditem"><dt>iter()</dt><dd>Iterator for object</dd></div><div class="ditem"><dt>len()</dt><dd>Length of an object</dd></div><div class="ditem"><dt>list()</dt><dd>Create list</dd></div><div class="ditem"><dt>locals()</dt><dd>Dictionary of current local symbol table</dd></div><div class="ditem"><dt>map()</dt><dd>Apply function to every item of iterable</dd></div><div class="ditem"><dt>max()</dt><dd>Largest item in an iterable</dd></div><div class="ditem"><dt>memoryview()</dt><dd>Access internal object data via buffer protocol</dd></div><div class="ditem"><dt>min()</dt><dd>Smallest item in an iterable</dd></div><div class="ditem"><dt>next()</dt><dd>Next item from iterator</dd></div><div class="ditem"><dt>object()</dt><dd>New featureless object</dd></div><div class="ditem"><dt>oct()</dt><dd>Convert integer to octal string</dd></div><div class="ditem"><dt>open()</dt><dd>Open file object</dd></div><div class="ditem"><dt>ord()</dt><dd>Integer representing Unicode code point of character</dd></div><div class="ditem"><dt>pow()</dt><dd>Return base to the power exp.</dd></div><div class="ditem"><dt>print()</dt><dd>Print object to text stream file</dd></div><div class="ditem"><dt>property()</dt><dd>Property decorator</dd></div><div class="ditem"><dt>range()</dt><dd>Generate integer sequences</dd></div><div class="ditem"><dt>repr()</dt><dd>String representation of object for debugging</dd></div><div class="ditem"><dt>reversed()</dt><dd>Reverse iterator</dd></div><div class="ditem"><dt>round()</dt><dd>Number rounded to ndigits precision after decimal point</dd></div><div class="ditem"><dt>set()</dt><dd>New set object.</dd></div><div class="ditem"><dt>setattr()</dt><dd>Set object attribute value by name</dd></div><div class="ditem"><dt>slice()</dt><dd>Slice object representing a set of indices</dd></div><div class="ditem"><dt>sorted()</dt><dd>New sorted list from the items in iterable</dd></div><div class="ditem"><dt>staticmethod()</dt><dd>Transform method into static method</dd></div><div class="ditem"><dt>str()</dt><dd>String description of object</dd></div><div class="ditem"><dt>sum()</dt><dd>Sums items of iterable</dd></div><div class="ditem"><dt>super()</dt><dd>Proxy object that delegates method calls to parent or sibling</dd></div><div class="ditem"><dt>tuple()</dt><dd>Create a tuple</dd></div><div class="ditem"><dt>type()</dt><dd>Type of an object</dd></div><div class="ditem"><dt>vars()</dt><dd>dict attribute for any other object with a dict attribute</dd></div><div class="ditem"><dt>zip()</dt><dd>Iterate over multiple iterables in parallel</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 id="h3-time"><a href="#h3-time" name="h3-time">#</a>Time</h3><p>Also: </p><a href="https://docs.python.org/3/library/time.html#time.strftime" rel="noopener noreferrer" target="_blank" class="external">pydocs time</a><a href="https://docs.python.org/3/library/datetime.html" rel="noopener noreferrer" target="_blank" class="external">pydocs datetime</a></div><p>Provides 'date', 'time', 'datetime' and 'timedelta' classes. All are immutable and hashable.</p><div class="section-links h4"><h4 id="h4-time-formatting"><a href="#h4-time-formatting" name="h4-time-formatting">#</a>Time formatting</h4></div><div class="hbox cont"><div><div class="table l10"><table><thead><tr><th>Code
+</th><th>Output
+</th></tr></thead><tbody><tr><td>%a
+</td><td>Day name short (Mon)
+</td></tr><tr><td>%A
+</td><td>Day name full (Monday)
+</td></tr><tr><td>%b
+</td><td>Month name short (Jan)
+</td></tr><tr><td>%B
+</td><td>Month name full (January)
+</td></tr><tr><td>%c
+</td><td>Locale datetime format
+</td></tr><tr><td>%d
+</td><td>Day of month [01,31]
+</td></tr><tr><td>%f
+</td><td>Microsecond [000000,999999]
+</td></tr><tr><td>%H
+</td><td>Hour (24-hour) [00,23]
+</td></tr></tbody></table></div></div><div><div class="table l10"><table><thead><tr><th>Code
+</th><th>Output
+</th></tr></thead><tbody><tr><td>%I
+</td><td>Hour (12-hour) [01,12]
+</td></tr><tr><td>%j
+</td><td>Day of year [001,366]
+</td></tr><tr><td>%m
+</td><td>Month [01,12]
+</td></tr><tr><td>%M
+</td><td>Minute [00,59]
+</td></tr><tr><td>%p
+</td><td>Locale format for AM/PM
+</td></tr><tr><td>%S
+</td><td>Second [00,61]. Yes, 61!
+</td></tr><tr><td>%U
+</td><td>Week number (Sunday start) [00(partial),53]
+</td></tr><tr><td>%w
+</td><td>Day number [0(Sunday),6]
+</td></tr></tbody></table></div></div><div><div class="table l10"><table><thead><tr><th>Code
+</th><th>Output
+</th></tr></thead><tbody><tr><td>%W
+</td><td>Week number (Monday start) [00(partial),53]
+</td></tr><tr><td>%x
+</td><td>Locale date format
+</td></tr><tr><td>%X
+</td><td>Locale time format
+</td></tr><tr><td>%y
+</td><td>Year without century [00,99]
+</td></tr><tr><td>%Y
+</td><td>Year with century (2023)
+</td></tr><tr><td>%Z
+</td><td>Time zone ('' if no TZ)
+</td></tr><tr><td>%z
+</td><td>UTC offset (+HHMM/-HHMM, '' if no TZ)
+</td></tr><tr><td>%%
+</td><td>Literal '%'
+</td></tr></tbody></table></div></div></div></div><div class="section"><div class="section-links h3"><h3 id="h3-exceptions"><a href="#h3-exceptions" name="h3-exceptions">#</a>Exceptions</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox stack-left"><div><pre class="code"><code class="py">try:
     …
 [except [Exception [as e]\]:
     …]
