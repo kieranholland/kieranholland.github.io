@@ -12,4 +12,4 @@ Design principles:
 
 Issues and feedback are tracked at the [best-python-cheat-sheet](https://github.com/kieranholland/best-python-cheat-sheet) repository.
 
-*It may not **be** the best Python cheat sheet, but it *aspires* to be.
+\*It may not **be** the best Python cheat sheet, but it *aspires* to be.
