@@ -9355,14 +9355,16 @@ dl.l90 dd {
   width: 10%;
 }
 .mobile #content {
-  border-left: none;
+  border-left: none !important;
 }
 .mobile div.table,
 .mobile #content dl,
 .mobile .hbox pre,
 .mobile p,
 .mobile pre,
-.mobile :not(li) > ul {
+.mobile :not(li) > ul,
+.mobile .hbox div.table,
+.mobile .hbox.cont div.table {
   margin-left: 0;
   margin-right: 0;
 }
@@ -9370,7 +9372,6 @@ dl.l90 dd {
   display: none !important;
 }
 .mobile #content {
-  border-left: none;
   width: 115mm;
 }
 .mobile #banner {
@@ -9400,8 +9401,11 @@ dl.l90 dd {
 .mobile .hbox.cont > :not(:first-child) table tbody > :first-child {
   border-top: none !important;
 }
+.mobile .hbox.cont > :not(:first-child) div.table {
+  margin-top: 0;
+}
 .mobile .hbox.cont > :not(:last-child) div.table {
-  margin: 0 0.2rem 0 0.2rem;
+  margin-bottom: 0;
 }
 .mobile dl,
 .mobile dl.col2 {
@@ -9453,16 +9457,27 @@ dl.l90 dd {
   font-size: 0.8rem;
   line-height: 0.8rem;
 }
+.mobile #content {
+  width: 115mm;
+}
+.mobile #banner {
+  width: 115mm;
+}
+.mobile .copyright {
+  width: 115mm;
+}
 @media (max-width: 120mm) {
   #content {
-    border-left: none;
+    border-left: none !important;
   }
   div.table,
   #content dl,
   .hbox pre,
   p,
   pre,
-  :not(li) > ul {
+  :not(li) > ul,
+  .hbox div.table,
+  .hbox.cont div.table {
     margin-left: 0;
     margin-right: 0;
   }
@@ -9470,7 +9485,6 @@ dl.l90 dd {
     display: none !important;
   }
   #content {
-    border-left: none;
     width: 115mm;
   }
   #banner {
@@ -9500,8 +9514,11 @@ dl.l90 dd {
   .hbox.cont > :not(:first-child) table tbody > :first-child {
     border-top: none !important;
   }
+  .hbox.cont > :not(:first-child) div.table {
+    margin-top: 0;
+  }
   .hbox.cont > :not(:last-child) div.table {
-    margin: 0 0.2rem 0 0.2rem;
+    margin-bottom: 0;
   }
   dl,
   dl.col2 {
@@ -9555,14 +9572,16 @@ dl.l90 dd {
   }
 }
 .tablet #content {
-  border-left: none;
+  border-left: none !important;
 }
 .tablet div.table,
 .tablet #content dl,
 .tablet .hbox pre,
 .tablet p,
 .tablet pre,
-.tablet :not(li) > ul {
+.tablet :not(li) > ul,
+.tablet .hbox div.table,
+.tablet .hbox.cont div.table {
   margin-left: 0;
   margin-right: 0;
 }
@@ -9570,7 +9589,6 @@ dl.l90 dd {
   display: none !important;
 }
 .tablet #content {
-  border-left: none;
   width: 115mm;
 }
 .tablet #banner {
@@ -9600,8 +9618,11 @@ dl.l90 dd {
 .tablet .hbox.cont > :not(:first-child) table tbody > :first-child {
   border-top: none !important;
 }
+.tablet .hbox.cont > :not(:first-child) div.table {
+  margin-top: 0;
+}
 .tablet .hbox.cont > :not(:last-child) div.table {
-  margin: 0 0.2rem 0 0.2rem;
+  margin-bottom: 0;
 }
 .tablet dl,
 .tablet dl.col2 {
@@ -9690,16 +9711,27 @@ dl.l90 dd {
   -moz-column-count: 3;
   column-count: 3;
 }
+.tablet #content {
+  width: 200mm;
+}
+.tablet #banner {
+  width: 200mm;
+}
+.tablet .copyright {
+  width: 200mm;
+}
 @media (min-width: 120mm) and (max-width: 220mm) {
   #content {
-    border-left: none;
+    border-left: none !important;
   }
   div.table,
   #content dl,
   .hbox pre,
   p,
   pre,
-  :not(li) > ul {
+  :not(li) > ul,
+  .hbox div.table,
+  .hbox.cont div.table {
     margin-left: 0;
     margin-right: 0;
   }
@@ -9707,7 +9739,6 @@ dl.l90 dd {
     display: none !important;
   }
   #content {
-    border-left: none;
     width: 115mm;
   }
   #banner {
@@ -9737,8 +9768,11 @@ dl.l90 dd {
   .hbox.cont > :not(:first-child) table tbody > :first-child {
     border-top: none !important;
   }
+  .hbox.cont > :not(:first-child) div.table {
+    margin-top: 0;
+  }
   .hbox.cont > :not(:last-child) div.table {
-    margin: 0 0.2rem 0 0.2rem;
+    margin-bottom: 0;
   }
   dl,
   dl.col2 {
@@ -9835,14 +9869,16 @@ dl.l90 dd {
   vertical-align: normal;
 }
 .print #content {
-  border-left: none;
+  border-left: none !important;
 }
 .print div.table,
 .print #content dl,
 .print .hbox pre,
 .print p,
 .print pre,
-.print :not(li) > ul {
+.print :not(li) > ul,
+.print .hbox div.table,
+.print .hbox.cont div.table {
   margin-left: 0;
   margin-right: 0;
 }
@@ -9926,9 +9962,6 @@ dl.l90 dd {
 .print .copyright {
   color: #646475;
 }
-.print #content {
-  border-left: none;
-}
 .print #banner a,
 .print #banner button,
 .print #banner #titles {
@@ -9961,14 +9994,16 @@ dl.l90 dd {
 }
 @media print {
   #content {
-    border-left: none;
+    border-left: none !important;
   }
   div.table,
   #content dl,
   .hbox pre,
   p,
   pre,
-  :not(li) > ul {
+  :not(li) > ul,
+  .hbox div.table,
+  .hbox.cont div.table {
     margin-left: 0;
     margin-right: 0;
   }
@@ -10051,9 +10086,6 @@ dl.l90 dd {
   }
   .copyright {
     color: #646475;
-  }
-  #content {
-    border-left: none;
   }
   #banner a,
   #banner button,
