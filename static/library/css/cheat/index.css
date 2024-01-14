@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+@charset 'UTF-8';
 .black {
   color: #000;
 }
@@ -3770,6 +3772,7 @@
   font-family: "Digital Dismay";
   src: url("/static/library/font/Digital Dismay.otf");
 }
+@charset 'UTF-8';
 html,
 body,
 div,
@@ -8507,14 +8510,6 @@ h6 {
 .dark-theme table td:not(:first-child) {
   color: #9d9d9d;
 }
-.dark-theme table:has(thead) th,
-.dark-theme table:has(thead) td {
-  border-left: 1px solid #303030;
-  border-right: 1px solid #303030;
-}
-.dark-theme table:not(:has(thead)) tbody tr:last-child {
-  border-bottom: none;
-}
 .dark-theme pre.code code.hljs {
   color: #d9d9d9;
   background: #181818;
@@ -8592,14 +8587,6 @@ h6 {
 }
 .light-theme table td:not(:first-child) {
   color: #646475;
-}
-.light-theme table:has(thead) th,
-.light-theme table:has(thead) td {
-  border-left: 1px solid #c9c9d1;
-  border-right: 1px solid #c9c9d1;
-}
-.light-theme table:not(:has(thead)) tbody tr:last-child {
-  border-bottom: none;
 }
 .light-theme pre.code code.hljs {
   color: #0b0b0d;
@@ -8880,6 +8867,9 @@ a.external::after {
   font-size: 0.7rem;
   line-height: 0;
   vertical-align: 0.1rem;
+}
+a.issues::after {
+  content: "" !important;
 }
 hr {
   height: 1px;
@@ -9865,6 +9855,7 @@ dl.l90 dd {
   background: #fff;
   content: " (" attr(href) ")";
   vertical-align: normal;
+  padding-top: 0 !important;
 }
 .print #content {
   border-left: none !important;
@@ -9879,6 +9870,47 @@ dl.l90 dd {
 .print .hbox.cont div.table {
   margin-left: 0;
   margin-right: 0;
+}
+.print #content {
+  width: 200mm;
+}
+.print #banner {
+  width: 200mm;
+}
+.print .copyright {
+  width: 200mm;
+}
+.print dl,
+.print dl.col2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.print .col2,
+.print .col3,
+.print .col4,
+.print .col5,
+.print .col6,
+.print .col7,
+.print .col8,
+.print .col9,
+.print .col10 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.print .col10e {
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-width: auto;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+.print #contents {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }
 .print h1,
 .print h2,
@@ -9912,7 +9944,7 @@ dl.l90 dd {
 }
 .print i,
 .print dd {
-  color: #646475;
+  color: #4d4d5b;
 }
 .print dt,
 .print dd {
@@ -9938,15 +9970,7 @@ dl.l90 dd {
   border-bottom: 1px solid #c9c9d1;
 }
 .print table td:not(:first-child) {
-  color: #646475;
-}
-.print table:has(thead) th,
-.print table:has(thead) td {
-  border-left: 1px solid #c9c9d1;
-  border-right: 1px solid #c9c9d1;
-}
-.print table:not(:has(thead)) tbody tr:last-child {
-  border-bottom: none;
+  color: #4d4d5b;
 }
 .print pre.code code.hljs {
   color: #0b0b0d;
@@ -9958,25 +9982,26 @@ dl.l90 dd {
   color: #c9c9d1;
 }
 .print .copyright {
-  color: #646475;
+  color: #4d4d5b;
 }
-.print #banner a,
-.print #banner button,
-.print #banner #titles {
-  display: none;
+@page {
+  width: A4;
+  height: portrait;
+  margin: 5mm 10mm 5mm 10mm;
 }
-.print #contents {
-  display: none;
+.print #titles {
+  position: relative;
 }
-.print .print-hide {
+.print #banner,
+.print #contents,
+.print .print-hide,
+.print .section-links p,
+.print .section-links a,
+.print .copyright {
   display: none !important;
 }
 .print .section {
-  border-top: none;
-}
-.print .section-links p,
-.print .section-links a {
-  display: none;
+  border-top: none !important;
 }
 .print a {
   color: #0b0b0d;
@@ -9989,6 +10014,66 @@ dl.l90 dd {
   -webkit-columns: 1;
   -moz-columns: 1;
   columns: 1;
+}
+.print table,
+.print table:has(thead) {
+  border-collapse: separate;
+  box-sizing: border-box;
+  border: none;
+}
+.print table thead,
+.print table:has(thead) thead,
+.print table tbody,
+.print table:has(thead) tbody {
+  border: none;
+}
+.print table th,
+.print table:has(thead) th,
+.print table td,
+.print table:has(thead) td {
+  border: 1px solid #c9c9d1;
+}
+.print table tr,
+.print table:has(thead) tr {
+  border: none;
+}
+.print .hbox div.table {
+  margin-right: 0.5rem;
+}
+.print pre.code code.hljs {
+  background: #f1f1f3;
+  border: 1px solid #9595a4;
+}
+.print pre,
+.print pre.code,
+.print pre.code code.hljs,
+.print .hbox pre,
+.print .pre,
+.print dt,
+.print dd,
+.print th,
+.print td {
+  word-break: break-all;
+  overflow: hidden;
+}
+.print h1,
+.print h2,
+.print h3,
+.print h4,
+.print h5,
+.print h6 {
+  color: #000 !important;
+  background: #fff !important;
+}
+.print h3,
+.print h4,
+.print h5,
+.print h6 {
+  margin-left: 0;
+  padding-left: 0;
+}
+.print #titles {
+  background: none;
 }
 @media print {
   #content {
@@ -10004,6 +10089,47 @@ dl.l90 dd {
   .hbox.cont div.table {
     margin-left: 0;
     margin-right: 0;
+  }
+  #content {
+    width: 200mm;
+  }
+  #banner {
+    width: 200mm;
+  }
+  .copyright {
+    width: 200mm;
+  }
+  dl,
+  dl.col2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .col10e {
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-width: auto;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  #contents {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
   }
   h1,
   h2,
@@ -10037,7 +10163,7 @@ dl.l90 dd {
   }
   i,
   dd {
-    color: #646475;
+    color: #4d4d5b;
   }
   dt,
   dd {
@@ -10063,15 +10189,7 @@ dl.l90 dd {
     border-bottom: 1px solid #c9c9d1;
   }
   table td:not(:first-child) {
-    color: #646475;
-  }
-  table:has(thead) th,
-  table:has(thead) td {
-    border-left: 1px solid #c9c9d1;
-    border-right: 1px solid #c9c9d1;
-  }
-  table:not(:has(thead)) tbody tr:last-child {
-    border-bottom: none;
+    color: #4d4d5b;
   }
   pre.code code.hljs {
     color: #0b0b0d;
@@ -10083,25 +10201,26 @@ dl.l90 dd {
     color: #c9c9d1;
   }
   .copyright {
-    color: #646475;
+    color: #4d4d5b;
   }
-  #banner a,
-  #banner button,
-  #banner #titles {
-    display: none;
+  @page {
+    width: A4;
+    height: portrait;
+    margin: 5mm 10mm 5mm 10mm;
   }
-  #contents {
-    display: none;
+  #titles {
+    position: relative;
   }
-  .print-hide {
+  #banner,
+  #contents,
+  .print-hide,
+  .section-links p,
+  .section-links a,
+  .copyright {
     display: none !important;
   }
   .section {
-    border-top: none;
-  }
-  .section-links p,
-  .section-links a {
-    display: none;
+    border-top: none !important;
   }
   a {
     color: #0b0b0d;
@@ -10114,6 +10233,66 @@ dl.l90 dd {
     -webkit-columns: 1;
     -moz-columns: 1;
     columns: 1;
+  }
+  table,
+  table:has(thead) {
+    border-collapse: separate;
+    box-sizing: border-box;
+    border: none;
+  }
+  table thead,
+  table:has(thead) thead,
+  table tbody,
+  table:has(thead) tbody {
+    border: none;
+  }
+  table th,
+  table:has(thead) th,
+  table td,
+  table:has(thead) td {
+    border: 1px solid #c9c9d1;
+  }
+  table tr,
+  table:has(thead) tr {
+    border: none;
+  }
+  .hbox div.table {
+    margin-right: 0.5rem;
+  }
+  pre.code code.hljs {
+    background: #f1f1f3;
+    border: 1px solid #9595a4;
+  }
+  pre,
+  pre.code,
+  pre.code code.hljs,
+  .hbox pre,
+  .pre,
+  dt,
+  dd,
+  th,
+  td {
+    word-break: break-all;
+    overflow: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000 !important;
+    background: #fff !important;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #titles {
+    background: none;
   }
 }
 
