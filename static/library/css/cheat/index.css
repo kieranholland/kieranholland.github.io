@@ -10038,18 +10038,6 @@ pre.code code.hljs {
   background: #f1f1f3;
   border: 1px solid #9595a4;
 }
-pre,
-pre.code,
-pre.code code.hljs,
-.hbox pre,
-.pre,
-dt,
-dd,
-th,
-td {
-  word-break: break-all;
-  overflow: hidden;
-}
 .print {
   color: #0b0b0d;
   background: #fff;
