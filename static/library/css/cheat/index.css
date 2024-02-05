@@ -8310,6 +8310,10 @@ h6 {
   content: " (" attr(href) ")";
   vertical-align: normal;
 }
+.dark-theme #titles-body h1,
+.dark-theme #titles-body h2 {
+  color: #d9d9d9;
+}
 .dark-theme h3,
 .dark-theme h4,
 .dark-theme h5,
@@ -8386,6 +8390,10 @@ h6 {
   content: " (" attr(href) ")";
   vertical-align: normal;
 }
+.light-theme #titles-body h1,
+.light-theme #titles-body h2 {
+  color: #0b0b0d;
+}
 .light-theme h3,
 .light-theme h4,
 .light-theme h5,
@@ -8461,6 +8469,10 @@ h6 {
   background: #fff;
   content: " (" attr(href) ")";
   vertical-align: normal;
+}
+.print #titles-body h1,
+.print #titles-body h2 {
+  color: #000;
 }
 .print h3,
 .print h4,
@@ -8587,12 +8599,19 @@ div.pyv {
 body {
   padding-top: 2rem;
 }
+#titles-banner {
+  height: 2rem;
+  background: #212127;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.03rem 0.4rem 0.1rem 0.15rem;
+  width: 18.5rem;
+}
+#titles-banner a {
+  text-decoration: none;
+}
 #titles-body {
   display: none;
-}
-#titles-body h1,
-#titles-body h2 {
-  color: #000;
 }
 #banner {
   position: fixed;
