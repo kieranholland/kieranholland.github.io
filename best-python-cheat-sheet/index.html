@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </li><li>yield
 </li><li>_*
 </li></ul><p>*<a href="https://docs.python.org/3/reference/lexical_analysis.html#soft-keywords" rel="noopener noreferrer" target="_blank" class="external">Soft keywords</a></p></div><div class="section"><div class="section-links h3"><h3 id="h3-scope"><a href="#h3-scope" name="h3-scope">#</a>Scope</h3></div><p>Scope levels:</p><dl><div class="ditem"><dt>Builtin</dt><dd>Names pre-assigned in <i>builtins</i> module</dd></div><div class="ditem"><dt>Module (global)</dt><dd>Names defined in current module
-Code in global scope cannot access local variables</dd></div><div class="ditem"><dt>Enclosing</dt><dd>Names defined in any enclosing functions</dd></div><div class="ditem"><dt>Function (local)</dt><dd>Names defined in current function
-By default, has read-only access to module and enclosing function names (<i>closure</i>)
+Code in global scope cannot access local variables</dd></div><div class="ditem"><dt>Enclosing (closure)</dt><dd>Names defined in any enclosing functions</dd></div><div class="ditem"><dt>Function (local)</dt><dd>Names defined in current function
+By default, has read-only access to module and enclosing function names
 By default, assignment creates a new local name
 <i>global &lt;name&gt;</i> grants read/write access to specified module name
 <i>nonlocal &lt;name&gt;</i> grants read/write access to specified name in closest enclosing function defining that name</dd></div><div class="ditem"><dt>Generator expression</dt><dd>Names contained within generator expression</dd></div><div class="ditem"><dt>Comprehension</dt><dd>Names contained within comprehension</dd></div><div class="ditem"><dt>Class</dt><dd>Names shared across all instances</dd></div><div class="ditem"><dt>Instance</dt><dd>Names contained within a specific instance</dd></div><div class="ditem"><dt>Method</dt><dd>Names contained within a specific instance method</dd></div></dl><ul><li><i>globals()</i> - return <i>dict</i> of module scope variables

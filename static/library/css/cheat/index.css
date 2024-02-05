@@ -9340,8 +9340,6 @@ dl.l90 dd {
 .mobile .hbox pre,
 .mobile p,
 .mobile pre,
-.mobile :not(li) > ul,
-.mobile body > ul,
 .mobile .hbox div.table,
 .mobile .hbox.cont div.table {
   margin-left: 0;
@@ -9466,8 +9464,6 @@ dl.l90 dd {
   .hbox pre,
   p,
   pre,
-  :not(li) > ul,
-  body > ul,
   .hbox div.table,
   .hbox.cont div.table {
     margin-left: 0;
@@ -9589,8 +9585,6 @@ dl.l90 dd {
 .tablet .hbox pre,
 .tablet p,
 .tablet pre,
-.tablet :not(li) > ul,
-.tablet body > ul,
 .tablet .hbox div.table,
 .tablet .hbox.cont div.table {
   margin-left: 0;
@@ -9732,8 +9726,6 @@ dl.l90 dd {
   .hbox pre,
   p,
   pre,
-  :not(li) > ul,
-  body > ul,
   .hbox div.table,
   .hbox.cont div.table {
     margin-left: 0;
@@ -9873,8 +9865,6 @@ dl.l90 dd {
 .print .hbox pre,
 .print p,
 .print pre,
-.print :not(li) > ul,
-.print body > ul,
 .print .hbox div.table,
 .print .hbox.cont div.table {
   margin-left: 0;
