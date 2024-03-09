@@ -8602,6 +8602,9 @@ body {
 #titles-banner a {
   text-decoration: none;
 }
+#titles-banner a h1 {
+  margin-bottom: 0;
+}
 #titles-body {
   display: none;
 }
