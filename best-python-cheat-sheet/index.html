@@ -171,7 +171,7 @@ By default, assignment creates a new local name
 </td></tr><tr><td>x ** y
 </td><td>power
 </td></tr><tr><td>x * y, x @ y, x / y, x // y, x % y
-</td><td>multiply, maxtrix multply, divide, floor divide, modulus
+</td><td>multiply, maxtrix multiply, divide, floor divide, modulus
 </td></tr><tr><td>x + y, x - y
 </td><td>add, substract
 </td></tr><tr><td>x &lt;&lt; y  x &gt;&gt; y
@@ -252,6 +252,12 @@ s  = [*it[, …]]            # unpack to list
 s  = (*it[, …])            # unpack to tuple
 s  = {*it[, …]}            # unpack to set
 d2 = {**d1[, …]}           # unpack to dict
+</code></pre><div class="section-links h4"><h4 id="h4-walrus-operator-assignment-expression"><a href="#h4-walrus-operator-assignment-expression" name="h4-walrus-operator-assignment-expression">#</a>Walrus operator (Assignment expression)</h4><p>Also: </p><a href="https://docs.python.org/3/reference/expressions.html#assignment-expressions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Assign a value and return that value.</p><pre class="code"><code class="py">if matching := pattern.search(data):
+    do_something(matching)
+
+count = 0
+while (count := count + 1) &lt; 5:
+    print(count)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Flow control" id="h3-flow-control"><a href="#h3-flow-control" name="h3-flow-control">#</a>Flow control</h3><p>Also: </p><a href="#h3-exceptions">Exceptions</a><div>, </div><a href="https://docs.python.org/3/tutorial/controlflow.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox evenly"><div><pre class="code"><code class="py">for item in &lt;iterable&gt;:
     …
 [else:                     # if loop completes without break
@@ -648,7 +654,7 @@ int('0x2a', 0)</dt><dd>Hex</dd></div></dl><div class="section-links h4"><h4 id="
 [1, 2]
 &gt;&gt;&gt; s[1:5:2]
 [1, 3]
-</code></pre><div class="section-links h4"></div><ul><li>Sequence comparison: values are compared in order until a pair of unequal
+</code></pre><div class="section-links h4"><h4 id="h4-comparison"><a href="#h4-comparison" name="h4-comparison">#</a>Comparison</h4></div><ul><li>Sequence comparison: values are compared in order until a pair of unequal
 values is found. The comparison of these two values is then returned. If all
 values are equal, the shorter sequence is lesser.
 </li><li>A sortable class should define <i>__eq__()</i>, <i>__lt__()</i>,
@@ -678,7 +684,7 @@ Point(x=1, y=2)
 1
 &gt;&gt;&gt; p.y
 2
-</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="List" id="h3-list"><a href="#h3-list" name="h3-list">#</a>List</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><div>, </div><a href="https://docs.python.org/3/tutorial/datastructures.html#lists" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable sequence.</p><dl class="pre"><div class="ditem"><dt>s = [1, 'a', 3.0]
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="List" id="h3-list"><a href="#h3-list" name="h3-list">#</a>List</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><div>, </div><a href="https://docs.python.org/3/tutorial/datastructures.html#lists" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable sequence.</p><dl><div class="ditem"><dt>s = [1, 'a', 3.0]
 s = list(range(3))</dt><dd>Create list</dd></div><div class="ditem"><dt>s[i] = x</dt><dd>Replace item index i with x</dd></div><div class="ditem"><dt>s[&lt;slice&gt;] = it</dt><dd>Replace slice with iterable</dd></div><div class="ditem"><dt>del s[&lt;slice&gt;]
 s[&lt;slice&gt;] = []</dt><dd>Delete slice</dd></div><div class="ditem"><dt>s.append(x)
 s += x
@@ -698,13 +704,11 @@ for item1 in sequence1:
             if condition1 and condition2 … and conditionN:
                 result.append(expression)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Dictionary" id="h3-dictionary"><a href="#h3-dictionary" name="h3-dictionary">#</a>Dictionary</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable key:value pair mapping.</p><dl class="l50"><div class="ditem"><dt>dict()
-{}</dt><dd>Empty dict</dd></div></dl><p>: dict(&lt;sequence</p><div class="table"><table><tbody><tr><td><p>mapping&gt;)</p><pre>					Create from key:value pairs
-</pre></td></tr></tbody></table></div><dl><div class="ditem"><dt>dict(**kwds)</dt><dd>Create from keyword arguments</dd></div><div class="ditem"><dt>dict(zip(keys, values))</dt><dd>Create from sequences of keys and values</dd></div><div class="ditem"><dt>dict.fromkeys(keys, value=None)</dt><dd>Create from keys, all set to value</dd></div><div class="ditem"><dt>d.keys()</dt><dd>Iterable of keys</dd></div><div class="ditem"><dt>d.values()</dt><dd>Iterable of values</dd></div><div class="ditem"><dt>d.items()</dt><dd>Iterable of (key, value) pairs</dd></div><div class="ditem"><dt>d.get(key, default=None)</dt><dd>Get value for key, or default</dd></div><div class="ditem"><dt>d.setdefault(key, default=None)</dt><dd>Get value for key, add if missing</dd></div><div class="ditem"><dt>d.pop(key)</dt><dd>Remove and return value for key, raise KeyError if missing</dd></div><div class="ditem"><dt>d.popitem()</dt><dd>Remove and return (key, value) pair (last-in, first-out)</dd></div><div class="ditem"><dt>d.clear()</dt><dd>Remove all items</dd></div><div class="ditem"><dt>d.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>collections.defaultdict(&lt;type&gt;)
+{}</dt><dd>Empty dict</dd></div><div class="ditem"><dt>dict(&lt;sequence|mapping&gt;)</dt><dd>Create from key:value pairs</dd></div><div class="ditem"><dt>dict(**kwds)</dt><dd>Create from keyword arguments</dd></div><div class="ditem"><dt>dict(zip(keys, values))</dt><dd>Create from sequences of keys and values</dd></div><div class="ditem"><dt>dict.fromkeys(keys, value=None)</dt><dd>Create from keys, all set to value</dd></div><div class="ditem"><dt>d.keys()</dt><dd>Iterable of keys</dd></div><div class="ditem"><dt>d.values()</dt><dd>Iterable of values</dd></div><div class="ditem"><dt>d.items()</dt><dd>Iterable of (key, value) pairs</dd></div><div class="ditem"><dt>d.get(key, default=None)</dt><dd>Get value for key, or default</dd></div><div class="ditem"><dt>d.setdefault(key, default=None)</dt><dd>Get value for key, add if missing</dd></div><div class="ditem"><dt>d.pop(key)</dt><dd>Remove and return value for key, raise KeyError if missing</dd></div><div class="ditem"><dt>d.popitem()</dt><dd>Remove and return (key, value) pair (last-in, first-out)</dd></div><div class="ditem"><dt>d.clear()</dt><dd>Remove all items</dd></div><div class="ditem"><dt>d.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>collections.defaultdict(&lt;type&gt;)
 collections.defaultdict(lambda: 42)</dt><dd>dict with default value &lt;type&gt;()
 e.g. dict with default value 42</dd></div><div class="ditem"><dt>d1.update(d2)
-d1 |= d2<span class="pyv">3.9+</span></dt><dd>Add/replace key:value pairs from d2 to d1</dd></div></dl><p>: d3 = d1 </p><div class="table"><table><tbody><tr><td><p>d2</p><pre>								Merge to new dict, d2 trumps d1
-</pre></td></tr></tbody></table></div><p>:</p><div class="table"><table><tbody><tr><td>d3 = {**d1, **d2}
-</td></tr></tbody></table></div><dl><div class="ditem"><dt>{k for k, v in d.items() if v==value}</dt><dd>Set of keys with given value</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Set" id="h3-set"><a href="#h3-set" name="h3-set">#</a>Set</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#sets" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable (<i>set</i>) and immutable (<i>frozenset</i>) sets.</p><dl class="l50"><div class="ditem"><dt>set(iterable=None)
+d1 |= d2<span class="pyv">3.9+</span></dt><dd>Add/replace key:value pairs from d2 to d1</dd></div><div class="ditem"><dt>d3 = d1 | d2
+d3 = {**d1, **d2}</dt><dd>Merge to new dict, d2 trumps d1</dd></div><div class="ditem"><dt>{k for k, v in d.items() if v==value}</dt><dd>Set of keys with given value</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Set" id="h3-set"><a href="#h3-set" name="h3-set">#</a>Set</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#sets" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable (<i>set</i>) and immutable (<i>frozenset</i>) sets.</p><dl class="l50"><div class="ditem"><dt>set(iterable=None)
 {1, 2, 3}
 frozenset(iterable=None)</dt><dd>New set from iterable, or empty
 But {} creates an empty dictionary (sad!)</dd></div><div class="ditem"><dt>len(s)</dt><dd>Cardinality</dd></div><div class="ditem"><dt>v in s
@@ -712,21 +716,9 @@ v not in s</dt><dd>Test membership</dd></div><div class="ditem"><dt>s1.issubset(
 s1 &amp; s2</dt><dd>New set of shared elements</dd></div><div class="ditem"><dt>s1.union(s2[, s3…])
 s1 | s2</dt><dd>New set of all elements</dd></div><div class="ditem"><dt>s1.difference(s2[, s3…])
 s1 - s2</dt><dd>New set of elements unique to s1</dd></div><div class="ditem"><dt>s1.symmetric_difference(s2)
-s1 ^ s2</dt><dd>New set of unshared elements</dd></div><div class="ditem"><dt>s.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>s.update(it1[, it2…])</dt><dd>Add all values from iterables</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Bytes" id="h3-bytes"><a href="#h3-bytes" name="h3-bytes">#</a>Bytes</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><div>, </div><a href="https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable sequence of bytes. Mutable version is <i>bytearray</i>.</p><pre>: b'&lt;str&gt;'											Create from ASCII characters and \x00-\xff
-: bytes(&lt;ints&gt;)										Create from int sequence
-: bytes(&lt;str&gt;, 'utf-8')								Create from string
-:|&lt;str&gt;.encode('utf-8')								
-: &lt;int&gt;.to_bytes(length, order, signed=False)		Create from int (order='big'|'little')
-: bytes.fromhex('&lt;hex&gt;')							Create from hex pairs (can be separated by whitespace)
-: &lt;int&gt; = &lt;bytes&gt;[&lt;index&gt;]							Return int in range 0 to 255
-: &lt;bytes&gt; = &lt;bytes&gt;[&lt;slice&gt;]						Return <i>bytes</i> even if only one element
-: list(&lt;bytes&gt;)										Return ints in range 0 to 255
-: &lt;bytes_sep&gt;.join(&lt;byte_objs&gt;)					Join <i>byte_objs</i> sequence with <i>bytes_sep</i> separator
-: str(&lt;bytes&gt;, 'utf-8')								Convert bytes to string
-:|&lt;bytes&gt;.decode('utf-8')							
-: int.from_bytes(bytes, order, signed=False)		Return int from bytes (order='big'|'little')
-: &lt;bytes&gt;.hex(sep='', bytes_per_sep=2)			Return hex pairs
-</pre><pre class="code"><code class="py">def read_bytes(filename):
+s1 ^ s2</dt><dd>New set of unshared elements</dd></div><div class="ditem"><dt>s.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>s.update(it1[, it2…])</dt><dd>Add all values from iterables</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Bytes" id="h3-bytes"><a href="#h3-bytes" name="h3-bytes">#</a>Bytes</h3><p>Also: </p><a href="#h3-sequence">Sequence</a><div>, </div><a href="https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable sequence of bytes. Mutable version is <i>bytearray</i>.</p><dl><div class="ditem"><dt>b'&lt;str&gt;'</dt><dd>Create from ASCII characters and \x00-\xff</dd></div><div class="ditem"><dt>bytes(&lt;ints&gt;)</dt><dd>Create from int sequence</dd></div><div class="ditem"><dt>bytes(&lt;str&gt;, 'utf-8')
+&lt;str&gt;.encode('utf-8')</dt><dd>Create from string</dd></div><div class="ditem"><dt>&lt;int&gt;.to_bytes(length, order, signed=False)</dt><dd>Create from int (order='big'|'little')</dd></div><div class="ditem"><dt>bytes.fromhex('&lt;hex&gt;')</dt><dd>Create from hex pairs (can be separated by whitespace)</dd></div><div class="ditem"><dt>&lt;int&gt; = &lt;bytes&gt;[&lt;index&gt;]</dt><dd>Return int in range 0 to 255</dd></div><div class="ditem"><dt>&lt;bytes&gt; = &lt;bytes&gt;[&lt;slice&gt;]</dt><dd>Return <i>bytes</i> even if only one element</dd></div><div class="ditem"><dt>list(&lt;bytes&gt;)</dt><dd>Return ints in range 0 to 255</dd></div><div class="ditem"><dt>&lt;bytes_sep&gt;.join(&lt;byte_objs&gt;)</dt><dd>Join <i>byte_objs</i> sequence with <i>bytes_sep</i> separator</dd></div><div class="ditem"><dt>str(&lt;bytes&gt;, 'utf-8')
+&lt;bytes&gt;.decode('utf-8')</dt><dd>Convert bytes to string</dd></div><div class="ditem"><dt>int.from_bytes(bytes, order, signed=False)</dt><dd>Return int from bytes (order='big'|'little')</dd></div><div class="ditem"><dt>&lt;bytes&gt;.hex(sep='', bytes_per_sep=2)</dt><dd>Return hex pairs</dd></div></dl><pre class="code"><code class="py">def read_bytes(filename):
     with open(filename, 'rb') as file:
         return file.read()
 
