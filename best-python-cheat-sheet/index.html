@@ -637,7 +637,8 @@ May also be a group name
 Tuple of match groups
 Non-participating groups are None
 String if len(tuple)==1</dd></div><div class="ditem"><dt>start(group), end(group)</dt><dd>Indices of start &amp; end of group match (None if group exists but didn't contribute)</dd></div><div class="ditem"><dt>span(group)</dt><dd>(start(group), end(group)); (None, None) if group didn't contibute</dd></div><div class="ditem"><dt>string</dt><dd>String passed to match() or search()</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Math / Number" id="h3-math-number"><a href="#h3-math-number" name="h3-math-number">#</a>Math / Number</h3></div><dl class="col1 l60"><div class="ditem"><dt>int(&lt;float|str|bool&gt;)
-5</dt><dd>Integer</dd></div><div class="ditem"><dt>float(&lt;int|str|bool&gt;)</dt><dd>Float (inexact, compare with math.isclose(&lt;float&gt;, &lt;float&gt;)</dd></div><div class="ditem"><dt>5.1, 1.2e-4</dt><dd></dd></div><div class="ditem"><dt>complex(real=0, imag=0)
+5</dt><dd>Integer</dd></div><div class="ditem"><dt>float(&lt;int|str|bool&gt;)
+5.1, 1.2e-4</dt><dd>Float (inexact, compare with math.isclose(&lt;float&gt;, &lt;float&gt;)</dd></div><div class="ditem"><dt>complex(real=0, imag=0)
 3 - 2j, 2.1 + 0.8j</dt><dd>Complex</dd></div><div class="ditem"><dt>fractions.Fraction(&lt;numerator&gt;, &lt;denominator&gt;)</dt><dd>Fraction</dd></div><div class="ditem"><dt>decimal.Decimal(&lt;str|int&gt;)</dt><dd>Decimal (exact, set precision: decimal.getcontext().prec = &lt;int&gt;)</dd></div><div class="ditem"><dt>bin(&lt;int&gt;)
 0b101010
 int('101010', 2)
