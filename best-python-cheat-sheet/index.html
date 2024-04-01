@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="9 Mar 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
+<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="1 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
     if (document.readyState !== 'complete') {
         await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve));
     }
@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
-</script></head><body rel="True"><div id="meta-date" style="display: none;">9 Mar 2024</div><div id="meta-copyright" style="display: none;">© Kieran Holland</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></a>
-</div><a href="#" class="logo"> <img name="image" src="/static/library/img/icon/python.svg"> </a><div class="version">Python 3.8+ | 9 Mar 2024</div><div class="version-short">Py3.8+ | 9 Mar</div><a href="best-python-cheat-sheet.pdf"><button id="pdf">PDF ↧</button></a><button id="theme" onclick="toggleTheme()">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Contents" id="h3-contents"><a href="#h3-contents" name="h3-contents">#</a>Contents</h3></div><ul id="toc"><li><a href="#h3-built-in-functions">Built-in functions</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-community">Community</a><span class="page-number"></span></li><li><a href="#h3-contents">Contents</a><span class="page-number"></span></li><li><a href="#h3-debugging">Debugging</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exceptions">Exceptions</a><span class="page-number"></span></li><li><a href="#h3-execution-environ">Execution / Environ </a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-keywords">Keywords</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-numbers-math">Numbers / Math</a><span class="page-number"></span></li><li><a href="#h3-operators">Operators</a><span class="page-number"></span></li><li><a href="#h3-references">References</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-testing">Testing</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keywords" id="h3-keywords"><a href="#h3-keywords" name="h3-keywords">#</a>Keywords</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
+</script></head><body><div id="meta-date" style="display: none;">1 Apr 2024</div><div id="meta-copyright" style="display: none;">© kieranholland.com</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></a>
+</div><div id="banner-pad"></div><a href="#" class="logo"> <img name="image" src="/static/library/img/icon/python.svg"> </a><div class="version">Python 3.8+ | 1 Apr 2024</div><div class="version-short">Py3.8+ | 1 Apr</div><a href="best-python-cheat-sheet.pdf"><button id="pdf">PDF ↧</button></a><button id="theme" onclick="toggleTheme()">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The Best* Python Cheat Sheet</h1><h2>Just what you need</h2></div><hr><ul id="toc"><li><a href="#h3-built-in-functions">Built-in functions</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-community">Community</a><span class="page-number"></span></li><li><a href="#h3-debugging">Debugging</a><span class="page-number"></span></li><li><a href="#h3-decorator">Decorator</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exception">Exception</a><span class="page-number"></span></li><li><a href="#h3-execution-environ">Execution / Environ </a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-iterator">Iterator</a><span class="page-number"></span></li><li><a href="#h3-keyword">Keyword</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-number-math">Number / Math</a><span class="page-number"></span></li><li><a href="#h3-operator">Operator</a><span class="page-number"></span></li><li><a href="#h3-reference">Reference</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-testing">Testing</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keyword" id="h3-keyword"><a href="#h3-keyword" name="h3-keyword">#</a>Keyword</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
 </li><li>as
 </li><li>assert
 </li><li>break
@@ -118,7 +118,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </li><li>with
 </li><li>yield
 </li><li>_<sup>1</sup>
-</li></ul><sup>1</sup><a href="https://docs.python.org/3/reference/lexical_analysis.html#soft-keywords" rel="noopener noreferrer" target="_blank" class="external">Soft keywords</a></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Scope" id="h3-scope"><a href="#h3-scope" name="h3-scope">#</a>Scope</h3></div><p>Scope levels:</p><dl><div class="ditem"><dt>Builtin</dt><dd>Names pre-assigned in <i>builtins</i> module</dd></div><div class="ditem"><dt>Module (global)</dt><dd>Names defined in current module
+</li></ul><sup>1</sup><a href="https://docs.python.org/3/reference/lexical_analysis.html#soft-keywords" rel="noopener noreferrer" target="_blank" class="external">Soft keywords</a></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Decorator" id="h3-decorator"><a href="#h3-decorator" name="h3-decorator">#</a>Decorator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A decorator is a callable that manipulates and returns a function.</p><pre class="code"><code class="py"># wraps decorator copies metadata of decorated function (func) to wrapped function (out)
+from functools import wraps
+
+def show_call(func):
+    """
+    Print function name and arguments each time it is called.
+    """
+    @wraps(func)
+    def out(*args, **kwds):
+        print(func.__name__, args, kwds)
+        return func(*args, **kwds)
+    return out
+
+@show_call
+def add(x, y):
+    return x + y
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Scope" id="h3-scope"><a href="#h3-scope" name="h3-scope">#</a>Scope</h3></div><p>Scope levels:</p><dl><div class="ditem"><dt>Builtin</dt><dd>Names pre-assigned in <i>builtins</i> module</dd></div><div class="ditem"><dt>Module (global)</dt><dd>Names defined in current module
 Code in global scope cannot access local variables</dd></div><div class="ditem"><dt>Enclosing (closure)</dt><dd>Names defined in any enclosing functions</dd></div><div class="ditem"><dt>Function (local)</dt><dd>Names defined in current function
 By default, has read-only access to module and enclosing function names
 By default, assignment creates a new local name
@@ -158,7 +174,7 @@ By default, assignment creates a new local name
 ...         self.instance_variable = 3
 ...         C.class_variable = 3
 ...         method_variable = 1
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Operators" id="h3-operators"><a href="#h3-operators" name="h3-operators">#</a>Operators</h3><p>Also: </p><a href="#h4-class-special-methods">Class special methods</a><div>, </div><a href="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><div class="table l50"><table><thead><tr><th>Precedence (high-&gt;low)
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Operator" id="h3-operator"><a href="#h3-operator" name="h3-operator">#</a>Operator</h3><p>Also: </p><a href="#h4-class-special-methods">Class special methods</a><div>, </div><a href="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><div class="table l50"><table><thead><tr><th>Precedence (high-&gt;low)
 </th><th>Description
 </th></tr></thead><tbody><tr><td>(…,) […,] {…,} {…:…,}
 </td><td>tuple, list, set, dict
@@ -288,7 +304,8 @@ with &lt;expression&gt; [as name]:
     case &lt;pattern&gt; [if &lt;condition&gt;]:
          …
     case &lt;pattern1&gt; | &lt;pattern2&gt;:     # OR pattern
-    case _                            # default case
+         …
+    case _:                           # default case
          …
 </code></pre><h5 id="h5-match-case-pattern">Match case pattern</h5><dl class="col1 l50"><div class="ditem"><dt>1/'abc'/True/None/math.pi</dt><dd>Value pattern, match literal or dotted name</dd></div><div class="ditem"><dt>&lt;type&gt;()</dt><dd>Class pattern, match any object of that type</dd></div><div class="ditem"><dt>&lt;type&gt;(&lt;name&gt;=&lt;pattern&gt;, …)</dt><dd>Class pattern, match object with matching attributes</dd></div><div class="ditem"><dt>&lt;name&gt;</dt><dd>Capture pattern, match any object, bind to name</dd></div><div class="ditem"><dt>_</dt><dd>Wildcard, match any object</dd></div><div class="ditem"><dt>&lt;pattern&gt; | &lt;pattern&gt; [| …]</dt><dd>Or pattern, match any of the patterns</dd></div><div class="ditem"><dt>&lt;pattern&gt; as &lt;name&gt;</dt><dd>As pattern, bind match to name</dd></div><div class="ditem"><dt>[&lt;pattern&gt;[, …[, *args]]</dt><dd>Sequence pattern (list|tuple) matches sequence with matching items</dd></div><div class="ditem"><dt>{&lt;value_pattern&gt;: &lt;pattern&gt;[, …[, **kwds]]}</dt><dd>Mapping pattern matches any dictionary with matching items</dd></div></dl><ul><li>Class patterns <b>do not</b> create a new instance of the class
 </li><li>Patterns can be bracketed to override precedence [| &gt; as &gt; ,] 
@@ -507,9 +524,11 @@ __getattr__(self, name) [if AttributeError]
 __exit__(self, exc_type, exc_value, traceback)
 </td></tr><tr><td>await self
 </td><td>__await__(self)
-</td></tr></tbody></table></div></div></div><div class="section-links h4"><h4 id="h4-iterator-iterable"><a href="#h4-iterator-iterable" name="h4-iterator-iterable">#</a>Iterator / Iterable</h4></div><pre class="code"><code class="py">def IterableIterator:
+</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Iterator" id="h3-iterator"><a href="#h3-iterator" name="h3-iterator">#</a>Iterator</h3></div><p>An iterator implements the <i>__iter__()</i> method, returning an iterable that
+implements the <i>__next__()</i> method. The <i>__next__()</i> method returns the
+next item in the collection and raises <i>StopIteration</i> when done.</p><pre class="code"><code class="py">def IterableIterator:
     def __iter__(self):
-        """Return iterator to make class iterable."""
+        """Make class iterable."""
         return self
 
     def __next__(self):
@@ -523,7 +542,7 @@ it = iter(c) # get iterator
 next(it)     # get next item
 while value := next(it):
     print(value)
-</code></pre><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Generator" id="h3-generator"><a href="#h3-generator" name="h3-generator">#</a>Generator</h3></div><pre class="code"><code class="py">g = (expression for item in iterable if condition) # generator expression
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Generator" id="h3-generator"><a href="#h3-generator" name="h3-generator">#</a>Generator</h3></div><pre class="code"><code class="py">g = (expression for item in iterable if condition) # generator expression
 
 def gen():
     """Generator function"""
@@ -617,7 +636,7 @@ If 1 &lt;= gi &lt;= 99, returns string matching group
 May also be a group name
 Tuple of match groups
 Non-participating groups are None
-String if len(tuple)==1</dd></div><div class="ditem"><dt>start(group), end(group)</dt><dd>Indices of start &amp; end of group match (None if group exists but didn't contribute)</dd></div><div class="ditem"><dt>span(group)</dt><dd>(start(group), end(group)); (None, None) if group didn't contibute</dd></div><div class="ditem"><dt>string</dt><dd>String passed to match() or search()</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Numbers / Math" id="h3-numbers-math"><a href="#h3-numbers-math" name="h3-numbers-math">#</a>Numbers / Math</h3></div><dl class="col1 l60"><div class="ditem"><dt>int(&lt;float|str|bool&gt;)
+String if len(tuple)==1</dd></div><div class="ditem"><dt>start(group), end(group)</dt><dd>Indices of start &amp; end of group match (None if group exists but didn't contribute)</dd></div><div class="ditem"><dt>span(group)</dt><dd>(start(group), end(group)); (None, None) if group didn't contibute</dd></div><div class="ditem"><dt>string</dt><dd>String passed to match() or search()</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Number / Math" id="h3-number-math"><a href="#h3-number-math" name="h3-number-math">#</a>Number / Math</h3></div><dl class="col1 l60"><div class="ditem"><dt>int(&lt;float|str|bool&gt;)
 5</dt><dd>Integer</dd></div><div class="ditem"><dt>float(&lt;int|str|bool&gt;)</dt><dd>Float (inexact, compare with math.isclose(&lt;float&gt;, &lt;float&gt;)</dd></div><div class="ditem"><dt>5.1, 1.2e-4</dt><dd></dd></div><div class="ditem"><dt>complex(real=0, imag=0)
 3 - 2j, 2.1 + 0.8j</dt><dd>Complex</dd></div><div class="ditem"><dt>fractions.Fraction(&lt;numerator&gt;, &lt;denominator&gt;)</dt><dd>Fraction</dd></div><div class="ditem"><dt>decimal.Decimal(&lt;str|int&gt;)</dt><dd>Decimal (exact, set precision: decimal.getcontext().prec = &lt;int&gt;)</dd></div><div class="ditem"><dt>bin(&lt;int&gt;)
 0b101010
@@ -779,7 +798,7 @@ def write_bytes(filename, bytes_obj):
 </td><td>UTC offset (+HHMM/-HHMM, '' if no TZ)
 </td></tr><tr><td>%%
 </td><td>Literal '%'
-</td></tr></tbody></table></div></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Exceptions" id="h3-exceptions"><a href="#h3-exceptions" name="h3-exceptions">#</a>Exceptions</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox stack-left"><div><pre class="code"><code class="py">try:
+</td></tr></tbody></table></div></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Exception" id="h3-exception"><a href="#h3-exception" name="h3-exception">#</a>Exception</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox stack-left"><div><pre class="code"><code class="py">try:
     …
 [except [Exception [as e]]:
     …]
@@ -897,11 +916,14 @@ $ python -S script.py
 </li><li><a href="https://www.pythoncheatsheet.org/cheatsheet/debugging" rel="noopener noreferrer" target="_blank" class="external">Assertions</a>
 </li><li><a href="https://gto76.github.io/python-cheatsheet/#introspection" rel="noopener noreferrer" target="_blank" class="external">Introspection</a>
 </li></ul><div class="section-links h4"></div></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Library" id="h3-library"><a href="#h3-library" name="h3-library">#</a>Library</h3></div><ul class="col3 links"><li><a href="https://docs.python.org/3/library/index.html" rel="noopener noreferrer" target="_blank" class="external">Python standard library</a>
-</li><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Library list - awesome-python</a>
+</li><li><a href="https://docs.python.org/3/library/os.html" rel="noopener noreferrer" target="_blank" class="external">Python - os - Operating system</a>
+</li><li><a href="https://docs.python.org/3/library/io.html" rel="noopener noreferrer" target="_blank" class="external">Python - io - Streams</a>
+</li><li><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">Python - sys - Interpreter</a>
+</li><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Third-party library list - awesome-python</a>
 </li></ul></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Community" id="h3-community"><a href="#h3-community" name="h3-community">#</a>Community</h3></div><ul class="col3 links"><li><a href="https://www.python.org/community/" rel="noopener noreferrer" target="_blank" class="external">Python community page</a>
 </li><li><a href="https://discuss.python.org/" rel="noopener noreferrer" target="_blank" class="external">Python discussion forums</a>
 </li><li><a href="https://devguide.python.org/" rel="noopener noreferrer" target="_blank" class="external">Contributing to Python</a>
-</li></ul></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="References" id="h3-references"><a href="#h3-references" name="h3-references">#</a>References</h3></div><ul class="col3 links"><li><a href="https://docs.python.org/3/" rel="noopener noreferrer" target="_blank" class="external">Python documentation</a>
+</li></ul></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Reference" id="h3-reference"><a href="#h3-reference" name="h3-reference">#</a>Reference</h3></div><ul class="col3 links"><li><a href="https://docs.python.org/3/" rel="noopener noreferrer" target="_blank" class="external">Python documentation</a>
 </li><li><a href="https://docs.python.org/3/reference/index.html" rel="noopener noreferrer" target="_blank" class="external">Python language reference</a>
 </li><li><a href="https://peps.python.org/pep-0000/" rel="noopener noreferrer" target="_blank" class="external">Python enhancment proposals (PEPs)</a>
 </li><li><a href="https://docs.python.org/3/whatsnew/index.html" rel="noopener noreferrer" target="_blank" class="external">What's new in Python</a>
@@ -910,4 +932,4 @@ $ python -S script.py
 </li><li><a href="https://gto76.github.io/python-cheatsheet/" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - gto76</a>
 </li><li><a href="https://www.pythoncheatsheet.org/" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - pythoncheatsheet.org</a>
 </li><li><a href="https://speedsheet.io/s/python" rel="noopener noreferrer" target="_blank" class="external">Cheat sheet - speedsheat.io</a>
-</li></ul><hr><p><b>*</b>It may not <b>be</b> the best, but it <i>aspires</i> to be. <a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="external">Send feedback</a></p></div></div></div><div class="copyright">© Kieran Holland</div></body></html>
+</li></ul><hr><p><b>*</b>It may not <b>be</b> the best, but it <i>aspires</i> to be. <a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="external">Send feedback</a></p></div></div></div><div class="copyright">© kieranholland.com</div></body></html>

@@ -211,6 +211,11 @@ template {
 * {
   margin: 0;
 }
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+}
 body {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
@@ -8530,6 +8535,9 @@ h6 {
 .print .copyright {
   color: #646475;
 }
+body {
+  margin-bottom: 80vh;
+}
 #content,
 #content-cheat {
   margin: 0;
@@ -8592,6 +8600,9 @@ body {
   padding-top: 2rem;
 }
 #titles-banner {
+  -webkit-align-self: flex-start;
+  -ms-align-self: flex-start;
+  align-self: flex-start;
   height: 2rem;
   background: #212127;
   border-top-right-radius: 7px;
@@ -8639,6 +8650,11 @@ body {
   -ms-flex-shrink: 1;
   flex-shrink: 1;
 }
+#banner #banner-pad {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
 #banner a {
   color: #5ca6f6;
   font-family: Roboto Mono, Consolas, Courier New, monospace;
@@ -8646,13 +8662,8 @@ body {
   text-align: center;
   line-height: 1rem;
 }
-#banner a.logo {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
 #banner a.logo img {
-  margin: 0.25rem 0.4rem 0 auto;
+  margin: 0.25rem 0.4rem 0 0.4rem;
   height: 1.4rem;
   width: 1.4rem;
 }
@@ -9359,6 +9370,9 @@ dl.l90 dd {
 .mobile .draft-show {
   display: none !important;
 }
+.mobile #banner #banner-pad {
+  display: none;
+}
 .mobile #banner a.logo {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -9483,6 +9497,9 @@ dl.l90 dd {
   .draft-show {
     display: none !important;
   }
+  #banner #banner-pad {
+    display: none;
+  }
   #banner a.logo {
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
@@ -9603,6 +9620,9 @@ dl.l90 dd {
 }
 .tablet .draft-show {
   display: none !important;
+}
+.tablet #banner #banner-pad {
+  display: none;
 }
 .tablet #banner a.logo {
   -webkit-flex-grow: 1;
@@ -9745,6 +9765,9 @@ dl.l90 dd {
   .draft-show {
     display: none !important;
   }
+  #banner #banner-pad {
+    display: none;
+  }
   #banner a.logo {
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
@@ -9867,6 +9890,7 @@ dl.l90 dd {
   height: 2rem;
   z-index: 101;
   padding-top: 0;
+  margin-bottom: 0;
 }
 .print #content-cheat {
   border-left: none;
@@ -9883,6 +9907,9 @@ dl.l90 dd {
 }
 .print .draft-show {
   display: none !important;
+}
+.print #banner #banner-pad {
+  display: none;
 }
 .print #banner a.logo {
   -webkit-flex-grow: 1;
