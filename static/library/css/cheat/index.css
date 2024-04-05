@@ -267,6 +267,30 @@ h6 {
 .blackb_a75 {
   color: rgba(85,85,85,0.753);
 }
+.dark {
+  color: #0d1117;
+}
+.dark_a25 {
+  color: rgba(13,17,23,0.251);
+}
+.dark_a50 {
+  color: rgba(13,17,23,0.502);
+}
+.dark_a75 {
+  color: rgba(13,17,23,0.753);
+}
+.darkcode {
+  color: #161b22;
+}
+.darkcode_a25 {
+  color: rgba(22,27,34,0.251);
+}
+.darkcode_a50 {
+  color: rgba(22,27,34,0.502);
+}
+.darkcode_a75 {
+  color: rgba(22,27,34,0.753);
+}
 .white {
   color: #bbb;
 }
@@ -278,6 +302,18 @@ h6 {
 }
 .white_a75 {
   color: rgba(187,187,187,0.753);
+}
+.whitecode {
+  color: #f6f8fa;
+}
+.whitecode_a25 {
+  color: rgba(246,248,250,0.251);
+}
+.whitecode_a50 {
+  color: rgba(246,248,250,0.502);
+}
+.whitecode_a75 {
+  color: rgba(246,248,250,0.753);
 }
 .whiteb {
   color: #fff;
@@ -8281,14 +8317,14 @@ h6 {
   margin-left: 0;
 }
 .dark-theme {
-  color: #d9d9d9;
-  background: #000;
+  color: #d6d6dc;
+  background: #0d1117;
   content: " (" attr(href) ")";
   vertical-align: normal;
 }
 .dark-theme #titles-body h1,
 .dark-theme #titles-body h2 {
-  color: #d9d9d9;
+  color: #d6d6dc;
 }
 .dark-theme h3,
 .dark-theme h4,
@@ -8297,46 +8333,46 @@ h6 {
   color: #fff;
 }
 .dark-theme #content-cheat {
-  border-left: 1px solid #303030;
+  border-left: 1px solid #42424e;
 }
 .dark-theme .section-links.h3 {
-  border-top: 1px solid #303030;
+  border-top: 1px solid #42424e;
 }
 .dark-theme h3,
 .dark-theme h4 {
-  background: #303030;
+  background: #42424e;
   color: #fff;
 }
 .dark-theme h3 a,
 .dark-theme h4 a {
-  color: #a9a9a9;
+  color: #a2a2b0;
 }
 .dark-theme table,
 .dark-theme figure figcaption {
-  color: #d9d9d9;
+  color: #d6d6dc;
 }
 .dark-theme i,
 .dark-theme dd {
-  color: #9d9d9d;
+  color: #9595a4;
 }
 .dark-theme dt,
 .dark-theme dd {
-  border-top: 1px solid #303030;
+  border-top: 1px solid #30363d;
 }
 .dark-theme sup,
 .dark-theme sub {
-  color: #000;
-  background: #d9d9d9;
+  color: #0d1117;
+  background: #d6d6dc;
 }
 .dark-theme a,
 .dark-theme #toc a {
   color: #5ca6f6;
 }
 .dark-theme hr.double {
-  border-color: #d9d9d9;
+  border-color: #d6d6dc;
 }
 .dark-theme table th {
-  background: #181818;
+  background: #161b22;
   color: #fff;
 }
 .dark-theme table th,
@@ -8344,23 +8380,25 @@ h6 {
   border: none;
 }
 .dark-theme table tr {
-  border-top: 1px solid #303030;
-  border-bottom: 1px solid #303030;
+  border-top: 1px solid #30363d;
+  border-bottom: 1px solid #30363d;
 }
 .dark-theme table td:not(:first-child) {
-  color: #9d9d9d;
+  color: #9595a4;
 }
 .dark-theme pre.code {
-  color: #d9d9d9;
-  background: #181818;
-  border: 1px solid #303030;
+  color: #d6d6dc;
+  border: 1px solid #30363d;
+}
+.dark-theme pre.code code.hljs {
+  background: #161b22;
 }
 .dark-theme hr {
-  background: #303030;
-  color: #303030;
+  background: #30363d;
+  color: #30363d;
 }
 .dark-theme .copyright {
-  color: #9d9d9d;
+  color: #9595a4;
 }
 .light-theme {
   color: #0b0b0d;
@@ -8379,14 +8417,14 @@ h6 {
   color: #212127;
 }
 .light-theme #content-cheat {
-  border-left: 1px solid #303030;
+  border-left: 1px solid #2c2c34;
 }
 .light-theme .section-links.h3 {
-  border-top: 1px solid #303030;
+  border-top: 1px solid #2c2c34;
 }
 .light-theme h3,
 .light-theme h4 {
-  background: #303030;
+  background: #2c2c34;
   color: #fff;
 }
 .light-theme h3 a,
@@ -8418,7 +8456,7 @@ h6 {
   border-color: #0b0b0d;
 }
 .light-theme table th {
-  background: #fbfbfe;
+  background: #f6f8fa;
   color: #212127;
 }
 .light-theme table th,
@@ -8434,8 +8472,10 @@ h6 {
 }
 .light-theme pre.code {
   color: #0b0b0d;
-  background: #fbfbfe;
   border: 1px solid #c9c9d1;
+}
+.light-theme pre.code code.hljs {
+  background: #f6f8fa;
 }
 .light-theme hr {
   background: #c9c9d1;
@@ -8461,14 +8501,14 @@ h6 {
   color: #212127;
 }
 .print #content-cheat {
-  border-left: 1px solid #303030;
+  border-left: 1px solid #646475;
 }
 .print .section-links.h3 {
-  border-top: 1px solid #303030;
+  border-top: 1px solid #646475;
 }
 .print h3,
 .print h4 {
-  background: #303030;
+  background: #646475;
   color: #fff;
 }
 .print h3 a,
@@ -8500,7 +8540,7 @@ h6 {
   border-color: #000;
 }
 .print table th {
-  background: #fbfbfe;
+  background: #f6f8fa;
   color: #212127;
 }
 .print table th,
@@ -8516,8 +8556,10 @@ h6 {
 }
 .print pre.code {
   color: #000;
-  background: #fbfbfe;
   border: 1px solid #c9c9d1;
+}
+.print pre.code code.hljs {
+  background: #f6f8fa;
 }
 .print hr {
   background: #c9c9d1;
@@ -10099,7 +10141,7 @@ dl.l90 dd {
 }
 .print pre,
 .print pre.code,
-.print pre code.hljs,
+.print pre.code code.hljs,
 .print .hbox pre,
 .print .pre,
 .print dt,
