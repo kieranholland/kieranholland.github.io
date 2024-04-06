@@ -4047,10 +4047,6 @@ h6 {
 .chrome95_a75 {
   color: rgba(241,241,243,0.753);
 }
-@font-face {
-  font-family: "Digital Dismay";
-  src: url("/static/library/font/Digital Dismay.otf");
-}
 .hbox {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -10201,7 +10197,7 @@ dl.l90 dd {
       margin-bottom: 0;
     }
     @bottom-left {
-      content: string(date) ' | ' string(version);
+      content: string(version) ' | ' string(date);
     }
   }
 }
