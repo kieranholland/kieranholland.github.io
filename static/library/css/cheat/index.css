@@ -8877,6 +8877,10 @@ a {
   text-decoration: none;
   white-space: nowrap;
 }
+.section a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
 a:hover {
   text-decoration: underline;
 }
