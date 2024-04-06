@@ -8881,6 +8881,7 @@ a:hover {
   text-decoration: underline;
 }
 a.external::after {
+  color: #7b7b8e;
   content: "\2197";
   font-family: Arial, sans-serif;
   font-weight: bold;
