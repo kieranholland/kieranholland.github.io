@@ -8844,6 +8844,8 @@ ul,
   line-height: 1rem;
 }
 pre.code {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
   padding: 0;
 }
 pre.code code.hljs {
