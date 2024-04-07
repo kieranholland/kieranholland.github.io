@@ -8347,9 +8347,32 @@ h6 {
 .dark-theme figure figcaption {
   color: #d6d6dc;
 }
+.dark-theme div.section p a,
+.dark-theme td a,
+.dark-theme dt a {
+  color: #d6d6dc;
+  text-decoration: underline;
+}
+.dark-theme div.section p a:hover,
+.dark-theme td a:hover,
+.dark-theme dt a:hover {
+  font-weight: bold;
+}
 .dark-theme i,
-.dark-theme dd {
+.dark-theme dd,
+.dark-theme td:not(:first-child) {
   color: #9595a4;
+}
+.dark-theme i a,
+.dark-theme dd a,
+.dark-theme td:not(:first-child) a {
+  color: #9595a4;
+  text-decoration: underline;
+}
+.dark-theme i a:hover,
+.dark-theme dd a:hover,
+.dark-theme td:not(:first-child) a:hover {
+  font-weight: bold;
 }
 .dark-theme dt,
 .dark-theme dd {
@@ -8431,9 +8454,32 @@ h6 {
 .light-theme figure figcaption {
   color: #0b0b0d;
 }
+.light-theme div.section p a,
+.light-theme td a,
+.light-theme dt a {
+  color: #0b0b0d;
+  text-decoration: underline;
+}
+.light-theme div.section p a:hover,
+.light-theme td a:hover,
+.light-theme dt a:hover {
+  font-weight: bold;
+}
 .light-theme i,
-.light-theme dd {
+.light-theme dd,
+.light-theme td:not(:first-child) {
   color: #646475;
+}
+.light-theme i a,
+.light-theme dd a,
+.light-theme td:not(:first-child) a {
+  color: #646475;
+  text-decoration: underline;
+}
+.light-theme i a:hover,
+.light-theme dd a:hover,
+.light-theme td:not(:first-child) a:hover {
+  font-weight: bold;
 }
 .light-theme dt,
 .light-theme dd {
@@ -8515,9 +8561,32 @@ h6 {
 .print figure figcaption {
   color: #000;
 }
+.print div.section p a,
+.print td a,
+.print dt a {
+  color: #000;
+  text-decoration: underline;
+}
+.print div.section p a:hover,
+.print td a:hover,
+.print dt a:hover {
+  font-weight: bold;
+}
 .print i,
-.print dd {
+.print dd,
+.print td:not(:first-child) {
   color: #646475;
+}
+.print i a,
+.print dd a,
+.print td:not(:first-child) a {
+  color: #646475;
+  text-decoration: underline;
+}
+.print i a:hover,
+.print dd a:hover,
+.print td:not(:first-child) a:hover {
+  font-weight: bold;
 }
 .print dt,
 .print dd {
@@ -8877,7 +8946,7 @@ a {
   text-decoration: none;
   white-space: nowrap;
 }
-.section a {
+.section > a {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
