@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="7 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
+<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="9 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
     if (document.readyState !== 'complete') {
         await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve));
     }
@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
-</script></head><body><div id="meta-date" style="display: none;">7 Apr 2024</div><div id="meta-copyright" style="display: none;">© kieranholland.com</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></a>
-</div><div id="banner-pad"></div><a href="#" class="logo"> <img name="image" src="/static/library/img/icon/python.svg"> </a><div class="version">Python 3.8+ | 7 Apr 2024</div><div class="version-short">Py3.8+ | 7 Apr</div><a href="best-python-cheat-sheet.pdf"><button id="pdf">PDF ↧</button></a><button id="theme" onclick="toggleTheme()">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></div><ul id="toc"><li><a href="#h3-built-in">Built-in</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-debug">Debug</a><span class="page-number"></span></li><li><a href="#h3-decorator">Decorator</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exception">Exception</a><span class="page-number"></span></li><li><a href="#h3-execution">Execution </a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-function">Function</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-iterator">Iterator</a><span class="page-number"></span></li><li><a href="#h3-keyword">Keyword</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-number">Number</a><span class="page-number"></span></li><li><a href="#h3-operator">Operator</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-resource">Resource</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-test">Test</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li><li><a href="#h3-types">Types</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keyword" id="h3-keyword"><a href="#h3-keyword" name="h3-keyword">#</a>Keyword</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
+</script></head><body><div id="meta-date" style="display: none;">9 Apr 2024</div><div id="meta-copyright" style="display: none;">© kieranholland.com</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></a>
+</div><div id="banner-pad"></div><a href="#" class="logo"> <img name="image" src="/static/library/img/icon/python.svg"> </a><div class="version">Python 3.8+ | 9 Apr 2024</div><div class="version-short">Py3.8+ | 9 Apr</div><a href="best-python-cheat-sheet.pdf"><button id="pdf">PDF ↧</button></a><button id="theme" onclick="toggleTheme()">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></div><ul id="toc"><li><a href="#h3-built-in">Built-in</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-debug">Debug</a><span class="page-number"></span></li><li><a href="#h3-decorator">Decorator</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exception">Exception</a><span class="page-number"></span></li><li><a href="#h3-execution">Execution</a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-function">Function</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-iterator">Iterator</a><span class="page-number"></span></li><li><a href="#h3-keyword">Keyword</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-number">Number</a><span class="page-number"></span></li><li><a href="#h3-operator">Operator</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-resource">Resource</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-test">Test</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li><li><a href="#h3-types">Types</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keyword" id="h3-keyword"><a href="#h3-keyword" name="h3-keyword">#</a>Keyword</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
 </li><li>as
 </li><li>assert
 </li><li>break
@@ -219,7 +219,7 @@ break                      # immediately exit loop
 continue                   # skip to next loop iteration
 return[ value]             # exit function, return value | None
 yield[ value]              # exit generator, yield value | None
-assert &lt;expr&gt;[, message]   # if not expression raise AssertionError(message)
+assert &lt;expr&gt;[, message]   # if not expression raise AssertionError([message])
 </code></pre></div><div><pre class="code"><code class="py">if condition:
     …
 [elif condition:
@@ -229,37 +229,38 @@ assert &lt;expr&gt;[, message]   # if not expression raise AssertionError(messag
 
 &lt;expression1&gt; if &lt;condition&gt; else &lt;expression2&gt;
 
-with &lt;expression&gt;[ as name]:
+with &lt;expression&gt;[ as name]: # context manager
   …
-</code></pre></div></div><div class="section-links h4"><h4 id="h4-match"><a href="#h4-match" name="h4-match">#</a>Match</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html#match-statements" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="pyv">3.10+</div><pre class="code"><code class="py">match &lt;expression&gt;:
-    case &lt;pattern&gt;[ if &lt;condition&gt;]:
+</code></pre></div></div><div class="section-links h4"><h4 id="h4-context-manager"><a href="#h4-context-manager" name="h4-context-manager">#</a>Context manager</h4><p>Also: </p><a href="https://docs.python.org/3/reference/datamodel.html#context-managers" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A <i>with</i> statement takes an object with special methods:</p><ul><li><i>__enter__()</i> - locks resources and optionally returns an object
+</li><li><i>__exit__()</i> - releases resources, handles any exception raised in the
+block, optionally suppressing it by returning True
+</li></ul><pre class="code"><code class="py">class AutoClose:
+    def __init__(self, filename):
+        self.filename = filename
+    def __enter__(self):
+        self.f = open(self.filename)
+        return self.f
+    def __exit__(self, exc_type, exception, traceback):
+        self.f.close()
+
+&gt;&gt;&gt; with open('test.txt', 'w') as f: …
+...        f.write('Hello World!')
+&gt;&gt;&gt; with AutoClose('test.txt') as f: …
+...        print(f.read())
+Hello World!
+</code></pre><div class="section-links h4"><h4 id="h4-match"><a href="#h4-match" name="h4-match">#</a>Match</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html#match-statements" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="pyv">3.10+</div><pre class="code"><code class="py">match &lt;expression&gt;:
+    case &lt;pattern&gt;[ if &lt;condition&gt;]:  # conditional match, if "guard" clause
          …
     case &lt;pattern1&gt; | &lt;pattern2&gt;:     # OR pattern
          …
     case _:                           # default case
          …
-</code></pre><h5 id="h5-match-case-pattern">Match case pattern</h5><dl class="col1 l50"><div class="ditem"><dt>1/'abc'/True/None/math.pi</dt><dd>Value pattern, match literal or dotted name</dd></div><div class="ditem"><dt>&lt;type&gt;()</dt><dd>Class pattern, match any object of that type</dd></div><div class="ditem"><dt>&lt;type&gt;(&lt;name&gt;=&lt;pattern&gt;, …)</dt><dd>Class pattern, match object with matching attributes</dd></div><div class="ditem"><dt>&lt;name&gt;</dt><dd>Capture pattern, match any object, bind to name</dd></div><div class="ditem"><dt>_</dt><dd>Wildcard, match any object</dd></div><div class="ditem"><dt>&lt;pattern&gt; | &lt;pattern&gt; [| …]</dt><dd>Or pattern, match any of the patterns</dd></div><div class="ditem"><dt>&lt;pattern&gt; as &lt;name&gt;</dt><dd>As pattern, bind match to name</dd></div><div class="ditem"><dt>[&lt;pattern&gt;[, …[, *args]]</dt><dd>Sequence pattern (list|tuple) matches sequence with matching items</dd></div><div class="ditem"><dt>{&lt;value_pattern&gt;: &lt;pattern&gt;[, …[, **kwds]]}</dt><dd>Mapping pattern matches any dictionary with matching items</dd></div></dl><ul><li>Class patterns <b>do not</b> create a new instance of the class
-</li><li>Patterns can be bracketed to override precedence [| &gt; as &gt; ,] 
-</li><li>Built-in types allow a single positional pattern that is matched against the entire object.
-</li><li>Names bound in the matching case + names bound in its block are visible after the match statement
-</li></ul><div class="section-links h4"><h4 id="h4-context-manager"><a href="#h4-context-manager" name="h4-context-manager">#</a>Context manager</h4><p>Also: </p><a href="https://docs.python.org/3/reference/datamodel.html#context-managers" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A <i>with</i> statement takes an object with special methods:</p><ul><li><i>__enter__()</i> - locks resources and optionally returns an object
-</li><li><i>__exit__()</i> - releases resources, handles an exception raised in the
-block, optionally suppressing it by returning True
-</li></ul><pre class="code"><code class="py">class MyOpen:
-    def __init__(self, filename):
-        self.filename = filename
-    def __enter__(self):
-        self.file = open(self.filename)
-        return self.file
-    def __exit__(self, exc_type, exception, traceback):
-        self.file.close()
-
-&gt;&gt;&gt; with open('test.txt', 'w') as file: …
-...        file.write('Hello World!')
-&gt;&gt;&gt; with MyOpen('test.txt') as file: …
-...        print(file.read())
-Hello World!
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Scope" id="h3-scope"><a href="#h3-scope" name="h3-scope">#</a>Scope</h3><p>Also: </p><a href="https://docs.python.org/3/reference/executionmodel.html#resolution-of-names" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Scope levels:</p><dl><div class="ditem"><dt>Builtin</dt><dd>Names pre-assigned in <i>builtins</i> module</dd></div><div class="ditem"><dt>Module (global)</dt><dd>Names defined in current module
+</code></pre><h5 id="h5-match-case-pattern">Match case pattern</h5><dl class="col1 l50"><div class="ditem"><dt>1/'abc'/True/None/math.pi</dt><dd>Value pattern, match literal or dotted name</dd></div><div class="ditem"><dt>&lt;name&gt;</dt><dd>Capture pattern, match any object and bind to name</dd></div><div class="ditem"><dt>_</dt><dd>Wildcard pattern, match any object</dd></div><div class="ditem"><dt>&lt;type&gt;()</dt><dd>Class pattern, match any object of that type</dd></div><div class="ditem"><dt>&lt;type&gt;(&lt;attr&gt;=&lt;pattern|name&gt;, …)</dt><dd>Class pattern, match object with matching attributes</dd></div><div class="ditem"><dt>&lt;pattern&gt; | &lt;pattern&gt; [| …]</dt><dd>Or pattern, match any of the patterns left to right</dd></div><div class="ditem"><dt>&lt;pattern&gt; as &lt;name&gt;</dt><dd>As pattern, bind match to name</dd></div><div class="ditem"><dt>[&lt;pattern&gt;[, …[, *args]]</dt><dd>Sequence pattern (list|tuple), match any sequence with matching items (but not string or iterator), may be nested</dd></div><div class="ditem"><dt>{&lt;value_pattern&gt;: &lt;pattern&gt;[, …[, **kwds]]}</dt><dd>Mapping pattern, match dictionary with matching items, may be nested</dd></div><div class="ditem"><dt>&lt;builtin&gt;(&lt;name&gt;)</dt><dd>Builtin pattern, shortcut for &lt;builtin&gt;() as &lt;name&gt; (e.g. str, int)</dd></div></dl><ul><li>Class patterns
+<ul><li><b>Do not</b> create a new instance of the class
+</li><li>Accept positional parameters if class defines __match_args__ special attribute (e.g. dataclass)
+</li></ul></li><li>Sequence patterns support <a href="#h4-assignment-unpacking">assignment unpacking</a>
+</li><li>Names bound in a match statement are visible after the match statement
+</li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Scope" id="h3-scope"><a href="#h3-scope" name="h3-scope">#</a>Scope</h3><p>Also: </p><a href="https://docs.python.org/3/reference/executionmodel.html#resolution-of-names" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Scope levels:</p><dl><div class="ditem"><dt>Builtin</dt><dd>Names pre-assigned in <i>builtins</i> module</dd></div><div class="ditem"><dt>Module (global)</dt><dd>Names defined in current module
 Code in global scope cannot access local variables</dd></div><div class="ditem"><dt>Enclosing (closure)</dt><dd>Names defined in any enclosing functions</dd></div><div class="ditem"><dt>Function (local)</dt><dd>Names defined in current function
 By default, has read-only access to module and enclosing function names
 By default, assignment creates a new local name
@@ -270,17 +271,14 @@ By default, assignment creates a new local name
 &gt;&gt;&gt; def read_global():
 ...     print(global_variable)
 ...     local_variable = "only available in this function"
-...     print(local_variable)
 &gt;&gt;&gt; read_global()
 1
-
 &gt;&gt;&gt; def write_global():
 ...     global global_variable
 ...     global_variable = 2
 &gt;&gt;&gt; write_global()
 &gt;&gt;&gt; print(global_variable)
 2
-
 &gt;&gt;&gt; def write_nonlocal():
 ...     x = 1
 ...     def nested():
@@ -290,7 +288,6 @@ By default, assignment creates a new local name
 ...     print(x)
 &gt;&gt;&gt; write_nonlocal()
 2
-
 &gt;&gt;&gt; class C:
 ...     class_variable = 1
 ...     def __init__(self):
@@ -299,12 +296,12 @@ By default, assignment creates a new local name
 ...         self.instance_variable = 3
 ...         C.class_variable = 3
 ...         method_variable = 1
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Sequence" id="h3-sequence"><a href="#h3-sequence" name="h3-sequence">#</a>Sequence</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Operations on sequence types (<a href="#h3-bytes">Bytes</a>, <a href="#h3-list">List</a>, <a href="#h3-tuple">Tuple</a>, <a href="#h3-string">String</a>).</p><dl><div class="ditem"><dt>x in s</dt><dd>True if any s[i]==x # ?? __contains__? is == right op</dd></div><div class="ditem"><dt>x not in s</dt><dd>True if no s[i]==x</dd></div><div class="ditem"><dt>s1 + s2</dt><dd>Concatenate s1 and s2</dd></div><div class="ditem"><dt>s*n, n*s</dt><dd>Concatenate n copies of s</dd></div><div class="ditem"><dt>s.count(x)</dt><dd>Count of s[i]==x</dd></div><div class="ditem"><dt>len(s)</dt><dd>Number of items</dd></div><div class="ditem"><dt>min(s)</dt><dd>Smallest item</dd></div><div class="ditem"><dt>max(s)</dt><dd>Largest item</dd></div><div class="ditem"><dt>s.index(x[, start[, stop]])</dt><dd>Smallest i where s[i]==x, start/stop bounds search</dd></div><div class="ditem"><dt>reversed(s)</dt><dd>Iterator on s in reverse order (for string use reversed(list(s)))</dd></div><div class="ditem"><dt>sorted(s1, cmp=func, key=getter, reverse=False)</dt><dd>New sorted list</dd></div></dl><div class="section-links h4"><h4 id="h4-indexing"><a href="#h4-indexing" name="h4-indexing">#</a>Indexing</h4></div><p>Select items from sequence by index or slice.</p><pre class="code"><code class="py">&gt;&gt;&gt; s = [0, 1, 2, 3, 4]
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Sequence" id="h3-sequence"><a href="#h3-sequence" name="h3-sequence">#</a>Sequence</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Operations on sequence types (<a href="#h3-bytes">Bytes</a>, <a href="#h3-list">List</a>, <a href="#h3-tuple">Tuple</a>, <a href="#h3-string">String</a>).</p><dl><div class="ditem"><dt>x in s</dt><dd>True if any s[i] == x</dd></div><div class="ditem"><dt>x not in s</dt><dd>True if no s[i] == x</dd></div><div class="ditem"><dt>s1 + s2</dt><dd>Concatenate s1 and s2</dd></div><div class="ditem"><dt>s*n, n*s</dt><dd>Concatenate n copies of s</dd></div><div class="ditem"><dt>s.count(x)</dt><dd>Count of s[i] == x</dd></div><div class="ditem"><dt>len(s)</dt><dd>Number of items</dd></div><div class="ditem"><dt>min(s)</dt><dd>Smallest item</dd></div><div class="ditem"><dt>max(s)</dt><dd>Largest item</dd></div><div class="ditem"><dt>s.index(x[, start[, stop]])</dt><dd>Smallest i where s[i] == x, start/stop bounds search</dd></div><div class="ditem"><dt>reversed(s)</dt><dd>Iterator on s in reverse order (for string use reversed(list(s)))</dd></div><div class="ditem"><dt>sorted(s1, cmp=func, key=getter, reverse=False)</dt><dd>New sorted list</dd></div></dl><div class="section-links h4"><h4 id="h4-indexing"><a href="#h4-indexing" name="h4-indexing">#</a>Indexing</h4></div><p>Select items from sequence by index or slice.</p><pre class="code"><code class="py">&gt;&gt;&gt; s = [0, 1, 2, 3, 4]
 &gt;&gt;&gt; s[0]               # 0-based indexing
 0
 &gt;&gt;&gt; s[-1]              # negative indexing from end
 4
-&gt;&gt;&gt; s[slice(2)]        # slice(stop) - index until stop (exclusive)
+&gt;&gt;&gt; s[slice(2)]        # slice(stop) - index from 0 until stop (exclusive)
 [0, 1]
 &gt;&gt;&gt; s[slice(1, 5, 3)]  # slice(start, stop[, step]) - index from start to stop (exclusive), with optional step size (+|-)
 [1, 4]
@@ -338,7 +335,7 @@ class C:
             return self.a &lt; other.a
         return NotImplemented
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Tuple" id="h3-tuple"><a href="#h3-tuple" name="h3-tuple">#</a>Tuple</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><p>Immutable hashable <a href="#h3-sequence">sequence</a>.</p><dl class="col1"><div class="ditem"><dt>s = (1, 'a', 3.0)
-s = 1, 'a', 3.0</dt><dd>Create tuple</dd></div><div class="ditem"><dt>s = (1,)</dt><dd>Single-item tuple</dd></div><div class="ditem"><dt>s = ()</dt><dd>Empty tuple</dd></div><div class="ditem"><dt>(1, 2, 3) == (1, 2) + (3,)</dt><dd>Add makes new tuple</dd></div><div class="ditem"><dt>(1, 2, 1, 2) == (1, 2) * 2</dt><dd>Multiply makes new tuple</dd></div></dl></div><div><div class="section-links h4"><h4 id="h4-named-tuple"><a href="#h4-named-tuple" name="h4-named-tuple">#</a>Named tuple</h4><p>Also: </p><a href="https://docs.python.org/3/library/collections.html#namedtuple-factory-function-for-tuples-with-named-fields" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Subclass with named items.</p><pre class="code"><code class="py">&gt;&gt;&gt; from collections import namedtuple
+s = 1, 'a', 3.0</dt><dd>Create tuple</dd></div><div class="ditem"><dt>s = (1,)</dt><dd>Single-item tuple</dd></div><div class="ditem"><dt>s = ()</dt><dd>Empty tuple</dd></div><div class="ditem"><dt>(1, 2, 3) == (1, 2) + (3,)</dt><dd>Add makes new tuple</dd></div><div class="ditem"><dt>(1, 2, 1, 2) == (1, 2) * 2</dt><dd>Multiply makes new tuple</dd></div></dl></div><div><div class="section-links h4"><h4 id="h4-named-tuple"><a href="#h4-named-tuple" name="h4-named-tuple">#</a>Named tuple</h4><p>Also: </p><a href="https://docs.python.org/3/library/collections.html#namedtuple-factory-function-for-tuples-with-named-fields" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p><a href="#h3-tuple">Tuple</a> subclass with named items.</p><pre class="code"><code class="py">&gt;&gt;&gt; from collections import namedtuple
 &gt;&gt;&gt; Point = namedtuple('Point', ('x', 'y')) # or namedtuple('Point', 'x y')
 &gt;&gt;&gt; p = Point(1, y=2)
 Point(x=1, y=2)
@@ -347,8 +344,8 @@ Point(x=1, y=2)
 &gt;&gt;&gt; p.y
 2
 </code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="List" id="h3-list"><a href="#h3-list" name="h3-list">#</a>List</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#lists" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable <a href="#h3-sequence">sequence</a>.</p><dl><div class="ditem"><dt>s = [1, 'a', 3.0]
-s = list(range(3))</dt><dd>Create list</dd></div><div class="ditem"><dt>s[i] = x</dt><dd>Replace item index i with x</dd></div><div class="ditem"><dt>s[&lt;slice&gt;] = it</dt><dd>Replace slice with iterable</dd></div><div class="ditem"><dt>del s[&lt;slice&gt;]
-s[&lt;slice&gt;] = []</dt><dd>Delete slice</dd></div><div class="ditem"><dt>s.append(x)
+s = list(range(3))</dt><dd>Create list</dd></div><div class="ditem"><dt>s[i] = x</dt><dd>Replace item index i with x</dd></div><div class="ditem"><dt>s[&lt;slice&gt;] = it</dt><dd>Replace <a href="#h4-indexing">slice</a> with iterable</dd></div><div class="ditem"><dt>del s[&lt;slice&gt;]
+s[&lt;slice&gt;] = []</dt><dd>Delete <a href="#h4-indexing">slice</a></dd></div><div class="ditem"><dt>s.append(x)
 s += x
 s[len(s):len(s)] = [x]</dt><dd>Add element to end</dd></div><div class="ditem"><dt>s.extend(it)
 s[len(s):len(s)] = it</dt><dd>Add elements from iterable to end</dd></div><div class="ditem"><dt>s.insert(i, x)
@@ -389,12 +386,12 @@ s1 ^ s2</dt><dd>New set of unshared elements</dd></div><div class="ditem"><dt>s1
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Bytes" id="h3-bytes"><a href="#h3-bytes" name="h3-bytes">#</a>Bytes</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable <a href="#h3-sequence">sequence</a> of bytes. Mutable version is <a href="https://docs.python.org/3/library/stdtypes.html#bytearray-objects" rel="noopener noreferrer" target="_blank" class="external"><i>bytearray</i></a>.</p><dl><div class="ditem"><dt>b'&lt;str&gt;'</dt><dd>Create from ASCII characters and \x00-\xff</dd></div><div class="ditem"><dt>bytes(&lt;ints&gt;)</dt><dd>Create from int sequence</dd></div><div class="ditem"><dt>bytes(&lt;str&gt;, 'utf-8')
 &lt;str&gt;.encode('utf-8')</dt><dd>Create from string</dd></div><div class="ditem"><dt>&lt;int&gt;.to_bytes(length, order, signed=False)</dt><dd>Create from int (order='big'|'little')</dd></div><div class="ditem"><dt>bytes.fromhex('&lt;hex&gt;')</dt><dd>Create from hex pairs (can be separated by whitespace)</dd></div><div class="ditem"><dt>&lt;int&gt; = &lt;bytes&gt;[&lt;index&gt;]</dt><dd>Return int in range 0 to 255</dd></div><div class="ditem"><dt>&lt;bytes&gt; = &lt;bytes&gt;[&lt;slice&gt;]</dt><dd>Return <i>bytes</i> even if only one element</dd></div><div class="ditem"><dt>list(&lt;bytes&gt;)</dt><dd>Return ints in range 0 to 255</dd></div><div class="ditem"><dt>&lt;bytes_sep&gt;.join(&lt;byte_objs&gt;)</dt><dd>Join <i>byte_objs</i> sequence with <i>bytes_sep</i> separator</dd></div><div class="ditem"><dt>str(&lt;bytes&gt;, 'utf-8')
 &lt;bytes&gt;.decode('utf-8')</dt><dd>Convert bytes to string</dd></div><div class="ditem"><dt>int.from_bytes(bytes, order, signed=False)</dt><dd>Return int from bytes (order='big'|'little')</dd></div><div class="ditem"><dt>&lt;bytes&gt;.hex(sep='', bytes_per_sep=2)</dt><dd>Return hex pairs</dd></div></dl><pre class="code"><code class="py">def read_bytes(filename):
-    with open(filename, 'rb') as file:
-        return file.read()
+    with open(filename, 'rb') as f:
+        return f.read()
 
 def write_bytes(filename, bytes_obj):
-    with open(filename, 'wb') as file:
-        file.write(bytes_obj)
+    with open(filename, 'wb') as f:
+        f.write(bytes_obj)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Function" id="h3-function"><a href="#h3-function" name="h3-function">#</a>Function</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="section-links h4"><h4 id="h4-function-definition"><a href="#h4-function-definition" name="h4-function-definition">#</a>Function definition</h4><p>Also: </p><a href="https://docs.python.org/3/glossary.html#term-parameter" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">def f(*args): …            # f(1, 2, 3)
 def f(x, *args): …         # f(1, 2, 3)
 def f(*args, z): …         # f(1, 2, z=3)
@@ -413,23 +410,26 @@ kwds = {'x': 3, 'y': 4}    # ** expands dictionary to keyword arguments
 func(*args, **kwds)        # is the same as:
 func(1, 2, x=3, y=4)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Class" id="h3-class"><a href="#h3-class" name="h3-class">#</a>Class</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/classes.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="https://docs.python.org/3/reference/datamodel.html#metaclasses" rel="noopener noreferrer" target="_blank" class="external">metaclass</a><div>, </div><a href="https://docs.python.org/3/library/dataclasses.html" rel="noopener noreferrer" target="_blank" class="external">dataclass</a></div><div class="section-links h4"><h4 id="h4-instantiation"><a href="#h4-instantiation" name="h4-instantiation">#</a>Instantiation</h4></div><pre class="code"><code class="py">class C:
+    """Class docstring."""
     def __init__(self, a):
+        """Method docstring."""
         self.a = a
     def __repr__(self):
         """Used for repr(c), also for str(c) if __str__ not defined."""
         return f'{self.__class__.__name__}({self.a!r})'
     def __str__(self):
+        """Used by str(c), e.g. print(c)"""
         return str(self.a)
-
     @classmethod
     def get_class_name(cls): # passed class rather than instance
         return cls.__name__
-
     @staticmethod
     def static(): # passed nothing
         return 1
 
-# class instantiation does this
+&gt;&gt;&gt; c = C(2) # instantiate
+
+# under the covers, class instantiation does this:
 obj = cls.__new__(cls, *args, **kwds)
 if isinstance(obj, cls):
     obj.__init__(*args, **kwds)
@@ -608,7 +608,7 @@ __getattr__(self, name) [if AttributeError]
 __exit__(self, exc_type, exc_value, traceback)
 </td></tr><tr><td>await self
 </td><td>__await__(self)
-</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Decorator" id="h3-decorator"><a href="#h3-decorator" name="h3-decorator">#</a>Decorator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A decorator is a callable that manipulates and returns a function.</p><pre class="code"><code class="py"># wraps decorator copies metadata of decorated function (func) to wrapped function (out)
+</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Decorator" id="h3-decorator"><a href="#h3-decorator" name="h3-decorator">#</a>Decorator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A decorator is a callable that manipulates and returns a function. </p><pre class="code"><code class="py"># wraps decorator copies metadata of decorated function (func) to wrapped function (out)
 from functools import wraps
 
 def show_call(func):
@@ -656,71 +656,131 @@ next(g)              # next item
 for i in g: …        # iterator over items
 list(g)              # list all items
 yield from g         # delegate yield to another generator
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="String" id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable <a href="#h3-sequence">sequence</a> of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with prefix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with suffix, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join sequence of <i>strings</i> with <i>separator</i> string</dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !#$%…]</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for separator from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for separator from end and split</dd></div><div class="ditem"><dt>s.removeprefix(&lt;prefix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove prefix if present</dd></div><div class="ditem"><dt>s.removesuffix(&lt;suffix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove suffix if present</dd></div></dl><div class="section-links h4"><h4 id="h4-string-formatting"><a href="#h4-string-formatting" name="h4-string-formatting">#</a>String formatting</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>f-string
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="String" id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable <a href="#h3-sequence">sequence</a> of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with <i>prefix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with <i>suffix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join sequence of <i>strings</i> with <i>separator</i> string</dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !#$%…]</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from end and split</dd></div><div class="ditem"><dt>s.removeprefix(&lt;prefix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>prefix</i> if present</dd></div><div class="ditem"><dt>s.removesuffix(&lt;suffix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>suffix</i> if present</dd></div></dl><div class="section-links h4"><h4 id="h4-string-escapes"><a href="#h4-string-escapes" name="h4-string-escapes">#</a>String escapes</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>Sequence
+</th><th>Escape
+</th></tr></thead><tbody><tr><td>Literal backslash
+</td><td>\\
+</td></tr><tr><td>Single quote
+</td><td>\'
+</td></tr><tr><td>Double quote
+</td><td>\"
+</td></tr><tr><td>Backspace
+</td><td>\b
+</td></tr><tr><td>Carriage return
+</td><td>\r
+</td></tr></tbody></table></div></div><div><div class="table"><table><thead><tr><th>Sequence
+</th><th>Escape
+</th></tr></thead><tbody><tr><td>Newline
+</td><td>\n
+</td></tr><tr><td>Tab
+</td><td>\t
+</td></tr><tr><td>Vertical tab
+</td><td>\v
+</td></tr><tr><td>Null
+</td><td>\0
+</td></tr><tr><td>Hex value
+</td><td>\xff
+</td></tr></tbody></table></div></div><div><div class="table"><table><thead><tr><th>Sequence
+</th><th>Escape
+</th></tr></thead><tbody><tr><td>Octal value
+</td><td>\o77
+</td></tr><tr><td>Unicode 16 bit
+</td><td>\uxxxx
+</td></tr><tr><td>Unicode 32 bit
+</td><td>\Uxxxxxxxx
+</td></tr><tr><td>Unicode name
+</td><td>\N{name}
+</td></tr></tbody></table></div></div></div><div class="section-links h4"><h4 id="h4-string-formatting"><a href="#h4-string-formatting" name="h4-string-formatting">#</a>String formatting</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>Format
+</th><th>f-string
 </th><th>Output
-</th></tr></thead><tbody><tr><td>f"{6/3}, {'a'+'b'}"
+</th></tr></thead><tbody><tr><td>Expression
+</td><td>f"{6/3}, {'a'+'b'}"
 '{}, {}'.format(6/3, 'a'+'b')
 </td><td>'2, ab'
-</td></tr><tr><td>f'{1:&lt;5}'
+</td></tr><tr><td>Justify left
+</td><td>f'{1:&lt;5}'
 </td><td>'1    '
-</td></tr><tr><td>f'{1:^5}'
-</td><td>'	1  '
-</td></tr><tr><td>f'{1:&gt;5}'
-</td><td>'	  1'
-</td></tr><tr><td>f'{1:.&lt;5}'
+</td></tr><tr><td>Justify center
+</td><td>f'{1:^5}'
+</td><td>'  1  '
+</td></tr><tr><td>Justify right
+</td><td>f'{1:&gt;5}'
+</td><td>'    1'
+</td></tr><tr><td>Justify left with char
+</td><td>f'{1:.&lt;5}'
 </td><td>'1....'
-</td></tr><tr><td>f'{1:.&gt;5}'
+</td></tr><tr><td>Justify right with char
+</td><td>f'{1:.&gt;5}'
 </td><td>'....1'
-</td></tr><tr><td>f'{1:0}'
-</td><td>'1'
-</td></tr><tr><td>f'{1+1=}'
-</td><td>'1+1=2' (= prepends)
-</td></tr><tr><td>f'{v!r}'
-</td><td>repr(v)
-</td></tr></tbody></table></div></div><div><div class="table"><table><thead><tr><th>f-string
-</th><th>Output
-</th></tr></thead><tbody><tr><td>f'{today:%d %b %Y}'
-</td><td>'21 Jan 1984'
-</td></tr><tr><td>f'{1.729:.2f}'
-</td><td>'1.73'
-</td></tr><tr><td>f'{1.7:04}'
-</td><td>'01.7'
-</td></tr><tr><td>f'{1.7:4}'
-</td><td>' 1.7'
-</td></tr><tr><td>f"{'abc':.2}"
+</td></tr><tr><td>Trim
+</td><td>f"{'abc':.2}"
 </td><td>'ab'
-</td></tr><tr><td>f"{'abc':6.2}"
-</td><td>'ab	'
-</td></tr><tr><td>f"{'abc'!r:6}"
+</td></tr><tr><td>Trim justify left
+</td><td>f"{'abc':6.2}"
+</td><td>'ab    '
+</td></tr><tr><td>ascii()
+</td><td>f'{v!a}'
+</td><td>ascii(v)
+</td></tr><tr><td>repr()
+</td><td>f'{v!r}'
+</td><td>repr(v)
+</td></tr><tr><td>str()
+</td><td>f'{v!s}'
+</td><td>str(v)
+</td></tr><tr><td>Justify left repr()
+</td><td>f"{'abc'!r:6}"
 </td><td>"'abc' "
-</td></tr><tr><td>f'{123456:,}'
-</td><td>'123,456'
-</td></tr><tr><td>f'{123456:_}'
-</td><td>'123_456'
-</td></tr><tr><td>f'{123456:+6}'
-</td><td>'	+123'
-</td></tr></tbody></table></div></div><div><div class="table"><table><thead><tr><th>f-string
+</td></tr><tr><td>Date format
+</td><td>f'{today:%d %b %Y}'
+</td><td>'21 Jan 1984'
+</td></tr><tr><td>f'{1+1=}'
+</td><td>f'{1+1=}'
+</td><td>'1+1=2' (= prepends)
+</td></tr></tbody></table></div></div><div><div class="table"><table><thead><tr><th>Format
+</th><th>f-string
 </th><th>Output
-</th></tr></thead><tbody><tr><td>f'{123456:=+6}'
-</td><td>'+  123'
-</td></tr><tr><td>f'{1.234:.2}'
+</th></tr></thead><tbody><tr><td>Significant figures
+</td><td>f'{1.234:.2}'
 </td><td>'1.2'
-</td></tr><tr><td>f'{1.234:.2f}'
+</td></tr><tr><td>Fixed-point notation
+</td><td>f'{1.234:.2f}'
 </td><td>'1.23'
-</td></tr><tr><td>f'{1.234:.2e}'
+</td></tr><tr><td>Scientific notation
+</td><td>f'{1.234:.2e}'
 </td><td>'1.230e+00'
-</td></tr><tr><td>f'{1.234:.2%}'
+</td></tr><tr><td>Percentage
+</td><td>f'{1.234:.2%}'
 </td><td>'123.40%'
-</td></tr><tr><td>f'{164:b}'
+</td></tr><tr><td>Pad with zeros
+</td><td>f'{1.7:04}'
+</td><td>'01.7'
+</td></tr><tr><td>Pad with spaces
+</td><td>f'{1.7:4}'
+</td><td>' 1.7'
+</td></tr><tr><td>Pad before sign
+</td><td>f'{123456:+6}'
+</td><td>'  +123'
+</td></tr><tr><td>Pad after sign
+</td><td>f'{123456:=+6}'
+</td><td>'+  123'
+</td></tr><tr><td>Separate with commas
+</td><td>f'{123456:,}'
+</td><td>'123,456'
+</td></tr><tr><td>Separate with underscores
+</td><td>f'{123456:_}'
+</td><td>'123_456'
+</td></tr><tr><td>Binary
+</td><td>f'{164:b}'
 </td><td>'10100100'
-</td></tr><tr><td>f'{164:o}'
+</td></tr><tr><td>Octal
+</td><td>f'{164:o}'
 </td><td>'244'
-</td></tr><tr><td>f'{164:X}'
+</td></tr><tr><td>Hex
+</td><td>f'{164:X}'
 </td><td>'A4'
-</td></tr><tr><td>f'{164:c}'
+</td></tr><tr><td>chr()
+</td><td>f'{164:c}'
 </td><td>'ÿ'
-</td></tr><tr><td>f'{1 #comment}'
-</td><td>'1' (v3.12)
 </td></tr></tbody></table></div></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Regex" id="h3-regex"><a href="#h3-regex" name="h3-regex">#</a>Regex</h3><p>Also: </p><a href="https://docs.python.org/3/library/re.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Standard library <i>re</i> module provides Python regular expressions.</p><pre class="code"><code class="py">&gt;&gt;&gt; import re
 &gt;&gt;&gt; my_re = re.compile(r'name is (?P&lt;name&gt;[A-Za-z]+)')
 &gt;&gt;&gt; match = my_re.search('My name is Douglas.')
@@ -730,8 +790,8 @@ yield from g         # delegate yield to another generator
 'Douglas'
 &gt;&gt;&gt; match.groupdict()['name']
 'Douglas'
-</code></pre><div class="section-links h4"><h4 id="h4-regex-syntax"><a href="#h4-regex-syntax" name="h4-regex-syntax">#</a>Regex syntax</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-syntax" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l25"><div class="ditem"><dt>.</dt><dd>Any character (newline if DOTALL)</dd></div><div class="ditem"><dt>^</dt><dd>Start of string (every line if MULTILINE)</dd></div><div class="ditem"><dt>$</dt><dd>End of string (every line if MULTILINE)</dd></div><div class="ditem"><dt>*</dt><dd>0 or more of preceding</dd></div><div class="ditem"><dt>+</dt><dd>1 or more of preceding</dd></div><div class="ditem"><dt>?</dt><dd>0 or 1 of preceding</dd></div><div class="ditem"><dt>*?, +?, ??</dt><dd>Same as *, + and ?, as few as possible</dd></div><div class="ditem"><dt>{m,n}</dt><dd>m to n repetitions</dd></div><div class="ditem"><dt>{m,n}?</dt><dd>m to n repetitions, as few as possible</dd></div><div class="ditem"><dt>[…]</dt><dd>Character set: e.g. '[a-zA-Z]'</dd></div><div class="ditem"><dt>[^…]</dt><dd>NOT character set</dd></div><div class="ditem"><dt>\</dt><dd>Escape chars '*?+&amp;$|()', introduce special sequences</dd></div><div class="ditem"><dt>\\</dt><dd>Literal '\'</dd></div><div class="ditem"><dt>|</dt><dd>Or</dd></div><div class="ditem"><dt>(…)</dt><dd>Group</dd></div><div class="ditem"><dt>(?:…)</dt><dd>Non-capturing group</dd></div><div class="ditem"><dt>(?P&lt;name&gt;…)</dt><dd>Named group</dd></div><div class="ditem"><dt>(?P=name)</dt><dd>Match text matched by earlier group</dd></div><div class="ditem"><dt>(?=…)</dt><dd>Match next, non-consumptive</dd></div><div class="ditem"><dt>(?!…)</dt><dd>Non-match next, non-consumptive</dd></div><div class="ditem"><dt>(?&lt;=…)</dt><dd>Match preceding, positive lookbehind assertion</dd></div><div class="ditem"><dt>(?&lt;!…)</dt><dd>Non-match preceding, negative lookbehind assertion</dd></div><div class="ditem"><dt>(?(group)A|B)</dt><dd>Conditional match - A if group previously matched else B</dd></div><div class="ditem"><dt>(?letters)</dt><dd>Set flags for RE ('i','L', 'm', 's', 'u', 'x')</dd></div><div class="ditem"><dt>(?#…)</dt><dd>Comment (ignored)</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-special-sequences"><a href="#h4-regex-special-sequences" name="h4-regex-special-sequences">#</a>Regex special sequences</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-syntax" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l25"><div class="ditem"><dt>\&lt;n&gt;</dt><dd>Match by integer group reference starting from 1</dd></div><div class="ditem"><dt>\A</dt><dd>Start of string</dd></div><div class="ditem"><dt>\b</dt><dd>Word boundary (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\B</dt><dd>Not word boundary (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\d</dt><dd>Decimal digit (see flag: ASCII)</dd></div><div class="ditem"><dt>\D</dt><dd>Non-decimal digit (see flag: ASCII)</dd></div><div class="ditem"><dt>\s</dt><dd>Whitespace [ \t\n\r\f\v] (see flag: ASCII)</dd></div><div class="ditem"><dt>\S</dt><dd>Non-whitespace (see flag: ASCII)</dd></div><div class="ditem"><dt>\w</dt><dd>Alphanumeric (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\W</dt><dd>Non-alphanumeric (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\Z</dt><dd>End of string</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-flags"><a href="#h4-regex-flags" name="h4-regex-flags">#</a>Regex flags</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#flags" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Flags modify regex behaviour. Pass to regex functions <i>re.A | re.ASCII</i> or
-embed in regular expression <i>(?a)</i>.</p><dl class="l50"><div class="ditem"><dt>(?a) | A | ASCII</dt><dd>ASCII-only match for \w, \W, \b, \B, \d, \D, \s, \S (default is Unicode)</dd></div><div class="ditem"><dt>(?i) | I | IGNORECASE</dt><dd>Case insensitive matching</dd></div><div class="ditem"><dt>(?L) | L | LOCALE</dt><dd>Apply current locale for \w, \W, \b, \B (discouraged)</dd></div><div class="ditem"><dt>(?m) | M | MULTILINE</dt><dd>Match every new line, not only start/end of string</dd></div><div class="ditem"><dt>(?s) | S | DOTALL</dt><dd>'.' matches ALL chars, including newline</dd></div><div class="ditem"><dt>(?x) | X | VERBOSE</dt><dd>Ignores whitespace outside character sets</dd></div><div class="ditem"><dt>DEBUG</dt><dd>Display expression debug info</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-functions"><a href="#h4-regex-functions" name="h4-regex-functions">#</a>Regex functions</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#functions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>compile(pattern[, flags=0])</dt><dd>Compiles <a href="#h4-regex-object">Regular Expression Object</a></dd></div><div class="ditem"><dt>escape(string)</dt><dd>Escape non-alphanumerics</dd></div><div class="ditem"><dt>match(pattern, string[, flags])</dt><dd>Match from start</dd></div><div class="ditem"><dt>search(pattern, string[, flags])</dt><dd>Match anywhere</dd></div><div class="ditem"><dt>split(pattern, string[, maxsplit=0])</dt><dd>Splits by pattern, keeping splitter if grouped</dd></div><div class="ditem"><dt>findall(pattern, string)</dt><dd>Non-overlapping matches as list of groups or tuples (&gt;1)</dd></div><div class="ditem"><dt>finditer(pattern, string[, flags])</dt><dd>Iterator over non-overlapping matches</dd></div><div class="ditem"><dt>sub(pattern, repl, string[, count=0])</dt><dd>Replace count first leftmost non-overlapping; If repl is function, called with a MatchObj</dd></div><div class="ditem"><dt>subn(pattern, repl, string[, count=0])</dt><dd>Like sub(), but returns (newString, numberOfSubsMade)</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-object"><a href="#h4-regex-object" name="h4-regex-object">#</a>Regex object</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-objects" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>flags</dt><dd><a href="#h4-regex-flags">Flags</a></dd></div><div class="ditem"><dt>groupindex</dt><dd>{group name: group number}</dd></div><div class="ditem"><dt>pattern</dt><dd>Pattern</dd></div><div class="ditem"><dt>match(string[, pos][, endpos])</dt><dd>Match from start of target[pos:endpos]</dd></div><div class="ditem"><dt>search(string[, pos][, endpos])</dt><dd>Match anywhere in target[pos:endpos]</dd></div><div class="ditem"><dt>split(string[, maxsplit=0])</dt><dd>See split() function</dd></div><div class="ditem"><dt>findall(string[, pos[, endpos]])</dt><dd>See findall() function</dd></div><div class="ditem"><dt>finditer(string[, pos[, endpos]])</dt><dd>See finditer() function</dd></div><div class="ditem"><dt>sub(repl, string[, count=0])</dt><dd>See sub() function</dd></div><div class="ditem"><dt>subn(repl, string[, count=0])</dt><dd>See subn() function</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-match-object"><a href="#h4-regex-match-object" name="h4-regex-match-object">#</a>Regex match object</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#match-objects" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l30"><div class="ditem"><dt>pos</dt><dd>pos passed to search or match</dd></div><div class="ditem"><dt>endpos</dt><dd>endpos passed to search or match</dd></div><div class="ditem"><dt>re</dt><dd>RE object</dd></div><div class="ditem"><dt>group([g1, g2, ...])</dt><dd>One or more groups of match
+</code></pre><div class="section-links h4"><h4 id="h4-regex-syntax"><a href="#h4-regex-syntax" name="h4-regex-syntax">#</a>Regex syntax</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-syntax" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l25"><div class="ditem"><dt>.</dt><dd>Any character (newline if DOTALL)</dd></div><div class="ditem"><dt>^</dt><dd>Start of string (every line if MULTILINE)</dd></div><div class="ditem"><dt>$</dt><dd>End of string (every line if MULTILINE)</dd></div><div class="ditem"><dt>*</dt><dd>0 or more of preceding</dd></div><div class="ditem"><dt>+</dt><dd>1 or more of preceding</dd></div><div class="ditem"><dt>?</dt><dd>0 or 1 of preceding</dd></div><div class="ditem"><dt>*?, +?, ??</dt><dd>Same as *, + and ?, as few as possible</dd></div><div class="ditem"><dt>{m,n}</dt><dd>m to n repetitions</dd></div><div class="ditem"><dt>{m,n}?</dt><dd>m to n repetitions, as few as possible</dd></div><div class="ditem"><dt>[…]</dt><dd>Character set: e.g. '[a-zA-Z]'</dd></div><div class="ditem"><dt>[^…]</dt><dd>NOT character set</dd></div><div class="ditem"><dt>\</dt><dd>Escape chars '*?+&amp;$|()', introduce special sequences</dd></div><div class="ditem"><dt>\\</dt><dd>Literal '\'</dd></div><div class="ditem"><dt>|</dt><dd>Or</dd></div><div class="ditem"><dt>(…)</dt><dd>Group</dd></div><div class="ditem"><dt>(?:…)</dt><dd>Non-capturing group</dd></div><div class="ditem"><dt>(?P&lt;name&gt;…)</dt><dd>Named group</dd></div><div class="ditem"><dt>(?P=name)</dt><dd>Match text matched by earlier group</dd></div><div class="ditem"><dt>(?=…)</dt><dd>Match next, non-consumptive</dd></div><div class="ditem"><dt>(?!…)</dt><dd>Non-match next, non-consumptive</dd></div><div class="ditem"><dt>(?&lt;=…)</dt><dd>Match preceding, positive lookbehind assertion</dd></div><div class="ditem"><dt>(?&lt;!…)</dt><dd>Non-match preceding, negative lookbehind assertion</dd></div><div class="ditem"><dt>(?(group)A|B)</dt><dd>Conditional match - A if group previously matched else B</dd></div><div class="ditem"><dt>(?letters)</dt><dd>Set flags for RE ('i','L', 'm', 's', 'u', 'x')</dd></div><div class="ditem"><dt>(?#…)</dt><dd>Comment (ignored)</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-special-sequences"><a href="#h4-regex-special-sequences" name="h4-regex-special-sequences">#</a>Regex special sequences</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-syntax" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l25"><div class="ditem"><dt>\&lt;n&gt;</dt><dd>Match by integer group reference starting from 1</dd></div><div class="ditem"><dt>\A</dt><dd>Start of string</dd></div><div class="ditem"><dt>\b</dt><dd>Word boundary (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\B</dt><dd>Not word boundary (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\d</dt><dd>Decimal digit (see flag: ASCII)</dd></div><div class="ditem"><dt>\D</dt><dd>Non-decimal digit (see flag: ASCII)</dd></div><div class="ditem"><dt>\s</dt><dd>Whitespace [ \t\n\r\f\v] (see flag: ASCII)</dd></div><div class="ditem"><dt>\S</dt><dd>Non-whitespace (see flag: ASCII)</dd></div><div class="ditem"><dt>\w</dt><dd>Alphanumeric (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\W</dt><dd>Non-alphanumeric (see flag: ASCII|LOCALE)</dd></div><div class="ditem"><dt>\Z</dt><dd>End of string</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-flags"><a href="#h4-regex-flags" name="h4-regex-flags">#</a>Regex flags</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#flags" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Flags modify regex behaviour. Pass to regex functions (e.g. <i>re.A | re.ASCII</i>) or
+embed in regular expression (e.g. <i>(?a)</i>).</p><dl class="l50"><div class="ditem"><dt>(?a) | A | ASCII</dt><dd>ASCII-only match for \w, \W, \b, \B, \d, \D, \s, \S (default is Unicode)</dd></div><div class="ditem"><dt>(?i) | I | IGNORECASE</dt><dd>Case insensitive matching</dd></div><div class="ditem"><dt>(?L) | L | LOCALE</dt><dd>Apply current locale for \w, \W, \b, \B (discouraged)</dd></div><div class="ditem"><dt>(?m) | M | MULTILINE</dt><dd>Match every new line, not only start/end of string</dd></div><div class="ditem"><dt>(?s) | S | DOTALL</dt><dd>'.' matches ALL chars, including newline</dd></div><div class="ditem"><dt>(?x) | X | VERBOSE</dt><dd>Ignores whitespace outside character sets</dd></div><div class="ditem"><dt>DEBUG</dt><dd>Display expression debug info</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-functions"><a href="#h4-regex-functions" name="h4-regex-functions">#</a>Regex functions</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#functions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>compile(pattern[, flags=0])</dt><dd>Compiles <a href="#h4-regex-object">Regular Expression Object</a></dd></div><div class="ditem"><dt>escape(string)</dt><dd>Escape non-alphanumerics</dd></div><div class="ditem"><dt>match(pattern, string[, flags])</dt><dd>Match from start</dd></div><div class="ditem"><dt>search(pattern, string[, flags])</dt><dd>Match anywhere</dd></div><div class="ditem"><dt>split(pattern, string[, maxsplit=0])</dt><dd>Splits by pattern, keeping splitter if grouped</dd></div><div class="ditem"><dt>findall(pattern, string)</dt><dd>Non-overlapping matches as list of groups or tuples (&gt;1)</dd></div><div class="ditem"><dt>finditer(pattern, string[, flags])</dt><dd>Iterator over non-overlapping matches</dd></div><div class="ditem"><dt>sub(pattern, repl, string[, count=0])</dt><dd>Replace count first leftmost non-overlapping; If repl is function, called with a MatchObj</dd></div><div class="ditem"><dt>subn(pattern, repl, string[, count=0])</dt><dd>Like sub(), but returns (newString, numberOfSubsMade)</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-object"><a href="#h4-regex-object" name="h4-regex-object">#</a>Regex object</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#regular-expression-objects" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>flags</dt><dd><a href="#h4-regex-flags">Flags</a></dd></div><div class="ditem"><dt>groupindex</dt><dd>{group name: group number}</dd></div><div class="ditem"><dt>pattern</dt><dd>Pattern</dd></div><div class="ditem"><dt>match(string[, pos][, endpos])</dt><dd>Match from start of target[pos:endpos]</dd></div><div class="ditem"><dt>search(string[, pos][, endpos])</dt><dd>Match anywhere in target[pos:endpos]</dd></div><div class="ditem"><dt>split(string[, maxsplit=0])</dt><dd>See split() function</dd></div><div class="ditem"><dt>findall(string[, pos[, endpos]])</dt><dd>See findall() function</dd></div><div class="ditem"><dt>finditer(string[, pos[, endpos]])</dt><dd>See finditer() function</dd></div><div class="ditem"><dt>sub(repl, string[, count=0])</dt><dd>See sub() function</dd></div><div class="ditem"><dt>subn(repl, string[, count=0])</dt><dd>See subn() function</dd></div></dl><div class="section-links h4"><h4 id="h4-regex-match-object"><a href="#h4-regex-match-object" name="h4-regex-match-object">#</a>Regex match object</h4><p>Also: </p><a href="https://docs.python.org/3/library/re.html#match-objects" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l30"><div class="ditem"><dt>pos</dt><dd>pos passed to search or match</dd></div><div class="ditem"><dt>endpos</dt><dd>endpos passed to search or match</dd></div><div class="ditem"><dt>re</dt><dd>RE object</dd></div><div class="ditem"><dt>group([g1, g2, ...])</dt><dd>One or more groups of match
 One arg, result is a string
 Multiple args, result is tuple
 If gi is 0, returns the entire matching string
@@ -899,7 +959,7 @@ except ZeroDivisionError:
 	  ├─ SyntaxWarning			   <i>Warning about dubious syntax</i>
 	  ├─ UnicodeWarning			   <i>Warnings related to Unicode</i>
 	  └─ UserWarning			   <i>Warnings generated by user code</i>
-</pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Execution " id="h3-execution"><a href="#h3-execution" name="h3-execution">#</a>Execution </h3><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="sh">$ python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | - ] [args]
+</pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Execution" id="h3-execution"><a href="#h3-execution" name="h3-execution">#</a>Execution</h3><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="sh">$ python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | - ] [args]
 $ python --version
 Python 3.10.12
 $ python --help[-all] # help-all [3.11+]
@@ -921,7 +981,7 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 </code></pre><pre class="code"><code class="py">if __name__ == '__main__': # run main() if file executed as script
     main()
-</code></pre><div class="section-links h4"><h4 id="h4-environment-variables"><a href="#h4-environment-variables" name="h4-environment-variables">#</a>Environment variables </h4><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs full list</a></div><dl><div class="ditem"><dt>PYTHONHOME</dt><dd>Change location of standard Python libraries</dd></div><div class="ditem"><dt>PYTHONPATH</dt><dd>Augment default search path for module files</dd></div><div class="ditem"><dt>PYTHONSTARTUP</dt><dd>Module to execute before entering interactive prompt</dd></div><div class="ditem"><dt>PYTHONOPTIMIZE</dt><dd>Optimise execution (-O)</dd></div><div class="ditem"><dt>PYTHONWARNINGS</dt><dd>Set warning level [default/error/always/module/once/ignore] (-W)</dd></div><div class="ditem"><dt>PYTHONPROFILEIMPORTTIME</dt><dd>Show module import times (-X)</dd></div></dl><div class="section-links h4"><h4 id="h4-sitecustomizepy-usercustomizepy"><a href="#h4-sitecustomizepy-usercustomizepy" name="h4-sitecustomizepy-usercustomizepy">#</a>sitecustomize.py / usercustomize.py</h4><p>Also: </p><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Before <i>__main__</i> module is executed Python automatically imports:</p><ul><li>sitecustomize.py in the system site-packages directory
+</code></pre><div class="section-links h4"><h4 id="h4-environment-variables"><a href="#h4-environment-variables" name="h4-environment-variables">#</a>Environment variables</h4><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs full list</a></div><dl><div class="ditem"><dt>PYTHONHOME</dt><dd>Change location of standard Python libraries</dd></div><div class="ditem"><dt>PYTHONPATH</dt><dd>Augment default search path for module files</dd></div><div class="ditem"><dt>PYTHONSTARTUP</dt><dd>Module to execute before entering interactive prompt</dd></div><div class="ditem"><dt>PYTHONOPTIMIZE</dt><dd>Optimise execution (-O)</dd></div><div class="ditem"><dt>PYTHONWARNINGS</dt><dd>Set warning level [default/error/always/module/once/ignore] (-W)</dd></div><div class="ditem"><dt>PYTHONPROFILEIMPORTTIME</dt><dd>Show module import times (-X)</dd></div></dl><div class="section-links h4"><h4 id="h4-sitecustomizepy-usercustomizepy"><a href="#h4-sitecustomizepy-usercustomizepy" name="h4-sitecustomizepy-usercustomizepy">#</a>sitecustomize.py / usercustomize.py</h4><p>Also: </p><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Before <i>__main__</i> module is executed Python automatically imports:</p><ul><li>sitecustomize.py in the system site-packages directory
 </li><li>usercustomize.py in the user site-packages directory
 </li></ul><pre class="code"><code class="sh"># Get user site packages directory
 $ python -m site --user-site
@@ -936,7 +996,7 @@ party type checkers.</p><ul class="col3 links"><li><a href="https://mypy.readthe
 </li></ul></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Debug" id="h3-debug"><a href="#h3-debug" name="h3-debug">#</a>Debug</h3><p>Also: </p><a href="#h3-exceptions">Exceptions</a></div><ul class="col3 links"><li><a href="https://gto76.github.io/python-cheatsheet/#logging" rel="noopener noreferrer" target="_blank" class="external">Logging</a>
 </li><li><a href="https://www.pythoncheatsheet.org/cheatsheet/debugging" rel="noopener noreferrer" target="_blank" class="external">Assertions</a>
 </li><li><a href="https://gto76.github.io/python-cheatsheet/#introspection" rel="noopener noreferrer" target="_blank" class="external">Introspection</a>
-</li></ul><div class="section-links h4"></div></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Library" id="h3-library"><a href="#h3-library" name="h3-library">#</a>Library</h3></div><div class="section-links h4"><h4 id="h4-standard-library"><a href="#h4-standard-library" name="h4-standard-library">#</a>Standard library</h4><p>Also: </p><a href="https://docs.python.org/3/library/index.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt><a href="https://docs.python.org/3/library/argparse.html" rel="noopener noreferrer" target="_blank" class="external">argparse</a></dt><dd>Command line parser</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/asyncio.html" rel="noopener noreferrer" target="_blank" class="external">asyncio</a></dt><dd>Asychronous I/O</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/collections.html" rel="noopener noreferrer" target="_blank" class="external">collections</a></dt><dd>Container datatypes</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/howto/enum.html#enum-howto" rel="noopener noreferrer" target="_blank" class="external">enum</a></dt><dd>Symbolic names</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/io.html" rel="noopener noreferrer" target="_blank" class="external">io</a></dt><dd>Streams</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/multiprocessing.html" rel="noopener noreferrer" target="_blank" class="external">multiprocessing</a></dt><dd>Process-based parallelism</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/os.html" rel="noopener noreferrer" target="_blank" class="external">os</a></dt><dd>Operating system</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/pathlib.html" rel="noopener noreferrer" target="_blank" class="external">pathlib</a></dt><dd>Filesystem paths</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/pickle.html" rel="noopener noreferrer" target="_blank" class="external">pickle</a></dt><dd>Object serialisation</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">sys</a></dt><dd>Python interpreter</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/threading.html" rel="noopener noreferrer" target="_blank" class="external">threading</a></dt><dd>Thread-based parallelism</dd></div></dl><div class="section-links h4"><h4 id="h4-third-party-library"><a href="#h4-third-party-library" name="h4-third-party-library">#</a>Third-party library</h4></div><ul><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Third-party library list - awesome-python</a>
+</li></ul><div class="section-links h4"></div></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Library" id="h3-library"><a href="#h3-library" name="h3-library">#</a>Library</h3></div><div class="section-links h4"><h4 id="h4-standard-library"><a href="#h4-standard-library" name="h4-standard-library">#</a>Standard library</h4><p>Also: </p><a href="https://docs.python.org/3/library/index.html" rel="noopener noreferrer" target="_blank" class="external">pydocs full list</a></div><dl class="l50"><div class="ditem"><dt><a href="https://docs.python.org/3/library/argparse.html" rel="noopener noreferrer" target="_blank" class="external">argparse</a></dt><dd>Command line parser</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/asyncio.html" rel="noopener noreferrer" target="_blank" class="external">asyncio</a></dt><dd>Asychronous I/O</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/collections.html" rel="noopener noreferrer" target="_blank" class="external">collections</a></dt><dd>Container datatypes</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/howto/enum.html#enum-howto" rel="noopener noreferrer" target="_blank" class="external">enum</a></dt><dd>Symbolic names</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/io.html" rel="noopener noreferrer" target="_blank" class="external">io</a></dt><dd>Streams</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/multiprocessing.html" rel="noopener noreferrer" target="_blank" class="external">multiprocessing</a></dt><dd>Process-based parallelism</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/os.html" rel="noopener noreferrer" target="_blank" class="external">os</a></dt><dd>Operating system</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/pathlib.html" rel="noopener noreferrer" target="_blank" class="external">pathlib</a></dt><dd>Filesystem paths</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/pickle.html" rel="noopener noreferrer" target="_blank" class="external">pickle</a></dt><dd>Object serialisation</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">sys</a></dt><dd>Python interpreter</dd></div><div class="ditem"><dt><a href="https://docs.python.org/3/library/threading.html" rel="noopener noreferrer" target="_blank" class="external">threading</a></dt><dd>Thread-based parallelism</dd></div></dl><div class="section-links h4"><h4 id="h4-third-party-library"><a href="#h4-third-party-library" name="h4-third-party-library">#</a>Third-party library</h4></div><ul><li><a href="https://github.com/vinta/awesome-python" rel="noopener noreferrer" target="_blank" class="external">Third-party library list - awesome-python</a>
 </li></ul></div><div class="section print-hide"><div class="section-links h3"><h3 data-toc-title="Resource" id="h3-resource"><a href="#h3-resource" name="h3-resource">#</a>Resource</h3></div><ul class="col3 links"><li><a href="https://docs.python.org/3/" rel="noopener noreferrer" target="_blank" class="external">Python documentation</a>
 </li><li><a href="https://docs.python.org/3/reference/index.html" rel="noopener noreferrer" target="_blank" class="external">Python language reference</a>
 </li><li><a href="https://peps.python.org/pep-0000/" rel="noopener noreferrer" target="_blank" class="external">Python enhancment proposals (PEPs)</a>
