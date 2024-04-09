@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="9 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
+<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="9 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, pdf, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
     if (document.readyState !== 'complete') {
         await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve));
     }
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </li><li>with
 </li><li>yield
 </li><li>_<sup>1</sup>
-</li></ul><sup>1</sup><a href="https://docs.python.org/3/reference/lexical_analysis.html#soft-keywords" rel="noopener noreferrer" target="_blank" class="external">Soft keywords</a></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Built-in" id="h3-built-in"><a href="#h3-built-in" name="h3-built-in">#</a>Built-in</h3><p>Also: </p><a href="https://docs.python.org/3/library/functions.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>abs(number)</dt><dd>Absolute value of <a href="#h3-number">number</a></dd></div><div class="ditem"><dt>aiter(async_iterable)</dt><dd>Asynchronous iterator for an asynchronous iterable</dd></div><div class="ditem"><dt>all(iterable)</dt><dd>True if all elements of iterable are true (all([]) == True)</dd></div><div class="ditem"><dt>any(iterable)</dt><dd>True if any element of iterable is true (any([]) == False)</dd></div><div class="ditem"><dt>ascii(object)</dt><dd>A string with a printable representation of an object</dd></div><div class="ditem"><dt>bin(number)</dt><dd>Convert integer number to binary string</dd></div><div class="ditem"><dt>bool(object)</dt><dd>Boolean value</dd></div><div class="ditem"><dt>breakpoint(*args, **kwds)</dt><dd>Drop into debugger via sys.breakpointhook(*args, **kwds)</dd></div><div class="ditem"><dt>bytearray(…)</dt><dd>New array of <a href="#h3-bytes">bytes</a> from byte-integers, string, bytes, object with buffer API</dd></div><div class="ditem"><dt>bytes(…)</dt><dd>New <a href="#h3-bytes">bytes</a> object from byte-integers, string, bytes</dd></div><div class="ditem"><dt>callable(object)</dt><dd>True if object is callable</dd></div><div class="ditem"><dt>chr(i)</dt><dd>One character string for unicode ordinal i (0 &lt;= i &lt;= 0x10ffff)</dd></div><div class="ditem"><dt>classmethod(func)</dt><dd>Transform function into <a href="#h4-instantiation">class method</a></dd></div><div class="ditem"><dt>compile(source, …)</dt><dd>Compile source into code or AST object</dd></div><div class="ditem"><dt>complex(real=0, imag=0)</dt><dd><a href="#h3-number">Complex number</a> with the value real + imag*1j</dd></div><div class="ditem"><dt>delattr(object, name)</dt><dd>Delete the named attribute, if object allows</dd></div><div class="ditem"><dt>dict(…)</dt><dd>Create new <a href="#h3-dictionary">dictionary</a></dd></div><div class="ditem"><dt>dir([object])</dt><dd>List of names in the local scope, or object.__dir__() or attributes</dd></div><div class="ditem"><dt>divmod(x, y)</dt><dd>Return (quotient x//y, remainder x%y)</dd></div><div class="ditem"><dt>enumerate(iterable, start=0)</dt><dd>Enumerate object as (n, item) pairs with n initialised to start value</dd></div><div class="ditem"><dt>eval(source, globals=None, locals=None)</dt><dd>Execute Python expression, string or code object from compile()</dd></div><div class="ditem"><dt>exec(source, globals=None, locals=None)</dt><dd>Execute Python statements, string or code object from compile()</dd></div><div class="ditem"><dt>filter(func, iterable)</dt><dd>Iterator yielding items where func(item) is true, or bool(item) if func is None</dd></div><div class="ditem"><dt>float(x=0)</dt><dd><a href="#h3-number">Floating point number</a> from number or string</dd></div><div class="ditem"><dt>format(object, format_spec='')</dt><dd>Formatted representation</dd></div><div class="ditem"><dt>frozenset(…)</dt><dd>New <a href="#h3-set">frozenset</a> object</dd></div><div class="ditem"><dt>getattr(object, name[, default])</dt><dd>Get value of named attribute of object, else default or raise exception</dd></div><div class="ditem"><dt>globals()</dt><dd>Dictionary of current module namespace</dd></div><div class="ditem"><dt>hasattr(object, name)</dt><dd>True if object has named attribute</dd></div><div class="ditem"><dt>hash(object)</dt><dd>Hash value of object (see object.__hash__())</dd></div><div class="ditem"><dt>help(…)</dt><dd>Built-in help system</dd></div><div class="ditem"><dt>hex(number)</dt><dd>Convert integer to lowercase hexadecimal string</dd></div><div class="ditem"><dt>id(object)</dt><dd>Return unique integer identifier of object</dd></div><div class="ditem"><dt>__import__(name, …)</dt><dd>Invoked by the import statement</dd></div><div class="ditem"><dt>input(prompt='')</dt><dd>Read string from stdin, with optional prompt</dd></div><div class="ditem"><dt>int(…)</dt><dd>Create <a href="#h3-number">integer</a> from number or string</dd></div><div class="ditem"><dt>isinstance(object, cls_or_tuple)</dt><dd>True if object is instance of given class(es)</dd></div><div class="ditem"><dt>issubclass(cls, cls_or_tuple)</dt><dd>True if class is subclass of given class(es)</dd></div><div class="ditem"><dt>iter(object, …)</dt><dd><a href="#h3-iterator">Iterator</a> for object</dd></div><div class="ditem"><dt>len(object)</dt><dd>Length of object</dd></div><div class="ditem"><dt>list(…)</dt><dd>Create <a href="#h3-list">list</a></dd></div><div class="ditem"><dt>locals()</dt><dd>Dictionary of current local symbol table</dd></div><div class="ditem"><dt>map(func, *iterables)</dt><dd>Apply function to every item of iterable(s)</dd></div><div class="ditem"><dt>max(…, key=func)</dt><dd>Largest item of iterable or arguments, optional key function extracts value</dd></div><div class="ditem"><dt>memoryview(object)</dt><dd>Access internal object data via buffer protocol</dd></div><div class="ditem"><dt>min(…, key=func)</dt><dd>Smallest item of iterable or arguments, optional key function extracts value </dd></div><div class="ditem"><dt>next(iterator[, default])</dt><dd>Next item from <a href="#h3-iterator">iterator</a>, optionally return default instead of StopIteration</dd></div><div class="ditem"><dt>object()</dt><dd>New featureless object</dd></div><div class="ditem"><dt>oct(number)</dt><dd>Convert integer to octal string</dd></div><div class="ditem"><dt>open(file, …)</dt><dd>Open file object</dd></div><div class="ditem"><dt>ord(chr)</dt><dd>Integer representing Unicode code point of character</dd></div><div class="ditem"><dt>pow(base, exp, mod=None)</dt><dd>Return <i>base</i> to the power of <i>exp</i></dd></div><div class="ditem"><dt>print(value, …)</dt><dd>Print object to text stream file</dd></div><div class="ditem"><dt>property(…)</dt><dd><a href="#h4-instance-property">Property</a> decorator</dd></div><div class="ditem"><dt>range(…)</dt><dd>Generate integer sequence</dd></div><div class="ditem"><dt>repr(object)</dt><dd>String representation of object for debugging</dd></div><div class="ditem"><dt>reversed(sequence)</dt><dd>Reverse iterator</dd></div><div class="ditem"><dt>round(number, ndigits=None)</dt><dd><a href="#h3-number">Number</a> rounded to ndigits precision after decimal point</dd></div><div class="ditem"><dt>set(…)</dt><dd>New <a href="#h3-set">set</a> object</dd></div><div class="ditem"><dt>setattr(object, name, value)</dt><dd>Set object attribute value by name</dd></div><div class="ditem"><dt>slice(…)</dt><dd>Slice object representing a set of <a href="#h4-indexing">indices</a></dd></div><div class="ditem"><dt>sorted(iterable, key=None, reverse=False)</dt><dd>New sorted list from the items in iterable</dd></div><div class="ditem"><dt>staticmethod(func)</dt><dd>Transform function into <a href="#h4-instantiation">static method</a></dd></div><div class="ditem"><dt>str(…)</dt><dd><a href="#h3-string">String</a> description of object</dd></div><div class="ditem"><dt>sum(iterable, start=0)</dt><dd>Sums items of iterable, optionally adding start value</dd></div><div class="ditem"><dt>super(…)</dt><dd>Proxy object that delegates method calls to parent or sibling</dd></div><div class="ditem"><dt>tuple(iterable)</dt><dd>Create a <a href="#h3-tuple">tuple</a></dd></div><div class="ditem"><dt>type(…)</dt><dd>Type of an object, or build new type</dd></div><div class="ditem"><dt>vars([object])</dt><dd>Return object.__dict__ or locals() if no argument</dd></div><div class="ditem"><dt>zip(*iterables, strict=False)</dt><dd>Iterate over multiple iterables in parallel, strict requires equal length</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Operator" id="h3-operator"><a href="#h3-operator" name="h3-operator">#</a>Operator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="#h4-class-special-methods">Class special methods</a></div><div class="hbox"><div><div class="table l50"><table><thead><tr><th>Precedence (high-&gt;low)
+</li></ul><sup>1</sup><a href="https://docs.python.org/3/reference/lexical_analysis.html#soft-keywords" rel="noopener noreferrer" target="_blank" class="external">Soft keywords</a></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Built-in" id="h3-built-in"><a href="#h3-built-in" name="h3-built-in">#</a>Built-in</h3></div><div class="section-links h4"><h4 id="h4-built-in-functions"><a href="#h4-built-in-functions" name="h4-built-in-functions">#</a>Built-in functions</h4><p>Also: </p><a href="https://docs.python.org/3/library/functions.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><dl class="l50"><div class="ditem"><dt>abs(number)</dt><dd>Absolute value of <a href="#h3-number">number</a></dd></div><div class="ditem"><dt>aiter(async_iterable)</dt><dd>Asynchronous iterator for an asynchronous iterable</dd></div><div class="ditem"><dt>all(iterable)</dt><dd>True if all elements of iterable are true (all([]) is True)</dd></div><div class="ditem"><dt>any(iterable)</dt><dd>True if any element of iterable is true (any([]) is False)</dd></div><div class="ditem"><dt>ascii(object)</dt><dd>A string with a printable representation of an object</dd></div><div class="ditem"><dt>bin(number)</dt><dd>Convert integer number to binary string</dd></div><div class="ditem"><dt>bool(object)</dt><dd>Boolean value</dd></div><div class="ditem"><dt>breakpoint(*args, **kwds)</dt><dd>Drop into debugger via sys.breakpointhook(*args, **kwds)</dd></div><div class="ditem"><dt>bytearray(…)</dt><dd>New array of <a href="#h3-bytes">bytes</a> from byte-integers, string, bytes, object with buffer API</dd></div><div class="ditem"><dt>bytes(…)</dt><dd>New <a href="#h3-bytes">bytes</a> object from byte-integers, string, bytes</dd></div><div class="ditem"><dt>callable(object)</dt><dd>True if object is callable</dd></div><div class="ditem"><dt>chr(i)</dt><dd>One character string for unicode ordinal i (0 &lt;= i &lt;= 0x10ffff)</dd></div><div class="ditem"><dt>classmethod(func)</dt><dd>Transform function into <a href="#h4-instantiation">class method</a></dd></div><div class="ditem"><dt>compile(source, …)</dt><dd>Compile source into code or AST object</dd></div><div class="ditem"><dt>complex(real=0, imag=0)</dt><dd><a href="#h3-number">Complex number</a> with the value real + imag*1j</dd></div><div class="ditem"><dt>delattr(object, name)</dt><dd>Delete the named attribute, if object allows</dd></div><div class="ditem"><dt>dict(…)</dt><dd>Create new <a href="#h3-dictionary">dictionary</a></dd></div><div class="ditem"><dt>dir([object])</dt><dd>List of names in the local scope, or object.__dir__() or attributes</dd></div><div class="ditem"><dt>divmod(x, y)</dt><dd>Return (quotient x//y, remainder x%y)</dd></div><div class="ditem"><dt>enumerate(iterable, start=0)</dt><dd>Enumerate object as (n, item) pairs with n initialised to start value</dd></div><div class="ditem"><dt>eval(source, globals=None, locals=None)</dt><dd>Execute Python expression, string or code object from compile()</dd></div><div class="ditem"><dt>exec(source, globals=None, locals=None)</dt><dd>Execute Python statements, string or code object from compile()</dd></div><div class="ditem"><dt>filter(func, iterable)</dt><dd>Iterator yielding items where func(item) is true, or bool(item) if func is None</dd></div><div class="ditem"><dt>float(x=0)</dt><dd><a href="#h3-number">Floating point number</a> from number or string</dd></div><div class="ditem"><dt>format(object, format_spec='')</dt><dd>Formatted representation</dd></div><div class="ditem"><dt>frozenset(…)</dt><dd>New <a href="#h3-set">frozenset</a> object</dd></div><div class="ditem"><dt>getattr(object, name[, default])</dt><dd>Get value of named attribute of object, else default or raise exception</dd></div><div class="ditem"><dt>globals()</dt><dd>Dictionary of current module namespace</dd></div><div class="ditem"><dt>hasattr(object, name)</dt><dd>True if object has named attribute</dd></div><div class="ditem"><dt>hash(object)</dt><dd>Hash value of object (see object.__hash__())</dd></div><div class="ditem"><dt>help(…)</dt><dd>Built-in help system</dd></div><div class="ditem"><dt>hex(number)</dt><dd>Convert integer to lowercase hexadecimal string</dd></div><div class="ditem"><dt>id(object)</dt><dd>Return unique integer identifier of object</dd></div><div class="ditem"><dt>__import__(name, …)</dt><dd>Invoked by the import statement</dd></div><div class="ditem"><dt>input(prompt='')</dt><dd>Read string from stdin, with optional prompt</dd></div><div class="ditem"><dt>int(…)</dt><dd>Create <a href="#h3-number">integer</a> from number or string</dd></div><div class="ditem"><dt>isinstance(object, cls_or_tuple)</dt><dd>True if object is instance of given class(es)</dd></div><div class="ditem"><dt>issubclass(cls, cls_or_tuple)</dt><dd>True if class is subclass of given class(es)</dd></div><div class="ditem"><dt>iter(object, …)</dt><dd><a href="#h3-iterator">Iterator</a> for object</dd></div><div class="ditem"><dt>len(object)</dt><dd>Length of object</dd></div><div class="ditem"><dt>list(…)</dt><dd>Create <a href="#h3-list">list</a></dd></div><div class="ditem"><dt>locals()</dt><dd>Dictionary of current local symbol table</dd></div><div class="ditem"><dt>map(func, *iterables)</dt><dd>Apply function to every item of iterable(s)</dd></div><div class="ditem"><dt>max(…, key=func)</dt><dd>Largest item of iterable or arguments, optional key function extracts value</dd></div><div class="ditem"><dt>memoryview(object)</dt><dd>Access internal object data via buffer protocol</dd></div><div class="ditem"><dt>min(…, key=func)</dt><dd>Smallest item of iterable or arguments, optional key function extracts value </dd></div><div class="ditem"><dt>next(iterator[, default])</dt><dd>Next item from <a href="#h3-iterator">iterator</a>, optionally return default instead of StopIteration</dd></div><div class="ditem"><dt>object()</dt><dd>New featureless object</dd></div><div class="ditem"><dt>oct(number)</dt><dd>Convert integer to octal string</dd></div><div class="ditem"><dt>open(file, …)</dt><dd>Open file object</dd></div><div class="ditem"><dt>ord(chr)</dt><dd>Integer representing Unicode code point of character</dd></div><div class="ditem"><dt>pow(base, exp, mod=None)</dt><dd>Return <i>base</i> to the power of <i>exp</i></dd></div><div class="ditem"><dt>print(value, …)</dt><dd>Print object to text stream file</dd></div><div class="ditem"><dt>property(…)</dt><dd><a href="#h4-instance-property">Property</a> decorator</dd></div><div class="ditem"><dt>range(…)</dt><dd>Generate integer sequence</dd></div><div class="ditem"><dt>repr(object)</dt><dd>String representation of object for debugging</dd></div><div class="ditem"><dt>reversed(sequence)</dt><dd>Reverse iterator</dd></div><div class="ditem"><dt>round(number, ndigits=None)</dt><dd><a href="#h3-number">Number</a> rounded to ndigits precision after decimal point</dd></div><div class="ditem"><dt>set(…)</dt><dd>New <a href="#h3-set">set</a> object</dd></div><div class="ditem"><dt>setattr(object, name, value)</dt><dd>Set object attribute value by name</dd></div><div class="ditem"><dt>slice(…)</dt><dd>Slice object representing a set of <a href="#h4-indexing">indices</a></dd></div><div class="ditem"><dt>sorted(iterable, key=None, reverse=False)</dt><dd>New sorted list from the items in iterable</dd></div><div class="ditem"><dt>staticmethod(func)</dt><dd>Transform function into <a href="#h4-instantiation">static method</a></dd></div><div class="ditem"><dt>str(…)</dt><dd><a href="#h3-string">String</a> description of object</dd></div><div class="ditem"><dt>sum(iterable, start=0)</dt><dd>Sums items of iterable, optionally adding start value</dd></div><div class="ditem"><dt>super(…)</dt><dd>Proxy object that delegates method calls to parent or sibling</dd></div><div class="ditem"><dt>tuple(iterable)</dt><dd>Create a <a href="#h3-tuple">tuple</a></dd></div><div class="ditem"><dt>type(…)</dt><dd>Type of an object, or build new type</dd></div><div class="ditem"><dt>vars([object])</dt><dd>Return object.__dict__ or locals() if no argument</dd></div><div class="ditem"><dt>zip(*iterables, strict=False)</dt><dd>Iterate over multiple iterables in parallel, strict requires equal length</dd></div></dl></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Operator" id="h3-operator"><a href="#h3-operator" name="h3-operator">#</a>Operator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/expressions.html#operator-precedence" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="#h4-class-special-methods">Class special methods</a></div><div class="hbox"><div><div class="table l50"><table><thead><tr><th>Precedence (high-&gt;low)
 </th><th>Description
 </th></tr></thead><tbody><tr><td>(…,) […,] {…,} {…:…,}
 </td><td><a href="#h3-tuple">tuple</a>, <a href="#h3-list">list</a>, <a href="#h3-set">set</a>, <a href="#h3-dictionary">dict</a>
@@ -188,7 +188,7 @@ identity,
 </td><td>a = a &gt;&gt; b
 </td></tr><tr><td>a &lt;&lt;= b
 </td><td>a = a &lt;&lt; b
-</td></tr></tbody></table></div></div></div><div class="break-page"></div><div class="section-links h4"><h4 id="h4-assignment-expression"><a href="#h4-assignment-expression" name="h4-assignment-expression">#</a>Assignment expression</h4><p>Also: </p><a href="https://docs.python.org/3/reference/expressions.html#assignment-expressions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Assign a value and return that value using the <i>walrus operator</i>.</p><pre class="code"><code class="py">if matching := pattern.search(data):
+</td></tr></tbody></table></div></div></div><div class="hbox"><div><div class="section-links h4"><h4 id="h4-assignment-expression"><a href="#h4-assignment-expression" name="h4-assignment-expression">#</a>Assignment expression</h4><p>Also: </p><a href="https://docs.python.org/3/reference/expressions.html#assignment-expressions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Assign and return value using the <i>walrus operator</i>.</p><pre class="code"><code class="py">if matching := pattern.search(data):
     do_something(matching)
 
 count = 0
@@ -198,14 +198,14 @@ while (count := count + 1) &lt; 5:
 &gt;&gt;&gt; z = [1, 2, 3, 4, 5]
 &gt;&gt;&gt; [x for i in z if (x:=i**2) &gt; 10]
 [16, 25]
-</code></pre><div class="section-links h4"><h4 id="h4-assignment-unpacking"><a href="#h4-assignment-unpacking" name="h4-assignment-unpacking">#</a>Assignment unpacking</h4><p>Also: </p><a href="https://peps.python.org/pep-3132/" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Unpack multiple values to a name using the <i>splat operator</i>.</p><pre class="code"><code class="py">head, *body       = s      # assign first value of s to head, remainder to body
-head, *body, tail = s      # assign first and last values of s to head and tail, remainder to body
-*body, tail       = s      # assign last value of s to tail, remainder to body
-s  = [*iterable[, …]]      # unpack to list
-s  = (*iterable[, …])      # unpack to tuple
-s  = {*iterable[, …]}      # unpack to set
-d2 = {**d1[, …]}           # unpack to dict
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Flow control" id="h3-flow-control"><a href="#h3-flow-control" name="h3-flow-control">#</a>Flow control</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="#h3-exceptions">Exceptions</a></div><div class="hbox evenly"><div><pre class="code"><code class="py">for item in &lt;iterable&gt;:
+</code></pre></div><div><div class="section-links h4"><h4 id="h4-assignment-unpacking"><a href="#h4-assignment-unpacking" name="h4-assignment-unpacking">#</a>Assignment unpacking</h4><p>Also: </p><a href="https://peps.python.org/pep-3132/" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Unpack multiple values to a name using the <i>splat operator</i>.</p><pre class="code"><code class="py">head, *body       = s  # assign first value of s to head, remainder to body
+head, *body, tail = s  # assign first and last values of s to head and tail, remainder to body
+*body, tail       = s  # assign last value of s to tail, remainder to body
+s  = [*iterable[, …]]  # unpack to list
+s  = (*iterable[, …])  # unpack to tuple
+s  = {*iterable[, …]}  # unpack to set
+d2 = {**d1[, …]}       # unpack to dict
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Flow control" id="h3-flow-control"><a href="#h3-flow-control" name="h3-flow-control">#</a>Flow control</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="#h3-exceptions">Exceptions</a></div><div class="hbox evenly"><div><pre class="code"><code class="py">for item in &lt;iterable&gt;:
     …
 [else:                     # if loop completes without break
     …]
@@ -234,7 +234,7 @@ with &lt;expression&gt;[ as name]: # context manager
 </code></pre></div></div><div class="section-links h4"><h4 id="h4-context-manager"><a href="#h4-context-manager" name="h4-context-manager">#</a>Context manager</h4><p>Also: </p><a href="https://docs.python.org/3/reference/datamodel.html#context-managers" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A <i>with</i> statement takes an object with special methods:</p><ul><li><i>__enter__()</i> - locks resources and optionally returns an object
 </li><li><i>__exit__()</i> - releases resources, handles any exception raised in the
 block, optionally suppressing it by returning True
-</li></ul><pre class="code"><code class="py">class AutoClose:
+</li></ul><div class="hbox"><div><pre class="code"><code class="py">class AutoClose:
     def __init__(self, filename):
         self.filename = filename
     def __enter__(self):
@@ -242,20 +242,19 @@ block, optionally suppressing it by returning True
         return self.f
     def __exit__(self, exc_type, exception, traceback):
         self.f.close()
-
-&gt;&gt;&gt; with open('test.txt', 'w') as f: …
+</code></pre></div><div><pre class="code"><code class="py">&gt;&gt;&gt; with open('test.txt', 'w') as f:
 ...        f.write('Hello World!')
-&gt;&gt;&gt; with AutoClose('test.txt') as f: …
+&gt;&gt;&gt; with AutoClose('test.txt') as f:
 ...        print(f.read())
 Hello World!
-</code></pre><div class="section-links h4"><h4 id="h4-match"><a href="#h4-match" name="h4-match">#</a>Match</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html#match-statements" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="pyv">3.10+</div><pre class="code"><code class="py">match &lt;expression&gt;:
+</code></pre></div></div><div class="section-links h4"><h4 id="h4-match"><a href="#h4-match" name="h4-match">#</a>Match</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/controlflow.html#match-statements" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="pyv">3.10+</div><pre class="code"><code class="py">match &lt;expression&gt;:
     case &lt;pattern&gt;[ if &lt;condition&gt;]:  # conditional match, if "guard" clause
          …
     case &lt;pattern1&gt; | &lt;pattern2&gt;:     # OR pattern
          …
     case _:                           # default case
          …
-</code></pre><h5 id="h5-match-case-pattern">Match case pattern</h5><dl class="col1 l50"><div class="ditem"><dt>1/'abc'/True/None/math.pi</dt><dd>Value pattern, match literal or dotted name</dd></div><div class="ditem"><dt>&lt;name&gt;</dt><dd>Capture pattern, match any object and bind to name</dd></div><div class="ditem"><dt>_</dt><dd>Wildcard pattern, match any object</dd></div><div class="ditem"><dt>&lt;type&gt;()</dt><dd>Class pattern, match any object of that type</dd></div><div class="ditem"><dt>&lt;type&gt;(&lt;attr&gt;=&lt;pattern|name&gt;, …)</dt><dd>Class pattern, match object with matching attributes</dd></div><div class="ditem"><dt>&lt;pattern&gt; | &lt;pattern&gt; [| …]</dt><dd>Or pattern, match any of the patterns left to right</dd></div><div class="ditem"><dt>&lt;pattern&gt; as &lt;name&gt;</dt><dd>As pattern, bind match to name</dd></div><div class="ditem"><dt>[&lt;pattern&gt;[, …[, *args]]</dt><dd>Sequence pattern (list|tuple), match any sequence with matching items (but not string or iterator), may be nested</dd></div><div class="ditem"><dt>{&lt;value_pattern&gt;: &lt;pattern&gt;[, …[, **kwds]]}</dt><dd>Mapping pattern, match dictionary with matching items, may be nested</dd></div><div class="ditem"><dt>&lt;builtin&gt;(&lt;name&gt;)</dt><dd>Builtin pattern, shortcut for &lt;builtin&gt;() as &lt;name&gt; (e.g. str, int)</dd></div></dl><ul><li>Class patterns
+</code></pre><h5 id="h5-match-case-pattern">Match case pattern</h5><dl class="col1 l40"><div class="ditem"><dt>1/'abc'/True/None/math.pi</dt><dd>Value pattern, match literal or dotted name</dd></div><div class="ditem"><dt>&lt;name&gt;</dt><dd>Capture pattern, match any object and bind to name</dd></div><div class="ditem"><dt>_</dt><dd>Wildcard pattern, match any object</dd></div><div class="ditem"><dt>&lt;type&gt;()</dt><dd>Class pattern, match any object of that type</dd></div><div class="ditem"><dt>&lt;type&gt;(&lt;attr&gt;=&lt;pattern|name&gt;, …)</dt><dd>Class pattern, match object with matching attributes</dd></div><div class="ditem"><dt>&lt;pattern&gt; | &lt;pattern&gt; [| …]</dt><dd>Or pattern, match any of the patterns left to right</dd></div><div class="ditem"><dt>[&lt;pattern&gt;[, …[, *args]]</dt><dd>Sequence pattern (list|tuple), match any sequence with matching items (but not string or iterator), may be nested</dd></div><div class="ditem"><dt>{&lt;value_pattern&gt;: &lt;pattern&gt;[, …[, **kwds]]}</dt><dd>Mapping pattern, match dictionary with matching items, may be nested</dd></div><div class="ditem"><dt>&lt;pattern&gt; as &lt;name&gt;</dt><dd>Bind match to name</dd></div><div class="ditem"><dt>&lt;builtin&gt;(&lt;name&gt;)</dt><dd>Builtin pattern, shortcut for &lt;builtin&gt;() as &lt;name&gt; (e.g. str, int)</dd></div></dl><ul><li>Class patterns
 <ul><li><b>Do not</b> create a new instance of the class
 </li><li>Accept positional parameters if class defines __match_args__ special attribute (e.g. dataclass)
 </li></ul></li><li>Sequence patterns support <a href="#h4-assignment-unpacking">assignment unpacking</a>
@@ -267,36 +266,36 @@ By default, assignment creates a new local name
 <i>global &lt;name&gt;</i> grants read/write access to specified module name
 <i>nonlocal &lt;name&gt;</i> grants read/write access to specified name in closest enclosing function defining that name</dd></div><div class="ditem"><dt>Generator expression</dt><dd>Names contained within generator expression</dd></div><div class="ditem"><dt>Comprehension</dt><dd>Names contained within comprehension</dd></div><div class="ditem"><dt>Class</dt><dd>Names shared across all instances</dd></div><div class="ditem"><dt>Instance</dt><dd>Names contained within a specific instance</dd></div><div class="ditem"><dt>Method</dt><dd>Names contained within a specific instance method</dd></div></dl><ul><li><i>globals()</i> - return <i>dict</i> of module scope variables
 </li><li><i>locals()</i> - return <i>dict</i> of local scope variables
-</li></ul><pre class="code"><code class="py">&gt;&gt;&gt; global_variable = 1
+</li></ul><div class="hbox"><div><pre class="code"><code class="py">&gt;&gt;&gt; global_name = 1
 &gt;&gt;&gt; def read_global():
-...     print(global_variable)
-...     local_variable = "only available in this function"
+...     print(global_name)
+...     local_name = "only available in this function"
 &gt;&gt;&gt; read_global()
 1
 &gt;&gt;&gt; def write_global():
-...     global global_variable
-...     global_variable = 2
+...     global global_name
+...     global_name = 2
 &gt;&gt;&gt; write_global()
-&gt;&gt;&gt; print(global_variable)
+&gt;&gt;&gt; print(global_name)
 2
 &gt;&gt;&gt; def write_nonlocal():
-...     x = 1
+...     closure_name = 1
 ...     def nested():
-...         nonlocal x
-...         x = 2
+...         nonlocal closure_name
+...         closure_name = 2
 ...     nested()
-...     print(x)
+...     print(closure_name)
 &gt;&gt;&gt; write_nonlocal()
 2
-&gt;&gt;&gt; class C:
-...     class_variable = 1
-...     def __init__(self):
-...         self.instance_variable = 2
-...     def method(self):
-...         self.instance_variable = 3
-...         C.class_variable = 3
-...         method_variable = 1
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Sequence" id="h3-sequence"><a href="#h3-sequence" name="h3-sequence">#</a>Sequence</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Operations on sequence types (<a href="#h3-bytes">Bytes</a>, <a href="#h3-list">List</a>, <a href="#h3-tuple">Tuple</a>, <a href="#h3-string">String</a>).</p><dl><div class="ditem"><dt>x in s</dt><dd>True if any s[i] == x</dd></div><div class="ditem"><dt>x not in s</dt><dd>True if no s[i] == x</dd></div><div class="ditem"><dt>s1 + s2</dt><dd>Concatenate s1 and s2</dd></div><div class="ditem"><dt>s*n, n*s</dt><dd>Concatenate n copies of s</dd></div><div class="ditem"><dt>s.count(x)</dt><dd>Count of s[i] == x</dd></div><div class="ditem"><dt>len(s)</dt><dd>Number of items</dd></div><div class="ditem"><dt>min(s)</dt><dd>Smallest item</dd></div><div class="ditem"><dt>max(s)</dt><dd>Largest item</dd></div><div class="ditem"><dt>s.index(x[, start[, stop]])</dt><dd>Smallest i where s[i] == x, start/stop bounds search</dd></div><div class="ditem"><dt>reversed(s)</dt><dd>Iterator on s in reverse order (for string use reversed(list(s)))</dd></div><div class="ditem"><dt>sorted(s1, cmp=func, key=getter, reverse=False)</dt><dd>New sorted list</dd></div></dl><div class="section-links h4"><h4 id="h4-indexing"><a href="#h4-indexing" name="h4-indexing">#</a>Indexing</h4></div><p>Select items from sequence by index or slice.</p><pre class="code"><code class="py">&gt;&gt;&gt; s = [0, 1, 2, 3, 4]
+</code></pre></div><div><pre class="code"><code class="py">class C:
+    class_name = 1
+    def __init__(self):
+        self.instance_name = 2
+    def method(self):
+        self.instance_name = 3
+        C.class_name = 3
+        method_name = 1
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Sequence" id="h3-sequence"><a href="#h3-sequence" name="h3-sequence">#</a>Sequence</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Operations on sequence types (<a href="#h3-bytes">Bytes</a>, <a href="#h3-list">List</a>, <a href="#h3-tuple">Tuple</a>, <a href="#h3-string">String</a>).</p><dl><div class="ditem"><dt>x in s</dt><dd>True if any s[i] == x</dd></div><div class="ditem"><dt>x not in s</dt><dd>True if no s[i] == x</dd></div><div class="ditem"><dt>s1 + s2</dt><dd>Concatenate s1 and s2</dd></div><div class="ditem"><dt>s * n, n * s</dt><dd>Concatenate n copies of s</dd></div><div class="ditem"><dt>s.count(x)</dt><dd>Count of s[i] == x</dd></div><div class="ditem"><dt>len(s)</dt><dd>Count of items</dd></div><div class="ditem"><dt>min(s)</dt><dd>Smallest item</dd></div><div class="ditem"><dt>max(s)</dt><dd>Largest item</dd></div><div class="ditem"><dt>s.index(x[, start[, stop]])</dt><dd>Smallest i where s[i] == x, start/stop bounds search</dd></div><div class="ditem"><dt>reversed(s)</dt><dd>Iterator on s in reverse order (for string: reversed(list(s)))</dd></div><div class="ditem"><dt>sorted(s, cmp=func, key=getter, reverse=False)</dt><dd>New sorted list</dd></div></dl><div class="section-links h4"><h4 id="h4-indexing"><a href="#h4-indexing" name="h4-indexing">#</a>Indexing</h4></div><p>Select items from sequence by index or slice.</p><pre class="code"><code class="py">&gt;&gt;&gt; s = [0, 1, 2, 3, 4]
 &gt;&gt;&gt; s[0]               # 0-based indexing
 0
 &gt;&gt;&gt; s[-1]              # negative indexing from end
@@ -307,20 +306,21 @@ By default, assignment creates a new local name
 [1, 4]
 &gt;&gt;&gt; s[:2]              # slices are created implicitly when indexing with ':' [start:stop:step]
 [0, 1]
-&gt;&gt;&gt; s[3::-1]           # negative steps
+&gt;&gt;&gt; s[3::-1]           # negative step
 [3, 2, 1, 0]
 &gt;&gt;&gt; s[1:3]
 [1, 2]
 &gt;&gt;&gt; s[1:5:2]
 [1, 3]
-</code></pre><div class="section-links h4"><h4 id="h4-comparison"><a href="#h4-comparison" name="h4-comparison">#</a>Comparison</h4><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#comparisons" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul><li>Sequence comparison: values are compared in order until a pair of unequal
-values is found. The comparison of these two values is then returned. If all
-values are equal, the shorter sequence is lesser.
-</li><li>A sortable class should define <i>__eq__()</i>, <i>__lt__()</i>,
-<i>__gt__()</i>, <i>__le__()</i> and <i>__ge__()</i> comparison special methods.
+</code></pre><div class="section-links h4"><h4 id="h4-comparison"><a href="#h4-comparison" name="h4-comparison">#</a>Comparison</h4><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#comparisons" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><ul><li>A sortable class should define <i>__eq__()</i>, <i>__lt__()</i>,
+<i>__gt__()</i>, <i>__le__()</i> and <i>__ge__()</i> <a href="#h4-class-special-methods">special
+methods</a>.
 </li><li>With <i>functools @total_ordering</i> decorator a class need only provide
 <i>__eq__()</i> and one other comparison special method.
-</li></ul><pre class="code"><code class="py">from functools import total_ordering
+</li><li>Sequence comparison: values are compared in order until a pair of unequal
+values is found. The comparison of these two values is then returned. If all
+values are equal, the shorter sequence is lesser.
+</li></ul></div><div><pre class="code"><code class="py">from functools import total_ordering
 
 @total_ordering
 class C:
@@ -334,7 +334,7 @@ class C:
         if isinstance(other, type(self)):
             return self.a &lt; other.a
         return NotImplemented
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Tuple" id="h3-tuple"><a href="#h3-tuple" name="h3-tuple">#</a>Tuple</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><p>Immutable hashable <a href="#h3-sequence">sequence</a>.</p><dl class="col1"><div class="ditem"><dt>s = (1, 'a', 3.0)
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Tuple" id="h3-tuple"><a href="#h3-tuple" name="h3-tuple">#</a>Tuple</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox"><div><p>Immutable hashable <a href="#h3-sequence">sequence</a>.</p><dl class="col1"><div class="ditem"><dt>s = (1, 'a', 3.0)
 s = 1, 'a', 3.0</dt><dd>Create tuple</dd></div><div class="ditem"><dt>s = (1,)</dt><dd>Single-item tuple</dd></div><div class="ditem"><dt>s = ()</dt><dd>Empty tuple</dd></div><div class="ditem"><dt>(1, 2, 3) == (1, 2) + (3,)</dt><dd>Add makes new tuple</dd></div><div class="ditem"><dt>(1, 2, 1, 2) == (1, 2) * 2</dt><dd>Multiply makes new tuple</dd></div></dl></div><div><div class="section-links h4"><h4 id="h4-named-tuple"><a href="#h4-named-tuple" name="h4-named-tuple">#</a>Named tuple</h4><p>Also: </p><a href="https://docs.python.org/3/library/collections.html#namedtuple-factory-function-for-tuples-with-named-fields" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p><a href="#h3-tuple">Tuple</a> subclass with named items.</p><pre class="code"><code class="py">&gt;&gt;&gt; from collections import namedtuple
 &gt;&gt;&gt; Point = namedtuple('Point', ('x', 'y')) # or namedtuple('Point', 'x y')
 &gt;&gt;&gt; p = Point(1, y=2)
@@ -345,12 +345,12 @@ Point(x=1, y=2)
 2
 </code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="List" id="h3-list"><a href="#h3-list" name="h3-list">#</a>List</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#lists" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable <a href="#h3-sequence">sequence</a>.</p><dl><div class="ditem"><dt>s = [1, 'a', 3.0]
 s = list(range(3))</dt><dd>Create list</dd></div><div class="ditem"><dt>s[i] = x</dt><dd>Replace item index i with x</dd></div><div class="ditem"><dt>s[&lt;slice&gt;] = it</dt><dd>Replace <a href="#h4-indexing">slice</a> with iterable</dd></div><div class="ditem"><dt>del s[&lt;slice&gt;]
-s[&lt;slice&gt;] = []</dt><dd>Delete <a href="#h4-indexing">slice</a></dd></div><div class="ditem"><dt>s.append(x)
+s[&lt;slice&gt;] = []</dt><dd>Remove <a href="#h4-indexing">slice</a></dd></div><div class="ditem"><dt>s.append(x)
 s += x
-s[len(s):len(s)] = [x]</dt><dd>Add element to end</dd></div><div class="ditem"><dt>s.extend(it)
-s[len(s):len(s)] = it</dt><dd>Add elements from iterable to end</dd></div><div class="ditem"><dt>s.insert(i, x)
+s[len(s):len(s)] = [x]</dt><dd>Add item to end</dd></div><div class="ditem"><dt>s.extend(it)
+s[len(s):len(s)] = it</dt><dd>Add items from iterable to end</dd></div><div class="ditem"><dt>s.insert(i, x)
 s[i:i] = [x]</dt><dd>Insert item at index i</dd></div><div class="ditem"><dt>s.remove(x)
-del s[s.index(x)]</dt><dd>Remove item</dd></div><div class="ditem"><dt>y = s.pop([i])</dt><dd>Remove and return last item, or indexed item</dd></div><div class="ditem"><dt>s.reverse()</dt><dd>Reverse in place</dd></div><div class="ditem"><dt>s.sort(cmp=func, key=getter, reverse=False)</dt><dd>Sort in place, default ascending</dd></div></dl><div class="section-links h4"><h4 id="h4-list-comprehension"><a href="#h4-list-comprehension" name="h4-list-comprehension">#</a>List comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">result = [expression for item1 in iterable1{ if condition1}
+del s[s.index(x)]</dt><dd>Remove first item where s[i] == x </dd></div><div class="ditem"><dt>y = s.pop([i])</dt><dd>Remove and return last item or indexed item</dd></div><div class="ditem"><dt>s.reverse()</dt><dd>Reverse items in place</dd></div><div class="ditem"><dt>s.sort(cmp=func, key=getter, reverse=False)</dt><dd>Sort items in place, default ascending</dd></div></dl><div class="section-links h4"><h4 id="h4-list-comprehension"><a href="#h4-list-comprehension" name="h4-list-comprehension">#</a>List comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">result = [expression for item1 in iterable1{ if condition1}
             {for item2 in iterable2{ if condition2} … for itemN in iterableN{ if conditionN}}]
 
 # is equivalent to:
@@ -363,18 +363,18 @@ for item1 in iterable1:
             if condition1 and condition2 … and conditionN:
                 result.append(expression)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Dictionary" id="h3-dictionary"><a href="#h3-dictionary" name="h3-dictionary">#</a>Dictionary</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable key:value pair mapping.</p><dl class="l50"><div class="ditem"><dt>dict()
-{}</dt><dd>Empty dict</dd></div><div class="ditem"><dt>dict(&lt;sequence|mapping&gt;)</dt><dd>Create from key:value pairs</dd></div><div class="ditem"><dt>dict(**kwds)</dt><dd>Create from keyword arguments</dd></div><div class="ditem"><dt>dict(zip(keys, values))</dt><dd>Create from sequences of keys and values</dd></div><div class="ditem"><dt>dict.fromkeys(keys, value=None)</dt><dd>Create from keys, all set to value</dd></div><div class="ditem"><dt>d.keys()</dt><dd>Iterable of keys</dd></div><div class="ditem"><dt>d.values()</dt><dd>Iterable of values</dd></div><div class="ditem"><dt>d.items()</dt><dd>Iterable of (key, value) pairs</dd></div><div class="ditem"><dt>d.get(key, default=None)</dt><dd>Get value for key, or default</dd></div><div class="ditem"><dt>d.setdefault(key, default=None)</dt><dd>Get value for key, add if missing</dd></div><div class="ditem"><dt>d.pop(key)</dt><dd>Remove and return value for key, raise KeyError if missing</dd></div><div class="ditem"><dt>d.popitem()</dt><dd>Remove and return (key, value) pair (last-in, first-out)</dd></div><div class="ditem"><dt>d.clear()</dt><dd>Remove all items</dd></div><div class="ditem"><dt>d.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>collections.defaultdict(&lt;type&gt;)
-collections.defaultdict(lambda: 42)</dt><dd>dict with default value &lt;type&gt;()
-e.g. dict with default value 42</dd></div><div class="ditem"><dt>d1.update(d2)
+{}</dt><dd>Empty dict</dd></div><div class="ditem"><dt>dict(&lt;sequence|mapping&gt;)
+{'d':4, 'a':2}</dt><dd>Create from key:value pairs</dd></div><div class="ditem"><dt>dict(**kwds)</dt><dd>Create from keyword arguments</dd></div><div class="ditem"><dt>dict(zip(keys, values))</dt><dd>Create from sequences of keys and values</dd></div><div class="ditem"><dt>dict.fromkeys(keys, value=None)</dt><dd>Create from keys, all set to value</dd></div><div class="ditem"><dt>d.keys()</dt><dd>Iterable of keys</dd></div><div class="ditem"><dt>d.values()</dt><dd>Iterable of values</dd></div><div class="ditem"><dt>d.items()</dt><dd>Iterable of (key, value) pairs</dd></div><div class="ditem"><dt>d.get(key, default=None)</dt><dd>Get value for key, or default</dd></div><div class="ditem"><dt>d.setdefault(key, default=None)</dt><dd>Get value for key, add if missing</dd></div><div class="ditem"><dt>d.pop(key)</dt><dd>Remove and return value for key, raise KeyError if missing</dd></div><div class="ditem"><dt>d.popitem()</dt><dd>Remove and return (key, value) pair (last-in, first-out)</dd></div><div class="ditem"><dt>d.clear()</dt><dd>Remove all items</dd></div><div class="ditem"><dt>d.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>d1.update(d2)
 d1 |= d2<span class="pyv">3.9+</span></dt><dd>Add/replace key:value pairs from d2 to d1</dd></div><div class="ditem"><dt>d3 = d1 | d2<span class="pyv">3.9+</span>
-d3 = {**d1, **d2}</dt><dd>Merge to new dict, d2 trumps d1</dd></div><div class="ditem"><dt>{k for k, v in d.items() if v==value}</dt><dd>Set of keys with given value</dd></div></dl><div class="section-links h4"><h4 id="h4-dict-comprehension"><a href="#h4-dict-comprehension" name="h4-dict-comprehension">#</a>Dict comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py"># {k: v for k, v in &lt;iterable&gt;[ if &lt;condition&gt;]}
+d3 = {**d1, **d2}</dt><dd>Merge to new dict, d2 trumps d1</dd></div></dl><pre class="code"><code class="py"># defaultdict(&lt;callable&gt;) sets default value returned by callable()
+import collections
+collections.defaultdict(lambda: 42) # dict with default value 42
+</code></pre><div class="section-links h4"><h4 id="h4-dict-comprehension"><a href="#h4-dict-comprehension" name="h4-dict-comprehension">#</a>Dict comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py"># {k: v for k, v in &lt;iterable&gt;[ if &lt;condition&gt;]}
 
 &gt;&gt;&gt; {x: x**2 for x in (2, 4, 6) if x &lt; 5}
 {2: 4, 4: 16}
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Set" id="h3-set"><a href="#h3-set" name="h3-set">#</a>Set</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#sets" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable (<i>set</i>) and immutable (<i>frozenset</i>) sets.</p><dl class="l50"><div class="ditem"><dt>set(iterable=None)
-{1, 2, 3}
-frozenset(iterable=None)</dt><dd>New set from iterable, or empty
-But {} creates an empty dictionary (sad!)</dd></div><div class="ditem"><dt>len(s)</dt><dd>Cardinality</dd></div><div class="ditem"><dt>v in s
+</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Set" id="h3-set"><a href="#h3-set" name="h3-set">#</a>Set</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#sets" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable (<i>set</i>) and immutable (<i>frozenset</i>) sets.</p><dl class="l50"><div class="ditem"><dt>set()</dt><dd>Empty set </dd></div><div class="ditem"><dt>{1, 2, 3}</dt><dd>Create (note: {} creates empty dict - sad!)</dd></div><div class="ditem"><dt>set(iterable)
+{*iterable}</dt><dd>Create from iterable</dd></div><div class="ditem"><dt>frozenset(iterable=None)</dt><dd>Create frozen set</dd></div><div class="ditem"><dt>len(s)</dt><dd>Cardinality</dd></div><div class="ditem"><dt>v in s
 v not in s</dt><dd>Test membership</dd></div><div class="ditem"><dt>s1.issubset(s2)</dt><dd>True if s1 is subset of s2</dd></div><div class="ditem"><dt>s1.issuperset(s2)</dt><dd>True if s1 is superset of s2</dd></div><div class="ditem"><dt>s.add(v) <i>[mutable]</i></dt><dd>Add element</dd></div><div class="ditem"><dt>s.remove(v) <i>[mutable]</i></dt><dd>Remove element (KeyError if not found)</dd></div><div class="ditem"><dt>s.discard(v) <i>[mutable]</i></dt><dd>Remove element if present</dd></div><div class="ditem"><dt>s.pop() <i>[mutable]</i></dt><dd>Remove and return arbitrary element (KeyError if empty)</dd></div><div class="ditem"><dt>s.clear() <i>[mutable]</i></dt><dd>Remove all elements</dd></div><div class="ditem"><dt>s1.intersection(s2[, s3…])
 s1 &amp; s2</dt><dd>New set of shared elements</dd></div><div class="ditem"><dt>s1.intersection_update(s2) <i>[mutable]</i></dt><dd>Update elements to intersection with s2</dd></div><div class="ditem"><dt>s1.union(s2[, s3…])
 s1 | s2</dt><dd>New set of all elements</dd></div><div class="ditem"><dt>s1.difference(s2[, s3…])
@@ -608,55 +608,131 @@ __getattr__(self, name) [if AttributeError]
 __exit__(self, exc_type, exc_value, traceback)
 </td></tr><tr><td>await self
 </td><td>__await__(self)
-</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Decorator" id="h3-decorator"><a href="#h3-decorator" name="h3-decorator">#</a>Decorator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A decorator is a callable that manipulates and returns a function. </p><pre class="code"><code class="py"># wraps decorator copies metadata of decorated function (func) to wrapped function (out)
-from functools import wraps
-
-def show_call(func):
+</td></tr></tbody></table></div></div></div><div class="section-links h4"></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Decorator" id="h3-decorator"><a href="#h3-decorator" name="h3-decorator">#</a>Decorator</h3><p>Also: </p><a href="https://docs.python.org/3/reference/compound_stmts.html#function-definitions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Decorator syntax passes a function or class to a callable and replaces it with
+the return value.</p><div class="hbox"><div><pre class="code"><code class="py">def show_call(obj):
     """
-    Print function name and arguments each time it is called.
+    Decorator that prints obj name and arguments each time obj is called.
     """
-    @wraps(func)
-    def out(*args, **kwds):
-        print(func.__name__, args, kwds)
-        return func(*args, **kwds)
-    return out
+    def show_call_wrapper(*args, **kwds):
+        print(obj.__name__, args, kwds)
+        return obj(*args, **kwds)
+    return show_call_wrapper
 
-@show_call
+@show_call # function decorator
 def add(x, y):
     return x + y
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Iterator" id="h3-iterator"><a href="#h3-iterator" name="h3-iterator">#</a>Iterator</h3><p>Also: </p><a href="https://docs.python.org/3/glossary.html#term-iterator" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="https://docs.python.org/3/library/itertools.html" rel="noopener noreferrer" target="_blank" class="external">itertools</a></div><p>An iterator implements the <i>__iter__()</i> method, returning an iterable that
+
+# is equivalent to
+add = show_call(add)
+
+&gt;&gt;&gt; add(13, 29)
+add (13, 29) {}
+42
+
+@show_call # class decorator
+class C:
+    def __init__(self, a=None):
+        pass
+
+# is equivalent to
+C = show_call(C)
+
+&gt;&gt;&gt; C(a=42)
+C () {'a': 42}
+</code></pre></div><div><pre class="code"><code class="py"># decorators arguments can modify the decorator function
+def show_call_if(condition):
+    """
+    Apply show_call decorator only if condition is True.
+    """
+    return show_call if condition else lambda obj: obj
+
+@show_call_if(False)
+def add(x, y):
+    return x + y
+
+# is equivalent to
+add = show_call_if(False)(add)
+
+&gt;&gt;&gt; add(13, 29)
+42
+
+@show_call_if(True)
+def add(x, y):
+    return x + y
+
+&gt;&gt;&gt; add(13, 29)
+add (13, 29) {}
+42
+
+&gt;&gt;&gt; add.__name__
+'show_call_wrapper' # ugh! decorated function has different metadata
+
+# @wraps decorator copies metadata of decorated object to wrapped object
+# preserving original attributes (e.g. __name__)
+from functools import wraps
+
+def show_call_preserve_meta(obj):
+    @wraps(obj)
+    def show_call_wrapper(*args, **kwds):
+        print(obj.__name__, args, kwds)
+        return obj(*args, **kwds)
+    return show_call_wrapper
+
+@show_call_preserve_meta
+def add(x, y):
+    return x + y
+
+&gt;&gt;&gt; add.__name__
+'add'
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Iterator" id="h3-iterator"><a href="#h3-iterator" name="h3-iterator">#</a>Iterator</h3><p>Also: </p><a href="https://docs.python.org/3/glossary.html#term-iterator" rel="noopener noreferrer" target="_blank" class="external">pydocs</a><div>, </div><a href="https://docs.python.org/3/library/itertools.html" rel="noopener noreferrer" target="_blank" class="external">itertools</a></div><p>An iterator implements the <i>__iter__()</i> method, returning an iterable that
 implements the <i>__next__()</i> method. The <i>__next__()</i> method returns the
-next item in the collection and raises <i>StopIteration</i> when done.</p><pre class="code"><code class="py">def IterableIterator:
+next item in the collection and raises <i>StopIteration</i> when done.</p><div class="hbox"><div><pre class="code"><code class="py">class C:
+    def __init__(self, items):
+        self.items = items
+
     def __iter__(self):
-        """Make class iterable."""
+        """Make class its own iterable."""
         return self
 
     def __next__(self):
         """Implement to be iterable."""
-        if at_the_end:
-            raise StopIteration
-        return next_item
-
-c = IterableIterator()
-it = iter(c) # get iterator
-next(it)     # get next item
-while value := next(it):
-    print(value)
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Generator" id="h3-generator"><a href="#h3-generator" name="h3-generator">#</a>Generator</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/classes.html#generators" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A function with a <i>yield</i> statement returns a generator iterator and suspends
+        if self.items:
+            return self.items.pop()
+        raise StopIteration
+</code></pre></div><div><pre class="code"><code class="py">&gt;&gt;&gt; c = C([13, 29])
+&gt;&gt;&gt; it = iter(c)    # get iterator
+&gt;&gt;&gt; next(it)        # get next item
+29
+&gt;&gt;&gt; for item in c:  # iterate over C instance
+...     print(item)
+13
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Generator" id="h3-generator"><a href="#h3-generator" name="h3-generator">#</a>Generator</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/classes.html#generators" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>A function with a <i>yield</i> statement returns a generator iterator and suspends
 function processing. Each iteration over the generator iterator resumes
-function execution, returns the next yield value, and suspends again.</p><pre class="code"><code class="py">def gen():
+function execution, returns the next yield value, and suspends again.</p><div class="hbox"><div><pre class="code"><code class="py">def gen():
     """Generator function"""
-    for i in range(10):
+    for i in [13, 29]:
         yield i
-g = gen()
 
-g = (expression for item in iterable if condition) # generator expression
+&gt;&gt;&gt; g = gen()
+&gt;&gt;&gt; next(g)            # next value
+13
+&gt;&gt;&gt; for item in gen(): # iterate over values
+...     print(item)
+13
+29
+&gt;&gt;&gt; list(gen())        # list all values
+[13, 29]
 
-next(g)              # next item
-for i in g: …        # iterator over items
-list(g)              # list all items
-yield from g         # delegate yield to another generator
-</code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="String" id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable <a href="#h3-sequence">sequence</a> of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with <i>prefix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with <i>suffix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join sequence of <i>strings</i> with <i>separator</i> string</dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !#$%…]</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from end and split</dd></div><div class="ditem"><dt>s.removeprefix(&lt;prefix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>prefix</i> if present</dd></div><div class="ditem"><dt>s.removesuffix(&lt;suffix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>suffix</i> if present</dd></div></dl><div class="section-links h4"><h4 id="h4-string-escapes"><a href="#h4-string-escapes" name="h4-string-escapes">#</a>String escapes</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>Sequence
+def parent_gen():
+    yield from gen()   # delegate yield to another generator
+
+&gt;&gt;&gt; list(parent_gen())
+[13, 29]
+</code></pre></div><div><div class="section-links h4"><h4 id="h4-generator-expression"><a href="#h4-generator-expression" name="h4-generator-expression">#</a>Generator expression</h4></div><pre class="code"><code class="py"># (&lt;expression&gt; for &lt;name&gt; in &lt;iterable&gt;[ if &lt;condition&gt;])
+&gt;&gt;&gt; g = (item for item in [13, 29] if item &gt; 20)
+&gt;&gt;&gt; list(g)
+[29]
+</code></pre></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="String" id="h3-string"><a href="#h3-string" name="h3-string">#</a>String</h3><p>Also: </p><a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Immutable <a href="#h3-sequence">sequence</a> of characters.</p><dl class="l50"><div class="ditem"><dt>&lt;substring&gt; in s</dt><dd>True if string contains <i>substring</i></dd></div><div class="ditem"><dt>s.startswith(&lt;prefix&gt;[, start[, end]])</dt><dd>True if string starts with <i>prefix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.endswith(&lt;suffix&gt;[, start[, end]])</dt><dd>True if string ends with <i>suffix</i>, optionally search bounded substring</dd></div><div class="ditem"><dt>s.strip(chars=None)</dt><dd>Strip whitespace from both ends, or passed characters</dd></div><div class="ditem"><dt>s.lstrip(chars=None)</dt><dd>Strip whitespace from left end, or passed characters</dd></div><div class="ditem"><dt>s.rstrip(chars=None)</dt><dd>Strip whitespace from right end, or passed characters</dd></div><div class="ditem"><dt>s.ljust(width, fillchar=' ')</dt><dd>Left justify with fillchar</dd></div><div class="ditem"><dt>s.rjust(width, fillchar=' ')</dt><dd>Right justify with fillchar</dd></div><div class="ditem"><dt>s.center(width, fillchar=' ')</dt><dd>Center with fillchar</dd></div><div class="ditem"><dt>s.split(sep=None, maxsplit=-1)</dt><dd>Split on whitespace, or <i>sep</i> str at most <i>maxsplit</i> times</dd></div><div class="ditem"><dt>s.splitlines(keepends=False)</dt><dd>Split lines on [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n</dd></div><div class="ditem"><dt>&lt;separator&gt;.join(&lt;strings&gt;)</dt><dd>Join sequence of <i>strings</i> with <i>separator</i> string</dd></div><div class="ditem"><dt>s.find(&lt;substring&gt;)</dt><dd>Index of first match or -1</dd></div><div class="ditem"><dt>s.index(&lt;substring&gt;)</dt><dd>Index of first match or raise ValueError</dd></div><div class="ditem"><dt>s.lower()</dt><dd>To lower case</dd></div><div class="ditem"><dt>s.upper()</dt><dd>To upper case</dd></div><div class="ditem"><dt>s.title()</dt><dd>To title case (The Quick Brown Fox)</dd></div><div class="ditem"><dt>s.capitalize()</dt><dd>Capitalize first letter</dd></div><div class="ditem"><dt>s.replace(old, new[, count])</dt><dd>Replace <i>old</i> with <i>new</i> at most <i>count</i> times</dd></div><div class="ditem"><dt>s.translate(&lt;table&gt;)</dt><dd>Use <i>str.maketrans(&lt;dict&gt;)</i> to generate table</dd></div><div class="ditem"><dt>chr(&lt;int&gt;)</dt><dd>Integer to Unicode character</dd></div><div class="ditem"><dt>ord(&lt;str&gt;)</dt><dd>Unicode character to integer</dd></div><div class="ditem"><dt>s.isdecimal()</dt><dd>True if [0-9], [०-९] or [٠-٩]</dd></div><div class="ditem"><dt>s.isdigit()</dt><dd>True if isdecimal() or [²³¹…]</dd></div><div class="ditem"><dt>s.isnumeric()</dt><dd>True if isdigit() or [¼½¾零〇一…]</dd></div><div class="ditem"><dt>s.isalnum()</dt><dd>True if isnumeric() or [a-zA-Z…]</dd></div><div class="ditem"><dt>s.isprintable()</dt><dd>True if isalnum() or [ !#$%…]</dd></div><div class="ditem"><dt>s.isspace()</dt><dd>True if [ \t\n\r\f\v\x1c-\x1f\x85\xa0…]</dd></div><div class="ditem"><dt>head, sep, tail = s.partition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from start and split</dd></div><div class="ditem"><dt>head, sep, tail = s.rpartition(&lt;separator&gt;)</dt><dd>Search for <i>separator</i> from end and split</dd></div><div class="ditem"><dt>s.removeprefix(&lt;prefix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>prefix</i> if present</dd></div><div class="ditem"><dt>s.removesuffix(&lt;suffix&gt;)<span class="pyv">3.9+</span></dt><dd>Remove <i>suffix</i> if present</dd></div></dl><div class="section-links h4"><h4 id="h4-string-escape"><a href="#h4-string-escape" name="h4-string-escape">#</a>String escape</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>Sequence
 </th><th>Escape
 </th></tr></thead><tbody><tr><td>Literal backslash
 </td><td>\\
@@ -810,7 +886,7 @@ int('101010', 2)
 int('0b101010', 0)</dt><dd>Binary</dd></div><div class="ditem"><dt>hex([int])
 0x2a
 int('2a', 16)
-int('0x2a', 0)</dt><dd>Hex</dd></div></dl><div class="section-links h4"><h4 id="h4-mathematics"><a href="#h4-mathematics" name="h4-mathematics">#</a>Mathematics</h4><p>Also: </p><a href="https://docs.python.org/3/library/math.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Also see <a href="#h3-built-in">built-in</a> functions abs, pow, round, sum, min, max.</p><pre class="code"><code class="py">from math import (e, pi, inf, nan, isinf, isnan,
+int('0x2a', 0)</dt><dd>Hex</dd></div></dl><div class="section-links h4"><h4 id="h4-mathematics"><a href="#h4-mathematics" name="h4-mathematics">#</a>Mathematics</h4><p>Also: </p><a href="https://docs.python.org/3/library/math.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Also see <a href="#h4-built-in-functions">built-in functions</a> abs, pow, round, sum, min, max.</p><pre class="code"><code class="py">from math import (e, pi, inf, nan, isinf, isnan,
                   sin, cos, tan, asin, acos, atan, degrees, radians,
                   log, log10, log2)
 </code></pre><div class="section-links h4"><h4 id="h4-statistics"><a href="#h4-statistics" name="h4-statistics">#</a>Statistics</h4><p>Also: </p><a href="https://docs.python.org/3/library/statistics.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">from statistics import mean, median, variance, stdev, quantiles, groupby
@@ -877,7 +953,7 @@ int('0x2a', 0)</dt><dd>Hex</dd></div></dl><div class="section-links h4"><h4 id="
 </td><td>Literal '%'
 </td></tr></tbody></table></div></div></div></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Exception" id="h3-exception"><a href="#h3-exception" name="h3-exception">#</a>Exception</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox stack-left"><div><pre class="code"><code class="py">try:
     …
-[except [Exception[ as e]]:
+[except [&lt;Exception&gt;[ as e]]:
     …]
 [except:  # catch all
     …]
@@ -886,12 +962,13 @@ int('0x2a', 0)</dt><dd>Hex</dd></div></dl><div class="section-links h4"><h4 id="
 [finally: # always executed
     …]
 
-raise exception[ from None] # stop exception chain
+raise &lt;exception&gt;[ from &lt;exception|None&gt;]
 
 try:
     1 / 0
 except ZeroDivisionError:
-    raise TypeError("Stop chain") from None
+    # from None hides exception context
+    raise TypeError("Hide ZeroDivisionError") from None
 </code></pre></div><div><pre class="squish">BaseException					   <i>Base class for all exceptions</i>
 ├─ BaseExceptionGroup			   <i>Base class for groups of exceptions</i>
 ├─ GeneratorExit				   <i>Generator close() raises to terminate iteration</i>
@@ -979,10 +1056,12 @@ $ python -W ignore foo.py
 # OR
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-</code></pre><pre class="code"><code class="py">if __name__ == '__main__': # run main() if file executed as script
+</code></pre><pre class="code"><code class="py"># module of executed script is assigned __name__ '__main__'
+# so to run main() only if module is executed as script
+if __name__ == '__main__':
     main()
-</code></pre><div class="section-links h4"><h4 id="h4-environment-variables"><a href="#h4-environment-variables" name="h4-environment-variables">#</a>Environment variables</h4><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs full list</a></div><dl><div class="ditem"><dt>PYTHONHOME</dt><dd>Change location of standard Python libraries</dd></div><div class="ditem"><dt>PYTHONPATH</dt><dd>Augment default search path for module files</dd></div><div class="ditem"><dt>PYTHONSTARTUP</dt><dd>Module to execute before entering interactive prompt</dd></div><div class="ditem"><dt>PYTHONOPTIMIZE</dt><dd>Optimise execution (-O)</dd></div><div class="ditem"><dt>PYTHONWARNINGS</dt><dd>Set warning level [default/error/always/module/once/ignore] (-W)</dd></div><div class="ditem"><dt>PYTHONPROFILEIMPORTTIME</dt><dd>Show module import times (-X)</dd></div></dl><div class="section-links h4"><h4 id="h4-sitecustomizepy-usercustomizepy"><a href="#h4-sitecustomizepy-usercustomizepy" name="h4-sitecustomizepy-usercustomizepy">#</a>sitecustomize.py / usercustomize.py</h4><p>Also: </p><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Before <i>__main__</i> module is executed Python automatically imports:</p><ul><li>sitecustomize.py in the system site-packages directory
-</li><li>usercustomize.py in the user site-packages directory
+</code></pre><div class="section-links h4"><h4 id="h4-environment-variables"><a href="#h4-environment-variables" name="h4-environment-variables">#</a>Environment variables</h4><p>Also: </p><a href="https://docs.python.org/3/using/cmdline.html" rel="noopener noreferrer" target="_blank" class="external">pydocs full list</a></div><dl><div class="ditem"><dt>PYTHONHOME</dt><dd>Change location of standard Python libraries</dd></div><div class="ditem"><dt>PYTHONPATH</dt><dd>Augment default search path for module files</dd></div><div class="ditem"><dt>PYTHONSTARTUP</dt><dd>Module to execute before entering interactive prompt</dd></div><div class="ditem"><dt>PYTHONOPTIMIZE</dt><dd>Optimise execution (-O)</dd></div><div class="ditem"><dt>PYTHONWARNINGS</dt><dd>Set warning level [default/error/always/module/once/ignore] (-W)</dd></div><div class="ditem"><dt>PYTHONPROFILEIMPORTTIME</dt><dd>Show module import times (-X)</dd></div></dl><div class="section-links h4"><h4 id="h4-sitecustomizepy-usercustomizepy"><a href="#h4-sitecustomizepy-usercustomizepy" name="h4-sitecustomizepy-usercustomizepy">#</a>sitecustomize.py / usercustomize.py</h4><p>Also: </p><a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Before <i>__main__</i> module is executed Python automatically imports:</p><ul><li><i>sitecustomize.py</i> in the system site-packages directory
+</li><li><i>usercustomize.py</i> in the user site-packages directory
 </li></ul><pre class="code"><code class="sh"># Get user site packages directory
 $ python -m site --user-site
 

@@ -8347,32 +8347,17 @@ h6 {
 .dark-theme figure figcaption {
   color: #d6d6dc;
 }
-.dark-theme div.section p a,
-.dark-theme td a,
-.dark-theme dt a {
-  color: #d6d6dc;
-  text-decoration: underline;
+.dark-theme a {
+  color: #9595a4;
 }
-.dark-theme div.section p a:hover,
-.dark-theme td a:hover,
-.dark-theme dt a:hover {
-  font-weight: bold;
+.dark-theme #toc a,
+.dark-theme a.external {
+  color: #5ca6f6;
 }
 .dark-theme i,
 .dark-theme dd,
 .dark-theme td:not(:first-child) {
   color: #9595a4;
-}
-.dark-theme i a,
-.dark-theme dd a,
-.dark-theme td:not(:first-child) a {
-  color: #9595a4;
-  text-decoration: underline;
-}
-.dark-theme i a:hover,
-.dark-theme dd a:hover,
-.dark-theme td:not(:first-child) a:hover {
-  font-weight: bold;
 }
 .dark-theme dt,
 .dark-theme dd {
@@ -8382,10 +8367,6 @@ h6 {
 .dark-theme sub {
   color: #0d1117;
   background: #d6d6dc;
-}
-.dark-theme a,
-.dark-theme #toc a {
-  color: #5ca6f6;
 }
 .dark-theme hr.double {
   border-color: #d6d6dc;
@@ -8454,32 +8435,17 @@ h6 {
 .light-theme figure figcaption {
   color: #0b0b0d;
 }
-.light-theme div.section p a,
-.light-theme td a,
-.light-theme dt a {
-  color: #0b0b0d;
-  text-decoration: underline;
+.light-theme a {
+  color: #646475;
 }
-.light-theme div.section p a:hover,
-.light-theme td a:hover,
-.light-theme dt a:hover {
-  font-weight: bold;
+.light-theme #toc a,
+.light-theme a.external {
+  color: #0a68cf;
 }
 .light-theme i,
 .light-theme dd,
 .light-theme td:not(:first-child) {
   color: #646475;
-}
-.light-theme i a,
-.light-theme dd a,
-.light-theme td:not(:first-child) a {
-  color: #646475;
-  text-decoration: underline;
-}
-.light-theme i a:hover,
-.light-theme dd a:hover,
-.light-theme td:not(:first-child) a:hover {
-  font-weight: bold;
 }
 .light-theme dt,
 .light-theme dd {
@@ -8489,10 +8455,6 @@ h6 {
 .light-theme sub {
   color: #fff;
   background: #0b0b0d;
-}
-.light-theme a,
-.light-theme #toc a {
-  color: #0a68cf;
 }
 .light-theme hr.double {
   border-color: #0b0b0d;
@@ -8561,32 +8523,17 @@ h6 {
 .print figure figcaption {
   color: #000;
 }
-.print div.section p a,
-.print td a,
-.print dt a {
-  color: #000;
-  text-decoration: underline;
+.print a {
+  color: #646475;
 }
-.print div.section p a:hover,
-.print td a:hover,
-.print dt a:hover {
-  font-weight: bold;
+.print #toc a,
+.print a.external {
+  color: #000;
 }
 .print i,
 .print dd,
 .print td:not(:first-child) {
   color: #646475;
-}
-.print i a,
-.print dd a,
-.print td:not(:first-child) a {
-  color: #646475;
-  text-decoration: underline;
-}
-.print i a:hover,
-.print dd a:hover,
-.print td:not(:first-child) a:hover {
-  font-weight: bold;
 }
 .print dt,
 .print dd {
@@ -8596,10 +8543,6 @@ h6 {
 .print sub {
   color: #fff;
   background: #000;
-}
-.print a,
-.print #toc a {
-  color: #000;
 }
 .print hr.double {
   border-color: #000;
@@ -8943,14 +8886,23 @@ body > ul {
   margin: 0 0.2rem 0.5rem 0.2rem;
 }
 a {
-  text-decoration: none;
+  text-decoration: underline;
   white-space: nowrap;
+}
+a:hover {
+  font-weight: bold;
 }
 .section > a {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
-a:hover {
+#toc a {
+  text-decoration: none;
+}
+a.external {
+  text-decoration: none;
+}
+a.external:hover {
   text-decoration: underline;
 }
 a.external::after {
