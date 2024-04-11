@@ -8660,6 +8660,9 @@ body {
 #titles-body {
   display: none;
 }
+#titles-body a {
+  text-decoration: none;
+}
 #banner {
   position: fixed;
   -webkit-box-align: center;
@@ -8751,7 +8754,7 @@ button {
   transition: background-color 0.3s;
 }
 button.standard {
-  background: #bcbcc6;
+  background: #afafbb;
   border-radius: 3px;
   height: 1.3rem;
   margin-right: 0.5rem;
@@ -8763,7 +8766,7 @@ button.standard:hover {
 .triangle {
   cursor: pointer;
   height: 0;
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   width: 0;
@@ -8772,17 +8775,26 @@ button.standard:hover {
   margin-left: 0.2rem;
   border-left: 0.6rem solid transparent;
   border-right: 0.6rem solid transparent;
-  border-bottom: 1.05rem solid #bcbcc6;
+  border-bottom: 1.05rem solid #afafbb;
+}
+#triangle-up:hover {
+  border-bottom: 1.05rem solid #f1f1f3;
 }
 #triangle-left {
   border-top: 0.6rem solid transparent;
   border-bottom: 0.6rem solid transparent;
-  border-right: 1.05rem solid #bcbcc6;
+  border-right: 1.05rem solid #afafbb;
+}
+#triangle-left:hover {
+  border-right: 1.05rem solid #f1f1f3;
 }
 #triangle-right {
   border-top: 0.6rem solid transparent;
   border-bottom: 0.6rem solid transparent;
-  border-left: 1.05rem solid #bcbcc6;
+  border-left: 1.05rem solid #afafbb;
+}
+#triangle-right:hover {
+  border-left: 1.05rem solid #f1f1f3;
 }
 .copyright {
   font-family: Arial, sans-serif;
