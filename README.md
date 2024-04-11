@@ -5,10 +5,9 @@ Design principles:
 - Focus on Python core
 - Comprehensive but selective (Just what you need)
 - Densely packed
-- Well-linked
-- Linkable
+- Well-linked and linkable
 - Responsive
-- Printable
+- [Printable version](https://kieranholland.com/best-python-cheat-sheet/best-python-cheat-sheet.pdf)
 
 Issues and feedback are tracked at the [best-python-cheat-sheet](https://github.com/kieranholland/best-python-cheat-sheet) repository.
 

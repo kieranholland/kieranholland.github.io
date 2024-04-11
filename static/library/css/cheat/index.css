@@ -8691,11 +8691,6 @@ body {
   -ms-flex-shrink: 1;
   flex-shrink: 1;
 }
-#banner #banner-pad {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
 #banner a {
   color: #5ca6f6;
   font-family: Roboto Mono, Consolas, Courier New, monospace;
@@ -8703,8 +8698,13 @@ body {
   text-align: center;
   line-height: 1rem;
 }
-#banner a.logo img {
-  margin: 0.25rem 0.4rem 0 0.4rem;
+#banner div.logo {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+#banner div.logo img {
+  margin: 0.25rem 0.4rem 0 auto;
   height: 1.4rem;
   width: 1.4rem;
 }
@@ -8740,23 +8740,49 @@ body {
   display: none;
 }
 button {
-  background: #bcbcc6;
   border: none;
-  border-radius: 3px;
   color: #000;
   cursor: pointer;
   font-family: Arial, sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
-  height: 1.3rem;
   line-height: 1rem;
-  margin-right: 0.5rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+button.standard {
+  background: #bcbcc6;
+  border-radius: 3px;
+  height: 1.3rem;
+  margin-right: 0.5rem;
   width: 3.5rem;
 }
-button:hover {
+button.standard:hover {
   background: #f1f1f3;
+}
+.triangle {
+  cursor: pointer;
+  height: 0;
+  margin-right: 0.4rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  width: 0;
+}
+#triangle-up {
+  margin-left: 0.2rem;
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  border-bottom: 1.05rem solid #bcbcc6;
+}
+#triangle-left {
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+  border-right: 1.05rem solid #bcbcc6;
+}
+#triangle-right {
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 1.05rem solid #bcbcc6;
 }
 .copyright {
   font-family: Arial, sans-serif;
@@ -9423,17 +9449,6 @@ dl.l90 dd {
 .mobile .draft-show {
   display: none !important;
 }
-.mobile #banner #banner-pad {
-  display: none;
-}
-.mobile #banner a.logo {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-.mobile #banner a.logo img {
-  margin: 0.25rem auto 0 0.3rem;
-}
 .mobile #titles-banner {
   display: none;
 }
@@ -9508,7 +9523,7 @@ dl.l90 dd {
   font-size: 0.8rem;
   line-height: 0.8rem;
 }
-.mobile button {
+.mobile button.standard {
   margin-right: 0.3rem;
   width: 3.2rem;
 }
@@ -9549,17 +9564,6 @@ dl.l90 dd {
   }
   .draft-show {
     display: none !important;
-  }
-  #banner #banner-pad {
-    display: none;
-  }
-  #banner a.logo {
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-  }
-  #banner a.logo img {
-    margin: 0.25rem auto 0 0.3rem;
   }
   #titles-banner {
     display: none;
@@ -9635,7 +9639,7 @@ dl.l90 dd {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
-  button {
+  button.standard {
     margin-right: 0.3rem;
     width: 3.2rem;
   }
@@ -9673,17 +9677,6 @@ dl.l90 dd {
 }
 .tablet .draft-show {
   display: none !important;
-}
-.tablet #banner #banner-pad {
-  display: none;
-}
-.tablet #banner a.logo {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-.tablet #banner a.logo img {
-  margin: 0.25rem auto 0 0.3rem;
 }
 .tablet #titles-banner {
   display: none;
@@ -9818,17 +9811,6 @@ dl.l90 dd {
   .draft-show {
     display: none !important;
   }
-  #banner #banner-pad {
-    display: none;
-  }
-  #banner a.logo {
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-  }
-  #banner a.logo img {
-    margin: 0.25rem auto 0 0.3rem;
-  }
   #titles-banner {
     display: none;
   }
@@ -9960,17 +9942,6 @@ dl.l90 dd {
 }
 .print .draft-show {
   display: none !important;
-}
-.print #banner #banner-pad {
-  display: none;
-}
-.print #banner a.logo {
-  -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-.print #banner a.logo img {
-  margin: 0.25rem auto 0 0.3rem;
 }
 .print #titles-banner {
   display: none;

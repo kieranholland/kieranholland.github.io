@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta content="Kieran Holland" name="author"><meta content="9 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, pdf, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
+<html><head><meta charset="utf-8"><script src="https://www.googletagmanager.com/gtag/js?id=G-28NK04KEEV"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-28NK04KEEV');
+                </script><meta content="Kieran Holland" name="author"><meta content="11 Apr 2024" name="date"><meta content="A dense Python cheat sheet with just what you need. Comprehensive but selective coverage of core Python, with links to detailed documentation and resources. Responsive design with light and dark modes. Printable PDF. Feedback is welcome." name="description"><meta content="Python, py, cheat sheet, cheatsheet, pdf, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13" name="keywords"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>The Best Python Cheat Sheet</title><link href="/static/library/img/icon/python.svg" rel="icon" sizes="x" type="image/svg"><link href="/static/repos/highlight.js/styles/stackoverflow-light.min.css" id="light-theme" media="all" rel="stylesheet" type="text/css"><link href="/static/repos/highlight.js/styles/stackoverflow-dark.min.css" id="dark-theme" media="all" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"><link href="/static/library/css/cheat/index.css" id="cheat" media="all" rel="stylesheet" type="text/css"><script src="/static/repos/paged.js"></script><script src="/static/repos/highlight.js/highlight.min.js"></script><script>hljs.highlightAll();</script><script class="js">async function printThemeAsync() {
     if (document.readyState !== 'complete') {
         await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve));
     }
@@ -73,15 +78,55 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('#content a[href^="#"]:not([href="#"]').forEach(anchor => { // exclude home link in banner, breaks
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
+            history.pushState({ scrollPosition: window.pageYOffset }, '', window.location.href);
             let target = document.querySelector(this.getAttribute('href'));
             window.scrollTo({
                 top: target.offsetTop,
             });
         });
     });
+    window.onpopstate = function(event) {
+        if(event.state && event.state.scrollPosition !== undefined) {
+            window.scrollTo({
+                top: event.state.scrollPosition,
+            });
+        }
+    };
 });
-</script></head><body><div id="meta-date" style="display: none;">9 Apr 2024</div><div id="meta-copyright" style="display: none;">© kieranholland.com</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></a>
-</div><div id="banner-pad"></div><a href="#" class="logo"> <img name="image" src="/static/library/img/icon/python.svg"> </a><div class="version">Python 3.8+ | 9 Apr 2024</div><div class="version-short">Py3.8+ | 9 Apr</div><a href="best-python-cheat-sheet.pdf"><button id="pdf">PDF ↧</button></a><button id="theme" onclick="toggleTheme()">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></div><ul id="toc"><li><a href="#h3-built-in">Built-in</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-debug">Debug</a><span class="page-number"></span></li><li><a href="#h3-decorator">Decorator</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exception">Exception</a><span class="page-number"></span></li><li><a href="#h3-execution">Execution</a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-function">Function</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-iterator">Iterator</a><span class="page-number"></span></li><li><a href="#h3-keyword">Keyword</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-number">Number</a><span class="page-number"></span></li><li><a href="#h3-operator">Operator</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-resource">Resource</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-test">Test</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li><li><a href="#h3-types">Types</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keyword" id="h3-keyword"><a href="#h3-keyword" name="h3-keyword">#</a>Keyword</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
+
+function nextAnchor() {
+    const anchors = Array.from(document.querySelectorAll('h3'));
+    const currentPosition = window.pageYOffset;
+    const nextAnchor = anchors.find(anchor => {
+        const anchorTop = anchor.getBoundingClientRect().top + currentPosition;
+        return anchorTop > currentPosition + 50;
+    });
+    if (nextAnchor) {
+        window.scrollTo({
+            top: nextAnchor.offsetTop,
+        });
+    }
+}
+
+function previousAnchor() {
+    const anchors = Array.from(document.querySelectorAll('h3')).reverse();
+    const currentPosition = window.pageYOffset;
+    const previousAnchor = anchors.find(anchor => {
+        const anchorBottom = anchor.getBoundingClientRect().top + currentPosition;
+        return anchorBottom < currentPosition;
+    });
+    if (previousAnchor) {
+        window.scrollTo({
+            top: previousAnchor.offsetTop,
+        });
+    } else {
+        window.scrollTo({
+            top: 0,
+        });
+    }
+}
+</script></head><body><div id="meta-date" style="display: none;">11 Apr 2024</div><div id="meta-copyright" style="display: none;">© kieranholland.com</div><div id="meta-version" style="display: none;">Python 3.8+</div><div id="content"><div id="banner"><div id="titles-banner"> <a href="#"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></a>
+</div><a href="#"><div id="triangle-up" class="triangle"></div></a><div id="triangle-left" onclick="previousAnchor()" class="triangle"></div><div id="triangle-right" onclick="nextAnchor()" class="triangle"></div><div class="logo"><img name="image" src="/static/library/img/icon/python.svg"> </div><div class="version">Python 3.8+ | 11 Apr 2024</div><div class="version-short">3.8+ | 11 Apr</div><a href="best-python-cheat-sheet.pdf"><button id="pdf" class="standard">PDF ↧</button></a><button id="theme" onclick="toggleTheme()" class="standard">Light</button><a href="https://github.com/kieranholland/best-python-cheat-sheet" rel="noopener noreferrer" target="_blank" class="issues external">Feedback</a></div><div id="content-cheat"><div class="section"><div id="titles-body"><h1>The *Best Python Cheat Sheet</h1><h2>Just what you need</h2></div><ul id="toc"><li><a href="#h3-built-in">Built-in</a><span class="page-number"></span></li><li><a href="#h3-bytes">Bytes</a><span class="page-number"></span></li><li><a href="#h3-class">Class</a><span class="page-number"></span></li><li><a href="#h3-debug">Debug</a><span class="page-number"></span></li><li><a href="#h3-decorator">Decorator</a><span class="page-number"></span></li><li><a href="#h3-dictionary">Dictionary</a><span class="page-number"></span></li><li><a href="#h3-exception">Exception</a><span class="page-number"></span></li><li><a href="#h3-execution">Execution</a><span class="page-number"></span></li><li><a href="#h3-flow-control">Flow control</a><span class="page-number"></span></li><li><a href="#h3-function">Function</a><span class="page-number"></span></li><li><a href="#h3-generator">Generator</a><span class="page-number"></span></li><li><a href="#h3-iterator">Iterator</a><span class="page-number"></span></li><li><a href="#h3-keyword">Keyword</a><span class="page-number"></span></li><li><a href="#h3-library">Library</a><span class="page-number"></span></li><li><a href="#h3-list">List</a><span class="page-number"></span></li><li><a href="#h3-number">Number</a><span class="page-number"></span></li><li><a href="#h3-operator">Operator</a><span class="page-number"></span></li><li><a href="#h3-regex">Regex</a><span class="page-number"></span></li><li><a href="#h3-resource">Resource</a><span class="page-number"></span></li><li><a href="#h3-scope">Scope</a><span class="page-number"></span></li><li><a href="#h3-sequence">Sequence</a><span class="page-number"></span></li><li><a href="#h3-set">Set</a><span class="page-number"></span></li><li><a href="#h3-string">String</a><span class="page-number"></span></li><li><a href="#h3-test">Test</a><span class="page-number"></span></li><li><a href="#h3-time">Time</a><span class="page-number"></span></li><li><a href="#h3-tuple">Tuple</a><span class="page-number"></span></li><li><a href="#h3-types">Types</a><span class="page-number"></span></li></ul></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Keyword" id="h3-keyword"><a href="#h3-keyword" name="h3-keyword">#</a>Keyword</h3><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><ul class="col10e nobullet"><li>and
 </li><li>as
 </li><li>assert
 </li><li>break
@@ -639,7 +684,7 @@ C = show_call(C)
 
 &gt;&gt;&gt; C(a=42)
 C () {'a': 42}
-</code></pre></div><div><pre class="code"><code class="py"># decorators arguments can modify the decorator function
+</code></pre></div><div><pre class="code"><code class="py"># decorators optionally take arguments
 def show_call_if(condition):
     """
     Apply show_call decorator only if condition is True.
@@ -769,7 +814,10 @@ def parent_gen():
 </td></tr></tbody></table></div></div></div><div class="section-links h4"><h4 id="h4-string-formatting"><a href="#h4-string-formatting" name="h4-string-formatting">#</a>String formatting</h4><p>Also: </p><a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><div class="hbox cont"><div><div class="table"><table><thead><tr><th>Format
 </th><th>f-string
 </th><th>Output
-</th></tr></thead><tbody><tr><td>Expression
+</th></tr></thead><tbody><tr><td>Escape curly braces
+</td><td>f"{{}}"
+</td><td>'{}'
+</td></tr><tr><td>Expression
 </td><td>f"{6/3}, {'a'+'b'}"
 '{}, {}'.format(6/3, 'a'+'b')
 </td><td>'2, ab'
