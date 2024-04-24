@@ -8987,7 +8987,7 @@ a:hover {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
-.section-links a,
+.section-links a.external,
 #toc a {
   text-decoration: none;
 }
