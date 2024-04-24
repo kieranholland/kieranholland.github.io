@@ -268,10 +268,10 @@ break                      # immediately exit loop
 continue                   # skip to next loop iteration
 return[ value]             # exit function, return value | None
 yield[ value]              # exit generator, yield value | None
-assert &lt;expr&gt;[, message]   # if not expression raise AssertionError([message])
-</code></pre></div><div><pre class="code"><code class="py">if condition:
+assert &lt;expr&gt;[, message]   # if not &lt;expr&gt; raise AssertionError([message])
+</code></pre></div><div><pre class="code"><code class="py">if &lt;condition&gt;:
     …
-[elif condition:
+[elif &lt;condition&gt;:
     …]*
 [else:
     …]
@@ -399,18 +399,18 @@ s += x
 s[len(s):len(s)] = [x]</dt><dd>Add item to end</dd></div><div class="ditem"><dt>s.extend(it)
 s[len(s):len(s)] = it</dt><dd>Add items from iterable to end</dd></div><div class="ditem"><dt>s.insert(i, x)
 s[i:i] = [x]</dt><dd>Insert item at index i</dd></div><div class="ditem"><dt>s.remove(x)
-del s[s.index(x)]</dt><dd>Remove first item where s[i] == x </dd></div><div class="ditem"><dt>y = s.pop([i])</dt><dd>Remove and return last item or indexed item</dd></div><div class="ditem"><dt>s.reverse()</dt><dd>Reverse items in place</dd></div><div class="ditem"><dt>s.sort(cmp=func, key=getter, reverse=False)</dt><dd>Sort items in place, default ascending</dd></div></dl><div class="section-links h4"><h4 id="h4-list-comprehension"><a href="#h4-list-comprehension" name="h4-list-comprehension">#</a>List comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">result = [expression for item1 in iterable1{ if condition1}
-            {for item2 in iterable2{ if condition2} … for itemN in iterableN{ if conditionN}}]
+del s[s.index(x)]</dt><dd>Remove first item where s[i] == x </dd></div><div class="ditem"><dt>y = s.pop([i])</dt><dd>Remove and return last item or indexed item</dd></div><div class="ditem"><dt>s.reverse()</dt><dd>Reverse items in place</dd></div><div class="ditem"><dt>s.sort(cmp=func, key=getter, reverse=False)</dt><dd>Sort items in place, default ascending</dd></div></dl><div class="section-links h4"><h4 id="h4-list-comprehension"><a href="#h4-list-comprehension" name="h4-list-comprehension">#</a>List comprehension</h4><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><pre class="code"><code class="py">result = [&lt;expression&gt; for item1 in &lt;iterable1&gt;{ if &lt;condition1&gt;}
+            {for item2 in &lt;iterable2&gt;{ if &lt;condition2&gt;} … for itemN in &lt;iterableN&gt;{ if &lt;conditionN&gt;}}]
 
 # is equivalent to:
 
 result = []
-for item1 in iterable1:
-    for item2 in iterable2:
+for item1 in &lt;iterable1&gt;:
+    for item2 in &lt;iterable2&gt;:
         …
-        for itemN in iterableN:
-            if condition1 and condition2 … and conditionN:
-                result.append(expression)
+        for itemN in &lt;iterableN&gt;:
+            if &lt;condition1&gt; and &lt;condition2&gt; … and &lt;conditionN&gt;:
+                result.append(&lt;expression&gt;)
 </code></pre></div><div class="section"><div class="section-links h3"><h3 data-toc-title="Dictionary" id="h3-dictionary"><a href="#h3-dictionary" name="h3-dictionary">#</a>Dictionary</h3><p>Also: </p><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" rel="noopener noreferrer" target="_blank" class="external">pydocs</a></div><p>Mutable non-hashable key:value pair mapping.</p><dl class="l50"><div class="ditem"><dt>dict()
 {}</dt><dd>Empty dict</dd></div><div class="ditem"><dt>dict(&lt;sequence|mapping&gt;)
 {'d':4, 'a':2}</dt><dd>Create from key:value pairs</dd></div><div class="ditem"><dt>dict(**kwds)</dt><dd>Create from keyword arguments</dd></div><div class="ditem"><dt>dict(zip(keys, values))</dt><dd>Create from sequences of keys and values</dd></div><div class="ditem"><dt>dict.fromkeys(keys, value=None)</dt><dd>Create from keys, all set to value</dd></div><div class="ditem"><dt>d.keys()</dt><dd>Iterable of keys</dd></div><div class="ditem"><dt>d.values()</dt><dd>Iterable of values</dd></div><div class="ditem"><dt>d.items()</dt><dd>Iterable of (key, value) pairs</dd></div><div class="ditem"><dt>d.get(key, default=None)</dt><dd>Get value for key, or default</dd></div><div class="ditem"><dt>d.setdefault(key, default=None)</dt><dd>Get value for key, add if missing</dd></div><div class="ditem"><dt>d.pop(key)</dt><dd>Remove and return value for key, raise KeyError if missing</dd></div><div class="ditem"><dt>d.popitem()</dt><dd>Remove and return (key, value) pair (last-in, first-out)</dd></div><div class="ditem"><dt>d.clear()</dt><dd>Remove all items</dd></div><div class="ditem"><dt>d.copy()</dt><dd>Shallow copy</dd></div><div class="ditem"><dt>d1.update(d2)
@@ -455,7 +455,7 @@ def f(x, *args, **kwds): … # f(x=1, y=2, z=3) | f(1, y=2, z=3) | f(1, 2, z=3) 
 def f(*args, y, **kwds): … # f(x=1, y=2, z=3) | f(1, y=2, z=3)
 
 # positional-only before /
-def f(x, /, y): …          # f(1, y=2) | f(1, 2)
+def f(x, /, y): …          # f(1, 2) | f(1, y=2)
 def f(x, y, /): …          # f(1, 2)
 
 # keyword-only after *
