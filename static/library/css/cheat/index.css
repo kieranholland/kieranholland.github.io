@@ -3933,7 +3933,7 @@ ul,
 dl,
 #header,
 #footer {
-  font-family: Palatino Linotype, Times New Roman, serif;
+  font-family: Playfair Display, Palatino Linotype, Times New Roman, serif;
 }
 h1,
 h2,
@@ -3941,7 +3941,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, sans-serif;
+  font-family: Source Sans 3, Arial, sans-serif;
 }
 i {
   font-style: italic;
@@ -3954,7 +3954,7 @@ pre {
   white-space: pre;
 }
 pre.p {
-  font-family: Palatino Linotype, Times New Roman, serif;
+  font-family: Playfair Display, Palatino Linotype, Times New Roman, serif;
   margin-left: 0;
 }
 .pre {
@@ -3976,7 +3976,7 @@ sup,
 sub {
   font-size: 0.6rem;
   position: relative;
-  top: -0.5rem;
+  top: -0.4rem;
   vertical-align: baseline;
 }
 sub {
@@ -4004,7 +4004,7 @@ h4,
 h5,
 h6 {
   color: #138;
-  font-family: Arial, sans-serif;
+  font-family: Source Sans 3, Arial, sans-serif;
   font-weight: bold;
   margin: 1.3rem 0 0rem -0.04rem;
   break-after: avoid;
@@ -4024,9 +4024,10 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: normal;
   margin-top: 0;
+  padding-bottom: 0.5rem;
   text-align: center;
 }
 h2.sub {
@@ -7111,53 +7112,80 @@ ul {
   list-style-position: outside;
   list-style-type: none;
   padding: 0;
-  counter-reset: kmh-counter;
 }
 ul {
   list-style-type: none;
 }
 ol {
   list-style-type: decimal;
-}
-ol,
-ol > li > ol,
-ul > li > ol {
-  margin-left: 1.1rem;
+  counter-reset: kmh-counter;
+  counter-reset: list-item;
 }
 ol ol,
 ol ul,
 ul ul,
 ul ol {
-  padding-left: 0;
-  margin-left: 0;
+  margin-bottom: 0.15rem;
+  margin-top: 0.15rem;
 }
-ol > li > ul {
-  margin-left: 0;
+ol {
+  margin-left: 1.1rem;
+}
+ol.long-list {
+  margin-left: 1.6rem;
+}
+ol li,
+ul li {
+  margin-bottom: 0.15rem;
 }
 ul > li::before {
-  content: "◼";
+  color: #6c6c6c;
+  content: "●";
   position: absolute;
-  left: -0.06rem;
-  top: 0.02rem;
+  left: 0rem;
+  top: -0.05rem;
 }
-ol.nested ol > li::before {
-  content: counters(kmh-counter, ".") " ";
+ul ul > li::before {
+  color: #c1c1c1;
 }
-li > ul > li::before {
-  color: #a9a9a9;
-}
-li > div:not(:first-child) {
-  margin-left: 0;
+ul > li {
+  position: relative;
+  padding-left: 1.26rem;
 }
 ul > li,
 ol > li {
   break-inside: avoid;
 }
-ul > li {
-  position: relative;
+ol.nested ol > li::before {
+  content: counters(kmh-counter, ".") " ";
 }
-ul > li {
-  padding-left: 1.26rem;
+li > div:not(:first-child) {
+  margin-left: 0;
+}
+body.preview .pagedjs_page {
+  border: 1px solid #cdcdcd;
+  margin-bottom: 0.15rem;
+}
+.page-back {
+  page: page-back;
+}
+.page-blank {
+  page: page-blank;
+}
+.page-cover {
+  page: page-cover;
+}
+#content {
+  page: page-content;
+}
+#content.header {
+  page: page-content-header;
+}
+#content.footer {
+  page: page-content-footer;
+}
+#content.header.footer {
+  page: page-content-header-footer;
 }
 @media print {
   #content {
@@ -7178,33 +7206,49 @@ ul > li {
     size: A4 portrait;
     margin: 19mm;
     @top-left {
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
       height: 1rem;
       margin-top: 0.8rem;
       width: 7rem;
+      white-space: pre;
       vertical-align: bottom;
     }
     @top-center {
-      font-size: 0.7rem;
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
       height: 1rem;
       margin-top: 0.8rem;
       content: string(version);
+      white-space: pre;
       vertical-align: bottom;
     }
     @top-right {
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
       height: 1rem;
       margin-top: 0.8rem;
       width: 7rem;
+      white-space: pre;
       vertical-align: bottom;
     }
     @bottom-left {
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
       width: 7rem;
+      white-space: pre;
       vertical-align: top;
     }
     @bottom-center {
-      font-size: 0.7rem;
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
+      white-space: pre;
       vertical-align: top;
     }
     @bottom-right {
+      font-family: Source Sans 3, Arial, sans-serif;
+      font-size: 0.8rem;
+      white-space: pre;
       width: 7rem;
       vertical-align: top;
     }
@@ -7239,16 +7283,12 @@ ul > li {
     }
     @bottom-left {
       color: #242424;
-      content: counter(page) ' of ' counter(pages);
     }
     @bottom-center {
       color: #6c6c6c;
-      content: string(title);
-      white-space: pre;
     }
     @bottom-right {
       color: #6c6c6c;
-      content: string(date);
     }
   }
   @page :right {
@@ -7263,19 +7303,173 @@ ul > li {
     }
     @bottom-left {
       color: #6c6c6c;
-      content: string(date);
     }
     @bottom-center {
       color: #6c6c6c;
-      content: string(title);
-      white-space: pre;
     }
     @bottom-right {
       color: #242424;
-      content: counter(page) ' of ' counter(pages);
     }
   }
-  h1 {
+  @page page-blank {
+    @bottom-left {
+      content: '';
+    }
+    @bottom-center {
+      content: 'This page is intentionally blank.';
+    }
+    @bottom-right {
+      content: '';
+    }
+  }
+  @page page-content :left {
+    @top-left {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @top-center {
+      content: string(title);
+    }
+    @top-right {
+      content: string(date);
+    }
+    @bottom-left {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @bottom-center {
+      content: string(title);
+    }
+    @bottom-right {
+      content: string(date);
+    }
+  }
+  @page page-content :right {
+    @top-left {
+      content: string(date);
+    }
+    @top-center {
+      content: string(title);
+    }
+    @top-right {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @bottom-left {
+      content: string(date);
+    }
+    @bottom-center {
+      content: string(title);
+    }
+    @bottom-right {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+  }
+  @page page-content-header :left {
+    @top-left {
+      content: '';
+    }
+    @top-center {
+      content: '';
+    }
+    @top-right {
+      content: '';
+    }
+    @bottom-left {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @bottom-center {
+      content: string(title);
+    }
+    @bottom-right {
+      content: string(date);
+    }
+  }
+  @page page-content-header :right {
+    @top-left {
+      content: '';
+    }
+    @top-center {
+      content: '';
+    }
+    @top-right {
+      content: '';
+    }
+    @bottom-left {
+      content: string(date);
+    }
+    @bottom-center {
+      content: string(title);
+    }
+    @bottom-right {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+  }
+  @page page-content-footer :left {
+    @top-left {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @top-center {
+      content: string(title);
+    }
+    @top-right {
+      content: string(date);
+    }
+    @bottom-left {
+      content: '';
+    }
+    @bottom-center {
+      content: '';
+    }
+    @bottom-right {
+      content: '';
+    }
+  }
+  @page page-content-footer :right {
+    @top-left {
+      content: string(date);
+    }
+    @top-center {
+      content: string(title);
+    }
+    @top-right {
+      content: attr(kmh-data-page) ' of ' attr(kmh-data-pages);
+    }
+    @bottom-left {
+      content: '';
+    }
+    @bottom-center {
+      content: '';
+    }
+    @bottom-right {
+      content: '';
+    }
+  }
+  @page page-content-header-footer {
+    @top-left {
+      content: '';
+    }
+    @top-center {
+      content: '';
+    }
+    @top-right {
+      content: '';
+    }
+    @bottom-left {
+      content: '';
+    }
+    @bottom-center {
+      content: '';
+    }
+    @bottom-right {
+      content: '';
+    }
+  }
+  .meta-section,
+  #meta-title,
+  #meta-copyright,
+  #meta-date,
+  #meta-version {
+    display: none;
+  }
+  #meta-title {
     string-set: title content(text);
   }
   #meta-copyright {
@@ -7295,19 +7489,19 @@ ul > li {
     text-decoration: none;
   }
 }
-h1,
-h2,
-.toc_title {
+h1 {
   color: #07468b;
+}
+h2 {
+  color: #3c3c3c;
 }
 h2.sub,
 .by p {
-  color: #053a74;
+  color: #6c6c6c;
 }
 h3,
 h4,
-h5,
-.toc ul {
+h5 {
   color: #0851a2;
 }
 h6 {
@@ -7316,9 +7510,6 @@ h6 {
 a {
   color: #0851a2;
   text-decoration-color: #73b2f7;
-}
-ul > li:before {
-  color: #0851a2;
 }
 hr {
   background: #0851a2;
@@ -7329,16 +7520,39 @@ hr.double {
 #content {
   padding: 0rem 6rem;
 }
-h1 {
-  margin-bottom: 0.25rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: PT Sans, Arial, sans-serif;
 }
-h2 {
-  margin-bottom: 0.2rem;
+body,
+ol,
+p,
+ul,
+dl,
+#header,
+#footer {
+  font-family: PT Serif, Palatino Linotype, Times New Roman, serif;
+}
+h1,
+h2,
+h2.sub {
+  margin-bottom: 0.25rem;
+  padding-bottom: 0;
+}
+h1:not(:has(+h2)),
+h2:not(:has(+h2.sub)),
+h2.sub {
+  margin-bottom: 1rem;
 }
 h3,
 h4,
 h5,
 h6 {
+  break-after: avoid;
   margin-bottom: 0.15rem;
 }
 .text-header {
@@ -7369,57 +7583,53 @@ h6 {
   width: 20%;
   text-align: right;
 }
+.toc {
+  break-after: page;
+}
 .toc h3 {
-  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
 }
-.toc h4 {
-  text-align: center;
+.toc ul {
+  margin: 0;
+  width: 100%;
 }
-.toc-body {
-  color: #053a74;
-  margin: 2rem auto 0 auto;
-  width: 75%;
+.toc ul li::before {
+  content: none;
 }
-.toc-level-1 {
+.toc > ul {
   font-weight: bold;
 }
-.toc-level-2 {
+.toc > ul ul {
   font-weight: normal;
 }
-.toc-line {
+.toc > ul > li {
+  padding-left: 0;
+}
+.toc li {
   display: flex;
-  margin-bottom: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
 }
-.toc-level-2 .toc-name {
-  padding-left: 1rem;
+.toc li:last-child {
+  margin-bottom: 0;
 }
-.toc-level-3 .toc-name {
-  padding-left: 1.75rem;
+.toc a {
+  color: unset;
+  white-space: nowrap;
 }
-.toc-level-4 .toc-name {
-  padding-left: 2.4rem;
-}
-.toc-name,
-.toc-page {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-.toc-name {
-  padding-right: 0.5rem;
-}
-.toc-page {
-  padding-left: 0.5rem;
-}
-.toc-dots {
-  flex-basis: auto;
+.toc .toc-dots {
   flex-grow: 1;
-  flex-shrink: 1;
+  margin: 0 0.25rem;
   overflow: hidden;
+  letter-spacing: 0.1rem;
 }
-.toc-dots::before {
-  letter-spacing: 0.25rem;
-  content: ".................................................................................................................";
+.toc .toc-dots::before {
+  content: "..........................................................................................................................";
+}
+.toc .toc-page {
+  text-align: right;
+  white-space: nowrap;
 }
 .boxed,
 .case,
@@ -7525,15 +7735,9 @@ ul.center {
   margin: 0 auto;
   text-align: left;
 }
-.references li {
-  padding-left: 0;
-  font-size: 0.95rem;
-}
-.references ol,
 .figures ol,
 .tables ol {
-  list-style-position: outside;
-  margin: 0 0 0 1.7rem;
+  margin: 0 0 0 1.6rem;
   padding: 0;
 }
 .figures li,
@@ -7545,7 +7749,7 @@ table {
   border-bottom: 2px solid #000;
   border-left: none;
   border-right: none;
-  font-family: Palatino Linotype, Times New Roman, serif;
+  font-family: PT Serif, Palatino Linotype, Times New Roman, serif;
   tbody: th;
 }
 table > caption {
@@ -7663,14 +7867,14 @@ blockquote footer::before {
   color: #e5e5e5;
   cursor: default;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: PT Serif, Palatino Linotype, Times New Roman, serif;
   font-size: 15rem;
-  font-style: italic;
   font-weight: bold;
   left: 50%;
   line-height: 100%;
   pointer-events: none;
   position: fixed;
+  text-transform: uppercase;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   user-select: none;
@@ -7686,30 +7890,6 @@ blockquote footer::before {
 }
 .hbox .table-space > table {
   margin-right: 3rem;
-}
-@media print {
-  @page {
-    margin: 12.7mm;
-  }
-}
-h1 {
-  font-size: 1.5rem;
-}
-h2 {
-  font-size: 1.25rem;
-}
-h3 {
-  font-size: 1.25rem;
-  margin-left: -0.06rem;
-}
-h4,
-h5 {
-  font-size: 1.02rem;
-  margin-left: -0.03rem;
-}
-h6 {
-  font-size: 0.95rem;
-  margin-left: 0;
 }
 .dark-theme {
   color: #d6d6dc;
@@ -8026,14 +8206,17 @@ body {
   background: #212127;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  padding: 0.03rem 0.4rem 0.1rem 0.15rem;
-  width: 18.5rem;
+  padding: 0.03rem 0.8rem 0.1rem 0.15rem;
 }
 #titles-banner a {
   text-decoration: none;
 }
 #titles-banner a h1 {
   margin-bottom: 0;
+}
+#titles-banner a h1:not(:has(+ h2)) {
+  margin-top: 0.4rem;
+  margin-left: 0.15rem;
 }
 #titles-body {
   display: none;
@@ -8093,21 +8276,24 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#banner .version,
-#banner .version-short {
+#banner #version,
+#banner #version-short {
   color: #d6d6dc;
   font-family: DejaVu Sans Mono, Roboto Mono, Consolas, Courier New, monospace;
   font-size: 0.85rem;
   margin-right: 0.5rem;
 }
-#banner .version-short {
+#banner #version-short {
   display: none;
+}
+#banner .draft-flag {
+  color: #c96e40 !important;
 }
 button {
   border: none;
   color: #000;
   cursor: pointer;
-  font-family: Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   line-height: 1rem;
@@ -8156,7 +8342,7 @@ button.standard:hover {
   border-left: 1.05rem solid #f1f1f3;
 }
 .copyright {
-  font-family: Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 0.7rem;
   text-align: center;
   margin: 1rem 0 0.75rem 0;
@@ -8165,7 +8351,7 @@ button.standard:hover {
   column-count: 6;
   column-gap: 0.6rem;
   display: block;
-  margin: 0 0.2rem 0.5rem 0.2rem;
+  margin: 0.2rem 0.2rem 0.5rem 0.2rem;
 }
 #toc li {
   display: inline-block;
@@ -8292,7 +8478,7 @@ a.external:hover {
 a.external::after {
   color: #7b7b8e;
   content: "\2197";
-  font-family: Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 0.7rem;
   line-height: 0;
@@ -8375,7 +8561,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   text-align: left;
   break-after: avoid;
 }
@@ -8387,7 +8573,7 @@ h1 {
 }
 h2 {
   color: #fff;
-  font-family: Palatino Linotype, Times New Roman, serif;
+  font-family: PT Serif, Palatino Linotype, Times New Roman, serif;
   font-size: 0.85rem;
   font-style: italic;
   text-align: left;
@@ -8853,10 +9039,10 @@ dl.l90 dd {
   margin-right: 0.3rem;
   width: 3.2rem;
 }
-.mobile #banner .version {
+.mobile #banner #version {
   display: none;
 }
-.mobile #banner .version-short {
+.mobile #banner #version-short {
   display: block;
 }
 .mobile pre,
@@ -8955,10 +9141,10 @@ dl.l90 dd {
     margin-right: 0.3rem;
     width: 3.2rem;
   }
-  #banner .version {
+  #banner #version {
     display: none;
   }
-  #banner .version-short {
+  #banner #version-short {
     display: block;
   }
   pre,
