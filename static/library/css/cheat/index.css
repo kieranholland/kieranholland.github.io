@@ -4285,6 +4285,13 @@ hr.gap {
 .draft-show {
   display: block !important;
 }
+.meta-section,
+#meta-title,
+#meta-copyright,
+#meta-date,
+#meta-version {
+  display: none;
+}
 .debug-border {
   border: 1px solid #f00;
 }
@@ -7461,13 +7468,6 @@ body.preview .pagedjs_page {
     @bottom-right {
       content: '';
     }
-  }
-  .meta-section,
-  #meta-title,
-  #meta-copyright,
-  #meta-date,
-  #meta-version {
-    display: none;
   }
   #meta-title {
     string-set: title content(text);
